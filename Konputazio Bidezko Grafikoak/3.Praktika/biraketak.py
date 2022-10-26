@@ -2,7 +2,6 @@
 from math import sqrt, sin, cos, acos, pi
 import numpy as np
 
-
 def rodrigues(theta_rad, bektorea):           # Rodrigues-en formularekin biraketa matrizea
     array1d = np.array(bektorea)                                # zerrenda sartuko balitz egokitzeko 
     w = array1d / sqrt(np.sum(array1d**2))                                  # w unitarioa izateko
