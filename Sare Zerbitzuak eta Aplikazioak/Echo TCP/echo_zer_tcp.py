@@ -8,7 +8,7 @@ PORT = 50007
 Sortu socket bat, esleitu helbide bat eta ezarri entzute socket
 bezala.
 """
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('', PORT))
 s.listen(5)
 
@@ -16,6 +16,9 @@ s.listen(5)
 
 while True:
 	elkarrizketa, _ = s.accept()
-	while elkarrizketa:
- 		elkarrizketa.sendall(elkarrizketa.recv())
+	buf_mezua=  elkarrizketa.recv(1024)
+	while buf_mezua:
+		elkarrizketa.sendall(buf_mezua)
+		buf_mezua = elkarrizketa.recv(1024)
+   
 s.close()
