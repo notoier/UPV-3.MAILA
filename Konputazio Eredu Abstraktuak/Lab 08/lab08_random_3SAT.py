@@ -1,4 +1,3 @@
-#Aurretik egindakoak hartu
 import random
 from time import time
 
@@ -33,9 +32,9 @@ def is_satisfied(num_variables, clauses, assignment):
                     break #True bada, orduan hurrengo klausulara pasatu
                 
         if maxFalse == 0: #MaxFalse 0-ra heltzen bada, orduan klausula oso bat False dela esan nahi du
-            return clause  #Klausula oso bat False bada, orduan guztia False izango da, beraz False bueltatu          
+            return clause  #Klausula oso bat False bada, orduan guztia False izango da, beraz False ematen duen klausula bueltatu          
                     
-    return [] #Jasotako klausula guztiak True badira, orduan True bueltatu
+    return [] #Jasotako klausula guztiak True badira, orduan klausula hutsa bueltatu
 
 #Programatu beharreko funtzioa
 #Ausaz asignazio bat sortu

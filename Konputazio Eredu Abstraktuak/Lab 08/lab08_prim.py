@@ -1,15 +1,11 @@
-
-  
-from matplotlib.colors import get_named_colors_mapping
-
-
+#Nodo guztiak lotzen dituen bide motzena lortzeko balio duen algoritmoa
 def prim_algorithm(graph):
       visited = [0] #Visitatutako nodoak hasieratu
       sec_graph = [[float("inf") for r in range(len(graph[0]))] for c in range(len(graph[0]))] #Grafo sekundario bat hasieratu
       while len(visited) < len(graph[0]): #Nodo guztiak bisitatu ez ditugun bitartean
             min_distance = float("inf") #Distantzia minimoa infinitura hasieratu
             _node = None #Sartu beharreko nodoa hasieratu
-            for node in visited: #Visitatutako nodoak iteratu
+            for node in visited: #Bisitatutako nodoak iteratu
 #                 print("NODO ACTUAL: " + str(node))
                   for _node in range(len(graph[node])): #Grafoko lerroko nodoak iteratu
                         if graph[node][_node] < min_distance and _node not in visited: #Distantzia minimoa baino txikiagoa bada eta nodo hori ez badugu bisitatu
