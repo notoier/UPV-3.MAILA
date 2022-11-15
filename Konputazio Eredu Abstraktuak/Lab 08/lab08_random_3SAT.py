@@ -50,9 +50,9 @@ def random_3SAT (clauses, num_variables):
             change = random.choice(posible_literals) #Zoriz, klausula horren literal bat aldatu
             assignment[change] = 0 if assignment[change] == 1 else 1 #Asignazioa lehen 1 bazen orduan 0-ra jarri, bestela kontrakoa egin
         else:
-            return "Formula betetzen da eta haren asignazioa hurrengoa da: " + str(assignment)    
+            return "Formula betetzen da eta haren asignazioa hurrengoa da: " + str(assignment)  #Formula betetzen da   
          
-    return "Formula ez da bete. Erabilitako azken asignazioa hurrengoa da: " + str(assignment)
+    return "Formula ez da bete. Erabilitako azken asignazioa hurrengoa da: " + str(assignment)  #Formula ez da betetzen
 
 
 def test():
