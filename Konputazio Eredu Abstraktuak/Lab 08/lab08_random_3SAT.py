@@ -42,16 +42,17 @@ def is_satisfied(num_variables, clauses, assignment):
 #False egiten duen klausula bat topatuta, ausaz literal bati dagokion aldagaiaren balioa aldatu
 #Errepikatu prozesua sarrera formularen aldagai kopuruaren balioa adina aldiz
 def random_3SAT (clauses, num_variables):
-    assignment = [0 if i == 0 else random.choice([0,1]) for i in range(num_variables + 1)] #Zoriz sortutako asignazioa, 0.posizioan 0 bat duena beti, posizio hori ez dagoelako literal batekin lotuta
-    for n in range(num_variables): # n aldiz iteratuko dugu
-        clause = is_satisfied(num_variables, clauses, assignment) #Formula betetzen den konprobatu
-        if clause: # Klausularen bat ez da bete
-            posible_literals = [abs(literal) for literal in clause] #Klausula horrek dituen literalen zerrenda
-            change = random.choice(posible_literals) #Zoriz, klausula horren literal bat aldatu
-            assignment[change] = 0 if assignment[change] == 1 else 1 #Asignazioa lehen 1 bazen orduan 0-ra jarri, bestela kontrakoa egin
-        else:
-            return "Formula betetzen da eta haren asignazioa hurrengoa da: " + str(assignment)  #Formula betetzen da   
-         
+    for n in range(num_variables): # n aldiz iteratu
+        assignment = [0 if i == 0 else random.choice([0,1]) for i in range(num_variables + 1)] #Zoriz sortutako asignazioa, 0.posizioan 0 bat duena beti, posizio hori ez dagoelako literal batekin lotuta
+        for n in range(num_variables): #beste n aldiz iteratuko dugu clausula aldatzeko, hau da n^2 aldiz
+            clause = is_satisfied(num_variables, clauses, assignment) #Formula betetzen den konprobatu
+            if clause: # Klausularen bat ez da bete
+                posible_literals = [abs(literal) for literal in clause] #Klausula horrek dituen literalen zerrenda
+                change = random.choice(posible_literals) #Zoriz, klausula horren literal bat aldatu
+                assignment[change] = 0 if assignment[change] == 1 else 1 #Asignazioa lehen 1 bazen orduan 0-ra jarri, bestela kontrakoa egin
+            else:
+                return "Formula betetzen da eta haren asignazioa hurrengoa da: " + str(assignment)  #Formula betetzen da   
+            
     return "Formula ez da bete. Erabilitako azken asignazioa hurrengoa da: " + str(assignment)  #Formula ez da betetzen
 
 
