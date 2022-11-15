@@ -4,27 +4,27 @@ from matplotlib.colors import get_named_colors_mapping
 
 
 def prim_algorithm(graph):
-      visited = [0]
-      sec_graph = [[float("inf") for r in range(len(graph[0]))] for c in range(len(graph[0]))]
-      while len(visited) < len(graph[0]):
-            min_distance = float("inf")
-            _node = None
-            for node in visited:
+      visited = [0] #Visitatutako nodoak hasieratu
+      sec_graph = [[float("inf") for r in range(len(graph[0]))] for c in range(len(graph[0]))] #Grafo sekundario bat hasieratu
+      while len(visited) < len(graph[0]): #Nodo guztiak bisitatu ez ditugun bitartean
+            min_distance = float("inf") #Distantzia minimoa infinitura hasieratu
+            _node = None #Sartu beharreko nodoa hasieratu
+            for node in visited: #Visitatutako nodoak iteratu
 #                 print("NODO ACTUAL: " + str(node))
-                  for _node in range(len(graph[node])):
-                        if graph[node][_node] < min_distance and _node not in visited:
-                              j = node
-                              i = _node
-                              min_distance = graph[node][_node]
+                  for _node in range(len(graph[node])): #Grafoko lerroko nodoak iteratu
+                        if graph[node][_node] < min_distance and _node not in visited: #Distantzia minimoa baino txikiagoa bada eta nodo hori ez badugu bisitatu
+                              j = node #Gorde lehengo nodoa
+                              i = _node #Gorde uneko nodoa
+                              min_distance = graph[node][_node] #Gorde distantzia
 #           print("DISTANCIA MINIMA: " + str(min_distance))
 #           print("NODO AÑADIDO: " + str(i))
-            if i:
-                  sec_graph[j][i] = min_distance
-                  sec_graph[i][j] = min_distance
+            if i: #Nodo berri bat sartu behar badugu
+                  sec_graph[j][i] = min_distance #Distantziak nodo sekundarioan ipini
+                  sec_graph[i][j] = min_distance #Bi posiziotan, grafo ez zuzendua delako, hau da, simetrikoa
 #                 print("GRAPH: " + str(sec_graph))
-                  visited.append(i)     
+                  visited.append(i) #Nodo berria sartu bisitatuen hartean
 #                 print("NODO VISITADO: " + str(visited))   
-      return sec_graph 
+      return sec_graph #Grafo sekundario bueltatu
  
 
 def test():
