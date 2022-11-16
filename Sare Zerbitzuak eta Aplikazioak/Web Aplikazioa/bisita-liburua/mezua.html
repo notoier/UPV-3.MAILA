@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SZAko Webgunea</title> 
+
+</head>
+
+<body>
+<div id="content">
+    <!-- Logoa Informatika Fakultatea -->
+    <div id="banner"> 
+    <img class="hr" id="logo" src="img/fakultatea.jpg" alt="Informatika Fakultatearen eraikuntza kanpotik">
+    </div>    
+
+
+
+    <!-- Nabigazio menua -->
+    <ul id="menu">
+        
+        <li><a href="index.html">Hasiera</a>
+                
+        </li>
+
+ <div id="activeMenu">   
+        <li>Iruzkina bidali
+    
+        </li>
+ </div>
+
+ <li><!--Bisita Liburua esteka-->
+
+        </li>
+ </ul>
+    
+   <!-- Edukia -->
+    <div id="main">
+        <div class="heading">
+          <div class="form">
+                <br>
+                   <br>
+                        <br>  
+                            <form method="post" novalidate>
+                            <fieldset> 
+
+
+                                <label class="label" for="name">Izena *:</label>
+                                <input id="name" name="izena" type="text" maxlength="20" required/>
+                                <br><br>
+                                
+
+                                <label class="label" for="eposta">Posta-elektroniko helbidea:</label>
+                                <input id="eposta" name="eposta" type="email"/>
+                                <br><br>
+
+                                
+                                <input type="checkbox" name="pribatua" id="pribatua">
+                                <label class="label" for="pribatua">Nire posta elektroniko helbidea pribatua izatea nahi dut</label>
+                                
+                                <br><br>
+                                
+                                <label class="label" for="mezua"> Mezua *:</label>
+                                <textarea id="mezua" name="iruzkina" maxlength="140" rows="5" required></textarea>
+
+                            <br>
+                                <br> <span class="label">* ikurra duten eremuak derrigorrezkoak dira</span><br><br>
+
+                                <button class="button" type="submit">Bidali</button>
+
+                            </fieldset>     
+                            </form> 
+        </div>
+        </div>
+        
+        <img class="hr" src="img/line_gradient.gif">
+            SZA irakasgaia. Informatika Ingeniaritza Gradua. UPV-EHU
+    </div>
+</div> <!-- content -->
+</body>
+</html>

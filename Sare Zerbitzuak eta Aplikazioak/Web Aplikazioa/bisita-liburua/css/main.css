@@ -1,0 +1,151 @@
+/*
+ * SZA Webgunearako sortutako CSS 
+ *
+ */
+
+/*
+ * Orokorra
+ *
+ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  background-color: #2A194C;
+  margin: 0;
+  padding: 0;
+}
+#content {
+  width: 80%;
+  margin: 10px auto;
+  padding: 1em;
+  background: white;
+  border-left: 2px solid black;
+}
+
+img.hr {
+    margin: 1em 0;
+    width: 100%;
+}
+/*
+ * HTML Elementuak
+ *
+ */
+a {
+  color: #3E0087;
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    border-color: transparent;
+}
+
+#main p {
+  float: left;
+  padding: 0 0.25em 0.;
+}
+
+.heading {
+    float: center;
+  font-size: 1.8em;
+  font-weight: strong;
+  margin: 0.75em 0.;
+}
+
+    
+/*
+ * Menu elementuak
+ *
+ */
+
+
+#menu > li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	background-color: #E7ECD8;
+        padding: 0;
+	margin: 0.25em;
+	border-left: 1px solid #BBB;
+	border-top: 1px solid #AAA;
+	border-right: 2px solid #999;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#menu li a {
+	padding: 0.25em 1em;
+    display: block;
+	color: #8A94A8;
+}
+
+#menu a:hover {
+    background: #39275b;
+	color: #FFF;
+}
+
+#activeMenu {
+        margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	background-color: #39275b;
+        padding: 0.25em 1em;
+	margin: 0.25em;
+	border-left: 1px solid #BBB;
+	border-top: 1px solid #AAA;
+	border-right: 2px solid #999;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+        display: block;
+        color: #FFF;
+}
+
+/*
+ * Formulario elementuak
+ *
+ */
+
+form > div {
+  margin: 2em 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+fieldset {
+  width: 80%;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  
+}
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #39275b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  color: black;
+}
+
+
+
+
+
+
+
+
+

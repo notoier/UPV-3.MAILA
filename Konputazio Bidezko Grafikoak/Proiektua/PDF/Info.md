@@ -35,7 +35,23 @@ Compilation command line: gcc *.c -lGL -lGLU -lglut -lm
 [-] Objektuak aukeratu badira ardatz guztietan txikitu. Kameraren kasuan ikuste bolumena txikitu
 [Z,z] Aldaketak desegin
 
-## GITHUB
+    Translation matrix = [[1, 0, 0, Tx]
+                          [0, 1, 0, Ty]
+                          [0, 0, 1, Tz]
+                          [0, 0, 0, 1 ]]
+
+    Rotation matrix = Rx = [[1,  0,      0,      0]          Ry = [[cos(x),  0,  sin(x), 0]          Rz = [[cos(x), -sin(x), 0, 0] 
+                            [0, cos(x), -sin(x), 0]                [  0,     1,    0,    0]                [sin(x), cos(x),  0, 0]
+                            [0, sin(x), cos(x),  0]                [-sin(x), 0,  cos(x), 0]                [ 0,      0,      1, 0]
+                            [0,  0,      0,      1]]               [  0,     0,    0,    1]]               [ 0,      0,      0, 1]]
+
+    Scale matrix =       [[Sx, 0,  0, 0]
+                          [0, Sy,  0, 0]
+                          [0,  0, Sz, 0]
+                          [0,  0,  0, 1]]
+
+## LINKS
 
 ===========
 [Github repository](https://www.google.com)
+[OpenGl matrix's](https://solarianprogrammer.com/2013/05/22/opengl-101-matrices-projection-view-model/)

@@ -18,8 +18,8 @@
 #define KG_MSSG_FILEREAD                    "Fitxategiaren irakurketa buruta"
 #define KG_MSSG_NOOBJECT                    "Ez dago objekturik aukeratuta"
 
-#define KG_STEP_MOVE                        5.0f
-#define KG_STEP_ROTATE                      10.0f
+//#define KG_STEP_MOVE                        5.0f
+//#define KG_STEP_ROTATE                      10.0f
 #define KG_STEP_ZOOM                        0.75
 #define KG_STEP_ZOOM_OUT                    1.25
 #define KG_STEP_CAMERA_ANGLE                5.0f
@@ -36,9 +36,9 @@
 #define KG_COL_BACK_B                       0.30f
 #define KG_COL_BACK_A                       1.00f
 
-#define KG_COL_SELECTED_R                   1.00f
-#define KG_COL_SELECTED_G                   0.75f
-#define KG_COL_SELECTED_B                   0.00f
+#define KG_COL_SELECTED_R                   0.2f
+#define KG_COL_SELECTED_G                   0.89f
+#define KG_COL_SELECTED_B                   0.89f
 
 #define KG_COL_NONSELECTED_R                1.00f
 #define KG_COL_NONSELECTED_G                1.00f
@@ -55,6 +55,10 @@
 #define KG_COL_Z_AXIS_R                     0.0f
 #define KG_COL_Z_AXIS_G                     1.0f    //Color: cian
 #define KG_COL_Z_AXIS_B                     1.0f
+
+#define KG_TRAN_STEP                        0.5f
+#define KG_ROT_ANGLE                        0.0872665f //5º in radians
+#define KG_SCALE_NUM                        1.1
 
 #define KG_GRID_LAYOUT                      1000
 

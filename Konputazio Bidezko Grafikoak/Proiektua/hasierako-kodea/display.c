@@ -69,14 +69,13 @@ void draw_grid()
 void output(int x, int y, float r, float g, float b, void* font, char *string)
 {
   glColor3f( r, g, b );
-  x = x / KG_WINDOW_WIDTH;
-  y = y / KG_WINDOW_HEIGHT;
+  x = x * KG_WINDOW_WIDTH / 1920;
+  y = y * KG_WINDOW_HEIGHT / 1080;
   glRasterPos2f(x, y);
   int len, i;
   len = (int)strlen(string);
   printf("%d",len);
   for (i = 0; i < len; i++) {
-
     glutBitmapCharacter(font, string[i]);
   }
 }
@@ -114,7 +113,7 @@ void display(void) {
     /* Define the projection */
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-/*
+/* 
     //When the window is wider than our original projection plane we extend the plane in the X axis //
     if ((_ortho_x_max - _ortho_x_min) / (_ortho_y_max - _ortho_y_min) < _window_ratio) {
         // New width //
@@ -131,19 +130,19 @@ void display(void) {
         //Definition of the projection//
         glOrtho(_ortho_x_min, _ortho_x_max, midpt - (he / 2), midpt + (he / 2), _ortho_z_min, _ortho_z_max);
     }
-*/    
+ */   
     glOrtho(_ortho_x_min, _ortho_x_max, _ortho_y_min, _ortho_y_max, _ortho_z_min, _ortho_z_max);
 
     /* Now we start drawing the object */
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(10,1,10, 0,0,0, 0,45,0);
+    //gluLookAt(10,1,10, 0,0,0, 0,45,0); //Change the position from where the object is being observed
 
     /*First, we draw the axes*/
     draw_axes();
 
     /*Now we draw the grid*/
-    draw_grid();
+    //draw_grid();
 
     
     /*Now each of the objects in the list*/
