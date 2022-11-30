@@ -18,6 +18,7 @@ object3d * _selected_object = 0;            /*Object currently selected*/
 
 char _change_type = 't';
 char _change_scope = 'g';
+char _change_mode = 'o';
 
 /** GENERAL INITIALIZATION **/
 void initialization (){
@@ -54,15 +55,15 @@ int main(int argc, char** argv) {
       * @param int * KG_WINDOW_WIDTH and @param int * KG_WINDOW_HEIGHT
       * It can also be directly changed in definitions.h
      **/
-    glutInitWindowSize(KG_WINDOW_WIDTH, KG_WINDOW_HEIGHT);
-    glutInitWindowPosition(KG_WINDOW_X, KG_WINDOW_Y);
-    glutCreateWindow(KG_WINDOW_TITLE);
+    glutInitWindowSize(KG_WINDOW_WIDTH, KG_WINDOW_HEIGHT); //Set window's size
+    glutInitWindowPosition(KG_WINDOW_X, KG_WINDOW_Y); //Set where the window will appear
+    glutCreateWindow(KG_WINDOW_TITLE); //Create window
 
     /* set the callback functions */
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
     glutKeyboardFunc(keyboard);
-    glutSpecialFunc(keyboard_func);
+    glutSpecialFunc(keyboard_func); //Set keyboard_func() as special function
     /* this initialization has to be AFTER the creation of the window */
     initialization();
     /* start the main loop */

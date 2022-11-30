@@ -57,7 +57,7 @@
 #define KG_COL_Z_AXIS_B                     1.0f
 
 #define KG_TRAN_STEP                        0.5f
-#define KG_ROT_ANGLE                        0.0872665f //5º in radians
+#define KG_ROT_ANGLE                        0.0872665f //5º in radians (5 * π/180)
 #define KG_SCALE_NUM                        1.1
 
 #define KG_GRID_LAYOUT                      1000
@@ -115,6 +115,15 @@ typedef struct {
     GLint *vertex_table;                /* table with the index of each vertex */
 } face;
 
+/****************************
+ * Structure to store all   *
+ * changes done to an object*
+ ****************************/
+typedef struct CZ{
+    char c;
+    struct CZ* hptr;
+} CZ;
+
 
 /****************************
  * Structure to store a     *
@@ -129,6 +138,7 @@ struct object3d{
     point3 max;                         /* coordinates' bigger bounds */
     struct object3d *next;              /* next element in the pile of objects */
     MZ *MZptr;
+    CZ *CZptr;
 };
 
 typedef struct object3d object3d;

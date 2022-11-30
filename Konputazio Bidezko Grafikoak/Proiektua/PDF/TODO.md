@@ -19,20 +19,20 @@ Free memory [DONE]
 
 ## _2.ATALA A_
 
-Objektuen translazioak, biraketak eta tamaina aldaketak inplementatu. [TODO]
+Objektuen translazioak, biraketak eta tamaina aldaketak inplementatu. [DONE]
 
-Aldaketak erreferentzi sistema lokalean zein globalean egiteko aukera eman. [TODO]
+Aldaketak erreferentzi sistema lokalean zein globalean egiteko aukera eman. [DONE]
 
-Aldaketak desegiteko aukera eman. [TODO]
+Aldaketak desegiteko aukera eman. [DONE]
 
-Geziek, RePag teklak eta AvPag teklak mundu birtualean beti eraginen bat izan behar dute. biraketa, edo leku-aldaketa edo dena delakoa eragin behar dute. [TODO]
+Geziek, RePag teklak eta AvPag teklak mundu birtualean beti eraginen bat izan behar dute. biraketa, edo leku-aldaketa edo dena delakoa eragin behar dute. [DONE]
 
-Beti aldaketa mota jakin bat aktibo egongo da, eta erabiltzaileari zein aldaketa dagoen aktibo esatea komeni da. [TODO]
+Beti aldaketa mota jakin bat aktibo egongo da, eta erabiltzaileari zein aldaketa dagoen aktibo esatea komeni da. [DONE]
 
-Eragiten den aldaketa erreferentzia sistema jakin batean eragingo da, eta erabiltzaileari zein erreferentzia sistematan ari den esatea komeni da. [TODO]
+Eragiten den aldaketa erreferentzia sistema jakin batean eragingo da, eta erabiltzaileari zein erreferentzia sistematan ari den esatea komeni da. [DONE]
 
 Oraingoz aldaketak objektuei eragingo zaizkie, baina + eta - teklen bidez bi gauza eskaini behar dira: alde batetik kameraren ikuste bolumena aldatzeko aukera eta
-bestetik, objektuei neurria 3 dimentsioetan aldatzeko aukera. Horretarako aldaketak objektuei ala kamerei eragingo zaion adieraziko duen egoera aldagaia kudeatu beharko da, eta  erabiltzaileari egoera horren berri ematea komeni da. [TODO]
+bestetik, objektuei neurria 3 dimentsioetan aldatzeko aukera. Horretarako aldaketak objektuei ala kamerei eragingo zaion adieraziko duen egoera aldagaia kudeatu beharko da, eta  erabiltzaileari egoera horren berri ematea komeni da. [DONE]
 
 ## ATAZA OSAGARRIAK
 
@@ -42,7 +42,7 @@ bestetik, objektuei neurria 3 dimentsioetan aldatzeko aukera. Horretarako aldake
 
 Sareta bat marraztu [TODO]
 
-Objektuen informazioa (zenbat erpin, aurpegi dituen, fitxategiaren izena, etab.) bistaratu, <I,i> tekla sakatzean [TODO]
+Objektuen informazioa (zenbat erpin, aurpegi dituen, fitxategiaren izena, etab.) bistaratu, <I,i> tekla sakatzean [FIX]
 
 Terminalean bistaratzen diren mezuak lehioan bertan bistaratu, beheko zatian [TODO]
 

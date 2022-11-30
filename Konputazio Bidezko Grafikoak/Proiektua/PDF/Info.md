@@ -1,12 +1,14 @@
-# PROGRAM UTILS
+# PROGRAM INFORMATION
 
-=================
+## COMPILATION LINES
+
+=====================
 
 Compilation command line: gcc *.c -lGL -lGLU -lglut -lm
 
 ## PROGRAM FUNCTIONALITIES
 
-=======================
+===========================
 
 [?] Laguntza pantailaratu
 [ESC]  Programatik irten
@@ -30,11 +32,11 @@ Compilation command line: gcc *.c -lGL -lGLU -lglut -lm
 [REPAG] Mugitu -Z; Handitu Z; Biratu -Z
 [O,o] Aldaketak objektuei eragin (besterik ezean hau izango da aukera)
 [C,c] Aldaketak Kamerei eragin
-[L,l] Aldaketak argiei eragin
+[A,a] Aldaketak argiei eragin
 [+] Objektuak aukeratu badira ardatz guztietan handitu. Kameraren kasuan ikuste bolumena handitu
 [-] Objektuak aukeratu badira ardatz guztietan txikitu. Kameraren kasuan ikuste bolumena txikitu
 [Z,z] Aldaketak desegin
-
+<!-- 
     Translation matrix = [[1, 0, 0, Tx]
                           [0, 1, 0, Ty]
                           [0, 0, 1, Tz]
@@ -49,9 +51,12 @@ Compilation command line: gcc *.c -lGL -lGLU -lglut -lm
                           [0, Sy,  0, 0]
                           [0,  0, Sz, 0]
                           [0,  0,  0, 1]]
-
+ -->
 ## LINKS
 
 ===========
-[Github repository](https://www.google.com)
+
 [OpenGl matrix's](https://solarianprogrammer.com/2013/05/22/opengl-101-matrices-projection-view-model/)
+[Egela: 0.Fasea](https://egela.ehu.eus/pluginfile.php/6925238/mod_resource/content/2/Praktika_martxan_jartzen.pdf)
+[Egela: 1.Fasea](https://egela.ehu.eus/mod/resource/view.php?id=5571269)
+[Egela: 2.Fasea](https://egela.ehu.eus/mod/resource/view.php?id=5571272)
