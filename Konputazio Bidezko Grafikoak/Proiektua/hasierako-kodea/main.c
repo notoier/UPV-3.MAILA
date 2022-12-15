@@ -14,7 +14,10 @@ GLdouble _ortho_y_min ,_ortho_y_max;        /*Variables for the control of the o
 GLdouble _ortho_z_min,_ortho_z_max;         /*Variables for the control of the orthographic projection*/
 
 object3d * _first_object= 0;                /*List of objects*/
-object3d * _selected_object = 0;            /*Object currently selected*/
+object3d * _selected_object = 0;  
+
+camera * _first_camera = 0;
+camera * _selected_camera = 0;          /*Object currently selected*/
 
 char _change_type = 't';
 char _change_scope = 'g';

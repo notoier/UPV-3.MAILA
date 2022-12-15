@@ -43,12 +43,12 @@ void draw_axes()
 
 /**
   * @brief Draw a grid (TODO)
-  * 
+  */ 
 void draw_grid()
 {
 
 } 
-*/
+
 
 /**
  * @brief Printing on window
@@ -137,13 +137,6 @@ void display(void) {
 
     /*Now we draw the grid*/
     //draw_grid();
-    /* glColor3f (1.0, 0.0, 0.0);
-    glRasterPos2f(5, 0.75); //define position on the screen
-    char *string = "Text";
-      
-    while(*string){
-        glutBitmapCharacter(GLUT_BITMAP_8_BY_13, *string++);
-    } */
     
     /*Now each of the objects in the list*/
     while (aux_obj != 0) {

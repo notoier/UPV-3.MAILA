@@ -73,7 +73,7 @@ void freeall(object3d *object){
 void translation_matrix(double x, double y, double z){
     double mptr[16];
     MZ* mlagptr;
-    CZ* clagptr;
+    // AZ* alagptr;
 
     mptr[0] = 1.0; mptr[4] = 0.0; mptr[8]  = 0.0; mptr[12] = x*KG_TRAN_STEP;
     mptr[1] = 0.0; mptr[5] = 1.0; mptr[9]  = 0.0; mptr[13] = y*KG_TRAN_STEP;
@@ -99,10 +99,12 @@ void translation_matrix(double x, double y, double z){
     mlagptr->hptr = _selected_object->MZptr;
     _selected_object->MZptr = mlagptr;
 
-    clagptr = (CZ*)malloc(sizeof(CZ));
-    clagptr->c =_change_scope;
-    clagptr->hptr = _selected_object->CZptr;
-    _selected_object->CZptr = clagptr;
+  /*   alagptr = (AZ*)malloc(sizeof(AZ));
+    alagptr->c =_change_scope;
+    alagptr->hptr = _selected_object->AZptr;
+    _selected_object->AZptr = alagptr; */
+
+    printf("Object moved in:  X: %f, Y: %f, Z: %f. \n", x,y,z );
 }
 
 /**
@@ -117,7 +119,7 @@ void rotation_matrix(double x, double y, double z){
 
     double mptr[16];
     MZ* mlagptr;
-    CZ* clagptr;
+    // AZ* alagptr;
 /* 
     mptr[0] = cos(KG_ROT_ANGLE) + pow(x, 2)*(1-cos(KG_ROT_ANGLE));   mptr[4] = x*y*(1-cos(KG_ROT_ANGLE)) - z*sin(KG_ROT_ANGLE);       mptr[8]  = x*z*(1-cos(KG_ROT_ANGLE)) + y*sin(KG_ROT_ANGLE);       mptr[12] = 0.0;
     mptr[1] = y*x*(1-cos(KG_ROT_ANGLE)) + z*sin(KG_ROT_ANGLE);       mptr[5] = cos(KG_ROT_ANGLE) + pow(y, 2)*(1-cos(KG_ROT_ANGLE));   mptr[9]  = y*z*(1-cos(KG_ROT_ANGLE)) - x*sin(KG_ROT_ANGLE);       mptr[13] = 0.0;
@@ -152,10 +154,12 @@ void rotation_matrix(double x, double y, double z){
     mlagptr->hptr = _selected_object->MZptr;
     _selected_object->MZptr = mlagptr;
 
-    clagptr = (CZ*)malloc(sizeof(CZ));
-    clagptr->c =_change_scope;
-    clagptr->hptr = _selected_object->CZptr;
-    _selected_object->CZptr = clagptr;
+/*     alagptr = (AZ*)malloc(sizeof(AZ));
+    alagptr->c =_change_scope;
+    alagptr->hptr = _selected_object->AZptr;
+    _selected_object->AZptr = alagptr; */
+
+    printf("Object rotated %fº in:  X: %f, Y: %f, Z: %f. \n", KG_ROT_ANGLE*180/M_PI, x*KG_ROT_ANGLE*180/M_PI, y*KG_ROT_ANGLE*180/M_PI, z*KG_ROT_ANGLE*180/M_PI);
 }
 /**
   * @brief Get scale matrix object
@@ -169,7 +173,7 @@ void scaling_matrix(double x, double y, double z){
 
     double mptr[16];
     MZ* mlagptr;
-    CZ* clagptr;
+    // AZ* alagptr;
 
     mptr[0] = x;                mptr[4] = 0.0;              mptr[8]  = 0.0;             mptr[12] = 0.0;
     mptr[1] = 0.0;              mptr[5] = y;                mptr[9]  = 0.0;             mptr[13] = 0.0;
@@ -195,16 +199,29 @@ void scaling_matrix(double x, double y, double z){
     mlagptr->hptr = _selected_object->MZptr;
     _selected_object->MZptr = mlagptr;
 
-    clagptr = (CZ*)malloc(sizeof(CZ));
-    clagptr->c =_change_scope;
-    clagptr->hptr = _selected_object->CZptr;
-    _selected_object->CZptr = clagptr;
-}
+    printf("Object's size changed in:  X: %f, Y: %f, Z: %f. \n", x,y,z);
 
+/*     alagptr = (AZ*)malloc(sizeof(AZ));
+    alagptr->c =_change_scope;
+    alagptr->hptr = _selected_object->AZptr;
+    _selected_object->AZptr = alagptr; */
+}
+/**
+ * @brief Undo the last change done to an object
+ * 
+ */
 void undo(){
-    if (_selected_object != 0 && _selected_object->MZptr != 0 && _selected_object->MZptr->hptr != 0 ){
-        _selected_object->MZptr = _selected_object->MZptr->hptr;
-    }
+    if (_selected_object != 0){
+        if (_selected_object->MZptr != 0){
+            if(_selected_object->MZptr->hptr != 0){        
+                MZ *auxptr;
+                auxptr = _selected_object->MZptr;
+                _selected_object->MZptr =_selected_object->MZptr->hptr;
+
+                free(auxptr);
+            }
+        }
+    }  
 }
 
 /**
@@ -410,9 +427,6 @@ void keyboard(unsigned char key, int x, int y) {
                 if (_selected_object!=0)
                     scaling_matrix(1.0/KG_SCALE_NUM, 1.0/KG_SCALE_NUM, 1.0/KG_SCALE_NUM);
                 break;
-
-            default:
-                break;
             }
 
             break;
@@ -441,9 +455,6 @@ void keyboard(unsigned char key, int x, int y) {
             case 'o':
                 if (_selected_object!=0)
                     scaling_matrix(1.0*KG_SCALE_NUM, 1.0*KG_SCALE_NUM, 1.0*KG_SCALE_NUM);
-                break;
-
-            default:
                 break;
             }
             break;

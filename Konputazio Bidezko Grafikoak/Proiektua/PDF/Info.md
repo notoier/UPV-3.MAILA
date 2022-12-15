@@ -42,10 +42,10 @@ Compilation command line: gcc *.c -lGL -lGLU -lglut -lm
                           [0, 0, 1, Tz]
                           [0, 0, 0, 1 ]]
 
-    Rotation matrix = Rx = [[1,  0,      0,      0]          Ry = [[cos(x),  0,  sin(x), 0]          Rz = [[cos(x), -sin(x), 0, 0] 
-                            [0, cos(x), -sin(x), 0]                [  0,     1,    0,    0]                [sin(x), cos(x),  0, 0]
-                            [0, sin(x), cos(x),  0]                [-sin(x), 0,  cos(x), 0]                [ 0,      0,      1, 0]
-                            [0,  0,      0,      1]]               [  0,     0,    0,    1]]               [ 0,      0,      0, 1]]
+    Rotation matrix =    [[cos(beta) * cos(gamma), [cos(beta) * sin(gamma), -sin(beta), 0.0], 
+                          [sin(alpha) * sin(beta) * cos (gamma) - cos(alpha) * sin(gamma), sin(alpha) * sin(beta) * sin(gamma) + cos(alpha) * cos(gamma), sin(alpha) * cos(beta), 0.0], 
+                          [cos(alpha) * sin(beta) * cos(gamma) + sin(alpha) * sin(gamma), cos(alpha) * sin(beta) * sin(gamma) - sin(alpha) * cos(gamma), cos(alpha) * cos(beta), 0.0], 
+                          [0.0, 0.0, 0.0, 1.0] ]
 
     Scale matrix =       [[Sx, 0,  0, 0]
                           [0, Sy,  0, 0]

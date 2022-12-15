@@ -119,11 +119,11 @@ typedef struct {
  * Structure to store all   *
  * changes done to an object*
  ****************************/
-typedef struct CZ{
+/* typedef struct AZ{
     char c;
-    struct CZ* hptr;
-} CZ;
-
+    struct AZ* hptr;
+} AZ;
+ */
 
 /****************************
  * Structure to store a     *
@@ -138,9 +138,22 @@ struct object3d{
     point3 max;                         /* coordinates' bigger bounds */
     struct object3d *next;              /* next element in the pile of objects */
     MZ *MZptr;
-    CZ *CZptr;
+    //AZ *AZptr;
+};
+
+struct camera{
+    double x_max;   // Max X coordinate
+    double x_min;   // Min X coordinate
+    double y_max;   // Max Y coordinate
+    double y_min;   // Min Y coordinate
+    double near;    // Max Z coordinate
+    double far;     // Min Z coordinate
+    int projection; // Type of projection
+    MZ *MZptr;      // Matrix list
+    struct camera *hptr;  // Camera list
 };
 
 typedef struct object3d object3d;
+typedef struct camera camera;
 
 #endif // DEFINITIONS_H
