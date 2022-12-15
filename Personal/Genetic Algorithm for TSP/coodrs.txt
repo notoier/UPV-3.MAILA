@@ -1,0 +1,20 @@
+526x467 --> Eskala 2,076
+Bilbao    110,130
+Gasteiz   148,225
+Donostia  272,116
+Iruña     327,234
+Baiona    362,76
+Donibane-Garazi 394,156
+Maule     451,139
+Beasain   223,181
+Tutera    337,406
+Zieko     163,298
+Elizondo  346,163
+Lodosa    251,319
+Durango   150,153
+Amurrio    94,175
+Mutriku   207,120
+
+
+[ 'Bilbao', 'Gasteiz', 'Donostia', 'Iruña', 'Baiona','Donibane-Garazi', 'Maule', 'Beasain', 'Tutera', 'Zieko', 'Elizondo', 'Lodosa', 'Durango', 'Amurrio', 'Mutriku']
+[[110,130],[148,225],[272,116],[327,234],[362,76],[394,156],[451,139],[223,181],[337,406],[163,298],[346,163],[251,319],[150,153],[94,175],[207,120]]
