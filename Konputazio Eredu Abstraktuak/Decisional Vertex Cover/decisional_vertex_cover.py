@@ -150,7 +150,7 @@ def test_all_solutions(filename, allsolutions):
         else:
             print("SOLUTION INCORRECT!")
             
-        #draw_graphs(graph, answer)
+        draw_graphs(graph, answer) #Lerro hau komentatzea gomendagarria da, azken grafoa denbora asko behar du eta
               
 
 if __name__ == "__main__":
