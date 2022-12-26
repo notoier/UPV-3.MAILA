@@ -15,6 +15,7 @@ extern GLdouble _ortho_z_min,_ortho_z_max;
 extern char _change_type; /*Variable used to define the type of change to be done to a selected object*/
 extern char _change_scope; /*Defines the types of changes (global or local)*/
 extern char _change_mode; /*Variable used to define the thing to change (camera, object...)*/
+extern char _camera_mode;
 /**
  * @brief This function just prints information about the use
  * of the keys
@@ -320,17 +321,27 @@ void keyboard(unsigned char key, int x, int y) {
         //Set changes to affect locally
         case 'l':
         case 'L':
-            _change_scope = 'l'; //Local change
-            printf("Changes set to: Local\n");
-            break;
-        
+            if (_change_mode != 'c'){
+                _change_scope = 'l'; //Local change
+                printf("Changes set to: Local\n");
+                break;
+            }else{
+                //CAMARA ALDAKETAK
+                _camera_mode = 'f';
+                printf("Flying camera is active");
+            }
         //Set changes to affect globaly
         case 'g':
         case 'G':
-            _change_scope = 'g'; //Global change
-            printf("Changes set to: Global\n");
-            break;
-        
+            if (_change_mode != 'c'){
+                _change_scope = 'g'; //Global change
+                printf("Changes set to: Global\n");
+                break;
+            }else{
+                //CAMARA ALDAKETAK
+                _camera_mode = 'a';
+                printf("Camera set in analisis mode");
+            }
         //Set changes to affect only to objects
         case 'o':
         case 'O':

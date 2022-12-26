@@ -16,6 +16,11 @@ extern GLdouble _ortho_z_min,_ortho_z_max;
 extern object3d *_first_object;
 extern object3d *_selected_object;
 
+extern char _camera_mode;
+
+extern camera *_first_camera;
+extern camera *_selected_camera;
+
 /**
  * @brief Function to draw the axes
  */
@@ -46,7 +51,7 @@ void draw_axes()
   */ 
 void draw_grid()
 {
-
+    //TODO:
 } 
 
 
@@ -100,6 +105,7 @@ void reshape(int width, int height) {
 void display(void) {
     GLint v_index, v, f;
     object3d *aux_obj = _first_object;
+    double ESAM[16];
 
     /* Clear the screen */
     glClear(GL_COLOR_BUFFER_BIT);
@@ -148,6 +154,15 @@ void display(void) {
             glColor3f(KG_COL_NONSELECTED_R,KG_COL_NONSELECTED_G,KG_COL_NONSELECTED_B);
         }
 
+        if(_selected_camera->projection){
+            glFrustum(_selected_camera->x_min, _selected_camera->x_max, 
+                      _selected_camera->y_min, _selected_camera->y_max, 
+                      _selected_camera->near, _selected_camera->far);
+            
+
+        }else{
+
+        }
         /* Draw the object; for each face create a new polygon with the corresponding vertex */
         glLoadMatrixd(aux_obj->MZptr->M);
         //glLoadIdentity(); 
