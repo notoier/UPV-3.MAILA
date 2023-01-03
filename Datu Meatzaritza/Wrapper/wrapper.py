@@ -61,7 +61,7 @@ def main():
         for index in range(1, data.num_attributes - 1):
             if index not in variable_list:
                 
-                print(str(index) + ", " + variables_str + "last")
+                print("Aukeratutako atributuak: " + str(index) + ", " + variables_str)
                 
                 remove = Filter(classname="weka.filters.unsupervised.attribute.Remove", options=["-R", str(index)+"," + variables_str + ",last", "-V"])
                 remove.inputformat(data)
