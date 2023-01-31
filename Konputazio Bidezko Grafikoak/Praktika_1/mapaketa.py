@@ -83,7 +83,7 @@ def koadroa_xy(i, j):
     koad_l = 3
     zatitz = float(m_zabal - 1)
     return koad_0_x + koad_l * j / zatitz, koad_0_y - koad_l * i / zatitz
-# Funtzioa ondo dago?
+
 print(koadroa_xy(0, 0))
 print(koadroa_xy(m_zabal-1, 0))
 print(koadroa_xy(m_zabal-1, m_zabal-1))

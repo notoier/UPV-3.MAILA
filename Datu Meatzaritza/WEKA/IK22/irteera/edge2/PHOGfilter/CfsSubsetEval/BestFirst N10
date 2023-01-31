@@ -1,0 +1,156 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 10
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/edge2-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 10 node expansions
+	Total number of subsets evaluated: 76051
+	Merit of best subset found:    0.761
+
+Attribute Subset Evaluator (supervised, Class (nominal): 631 class):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 1,3,8,9,21,23,24,26,29,31,49,52,54,63,69,83,84,86,92,93,99,114,116,118,119,120,121,143,144,153,164,165,174,195,200,201,222,228,249,257,266,267,268,269,271,296,298,299,305,307,308,313,320,329,331,333,335,338,339,341,342,343,350,351,352,353,354,355,356,360,363,365,368,369,375,377,391,392,395,401,406,423,425,428,429,433,435,436,438,441,444,445,446,447,451,452,453,456,459,460,461,463,464,466,471,473,474,479,480,483,491,495,496,509,518,534,536,541,546,551,602,603,604,605,611,617,623,624 : 128
+                     PHOG0
+                     PHOG2
+                     PHOG7
+                     PHOG8
+                     PHOG20
+                     PHOG22
+                     PHOG23
+                     PHOG25
+                     PHOG28
+                     PHOG30
+                     PHOG48
+                     PHOG51
+                     PHOG53
+                     PHOG62
+                     PHOG68
+                     PHOG82
+                     PHOG83
+                     PHOG85
+                     PHOG91
+                     PHOG92
+                     PHOG98
+                     PHOG113
+                     PHOG115
+                     PHOG117
+                     PHOG118
+                     PHOG119
+                     PHOG120
+                     PHOG142
+                     PHOG143
+                     PHOG152
+                     PHOG163
+                     PHOG164
+                     PHOG173
+                     PHOG194
+                     PHOG199
+                     PHOG200
+                     PHOG221
+                     PHOG227
+                     PHOG248
+                     PHOG256
+                     PHOG265
+                     PHOG266
+                     PHOG267
+                     PHOG268
+                     PHOG270
+                     PHOG295
+                     PHOG297
+                     PHOG298
+                     PHOG304
+                     PHOG306
+                     PHOG307
+                     PHOG312
+                     PHOG319
+                     PHOG328
+                     PHOG330
+                     PHOG332
+                     PHOG334
+                     PHOG337
+                     PHOG338
+                     PHOG340
+                     PHOG341
+                     PHOG342
+                     PHOG349
+                     PHOG350
+                     PHOG351
+                     PHOG352
+                     PHOG353
+                     PHOG354
+                     PHOG355
+                     PHOG359
+                     PHOG362
+                     PHOG364
+                     PHOG367
+                     PHOG368
+                     PHOG374
+                     PHOG376
+                     PHOG390
+                     PHOG391
+                     PHOG394
+                     PHOG400
+                     PHOG405
+                     PHOG422
+                     PHOG424
+                     PHOG427
+                     PHOG428
+                     PHOG432
+                     PHOG434
+                     PHOG435
+                     PHOG437
+                     PHOG440
+                     PHOG443
+                     PHOG444
+                     PHOG445
+                     PHOG446
+                     PHOG450
+                     PHOG451
+                     PHOG452
+                     PHOG455
+                     PHOG458
+                     PHOG459
+                     PHOG460
+                     PHOG462
+                     PHOG463
+                     PHOG465
+                     PHOG470
+                     PHOG472
+                     PHOG473
+                     PHOG478
+                     PHOG479
+                     PHOG482
+                     PHOG490
+                     PHOG494
+                     PHOG495
+                     PHOG508
+                     PHOG517
+                     PHOG533
+                     PHOG535
+                     PHOG540
+                     PHOG545
+                     PHOG550
+                     PHOG601
+                     PHOG602
+                     PHOG603
+                     PHOG604
+                     PHOG610
+                     PHOG616
+                     PHOG622
+                     PHOG623
+

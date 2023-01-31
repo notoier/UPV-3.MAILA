@@ -1,0 +1,506 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.SimpleColorHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/paint5-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   65
+              RGB Color Histogram0
+              RGB Color Histogram1
+              RGB Color Histogram2
+              RGB Color Histogram3
+              RGB Color Histogram4
+              RGB Color Histogram5
+              RGB Color Histogram6
+              RGB Color Histogram7
+              RGB Color Histogram8
+              RGB Color Histogram9
+              RGB Color Histogram10
+              RGB Color Histogram11
+              RGB Color Histogram12
+              RGB Color Histogram13
+              RGB Color Histogram14
+              RGB Color Histogram15
+              RGB Color Histogram16
+              RGB Color Histogram17
+              RGB Color Histogram18
+              RGB Color Histogram19
+              RGB Color Histogram20
+              RGB Color Histogram21
+              RGB Color Histogram22
+              RGB Color Histogram23
+              RGB Color Histogram24
+              RGB Color Histogram25
+              RGB Color Histogram26
+              RGB Color Histogram27
+              RGB Color Histogram28
+              RGB Color Histogram29
+              RGB Color Histogram30
+              RGB Color Histogram31
+              RGB Color Histogram32
+              RGB Color Histogram33
+              RGB Color Histogram34
+              RGB Color Histogram35
+              RGB Color Histogram36
+              RGB Color Histogram37
+              RGB Color Histogram38
+              RGB Color Histogram39
+              RGB Color Histogram40
+              RGB Color Histogram41
+              RGB Color Histogram42
+              RGB Color Histogram43
+              RGB Color Histogram44
+              RGB Color Histogram45
+              RGB Color Histogram46
+              RGB Color Histogram47
+              RGB Color Histogram48
+              RGB Color Histogram49
+              RGB Color Histogram50
+              RGB Color Histogram51
+              RGB Color Histogram52
+              RGB Color Histogram53
+              RGB Color Histogram54
+              RGB Color Histogram55
+              RGB Color Histogram56
+              RGB Color Histogram57
+              RGB Color Histogram58
+              RGB Color Histogram59
+              RGB Color Histogram60
+              RGB Color Histogram61
+              RGB Color Histogram62
+              RGB Color Histogram63
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                     K1       K2       K3       K4       K5       K6       K7       K8
+                          (0.11)   (0.17)   (0.15)   (0.36)   (0.14)   (0.06)      (0)      (0)
+================================================================================================
+RGB Color Histogram0
+  mean                   127.3881 209.7366 245.8336 210.5824  43.0243 135.2182        0        0
+  std. dev.              107.7406  85.4268  26.6069  50.9398  71.9376 107.1577   0.4009   0.4009
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                2.4057   2.4057   2.4057   2.4057   2.4057   2.4057   2.4057   2.4057
+
+RGB Color Histogram1
+  mean                     4.7636  12.4767   0.8649  93.9362   2.3313  48.7705        0        0
+  std. dev.                 9.351  26.9073    2.425 112.2221   5.5853  88.6426   0.6967   0.6967
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.1803   4.1803   4.1803   4.1803   4.1803   4.1803   4.1803   4.1803
+
+RGB Color Histogram2
+  mean                          0        0        0   3.8043        0  24.0625        0        0
+  std. dev.                  1.75     1.75     1.75  20.4191     1.75  54.0928     1.75     1.75
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  10.5     10.5     10.5     10.5     10.5     10.5     10.5     10.5
+
+RGB Color Histogram3
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram4
+  mean                     1.1907        0   0.0441   0.0371   7.7785  11.7333        0        0
+  std. dev.                4.6307   0.4267   0.4267   0.4343  14.6886  10.1843   0.4267   0.4267
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  2.56     2.56     2.56     2.56     2.56     2.56     2.56     2.56
+
+RGB Color Histogram5
+  mean                     2.3362        0   1.3989  36.7885   3.1206  93.0492        0        0
+  std. dev.                7.7783   0.6439   3.4182  61.2543    6.204  97.1298   0.6439   0.6439
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                3.8636   3.8636   3.8636   3.8636   3.8636   3.8636   3.8636   3.8636
+
+RGB Color Histogram6
+  mean                     0.1262        0        0   57.204        0 171.5824        0        0
+  std. dev.                0.9043   0.9043   0.9043  91.6892   0.9043  94.3743   0.9043   0.9043
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                5.4255   5.4255   5.4255   5.4255   5.4255   5.4255   5.4255   5.4255
+
+RGB Color Histogram7
+  mean                          0        0        0  14.7826        0        0        0        0
+  std. dev.                5.3125   5.3125   5.3125  56.6778   5.3125   5.3125   5.3125   5.3125
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                31.875   31.875   31.875   31.875   31.875   31.875   31.875   31.875
+
+RGB Color Histogram8
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram9
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram10
+  mean                          0        0        0    0.029        0        0        0        0
+  std. dev.                0.3333   0.3333   0.3333   0.3333   0.3333   0.3333   0.3333   0.3333
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     2        2        2        2        2        2        2        2
+
+RGB Color Histogram11
+  mean                          0        0        0   3.1077        0        0        0        0
+  std. dev.                3.7619   3.7619   3.7619  19.8179   3.7619   3.7619   3.7619   3.7619
+  weight sum                   43       65       58      138       52       24        0        0
+  precision               22.5714  22.5714  22.5714  22.5714  22.5714  22.5714  22.5714  22.5714
+
+RGB Color Histogram12
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram13
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram14
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram15
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram16
+  mean                   104.8804  67.1033  53.0099   0.0176  68.8874   4.4524        0        0
+  std. dev.               79.4739  78.8152  66.9437   0.4048  81.7515   8.3444   0.4048   0.4048
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                2.4286   2.4286   2.4286   2.4286   2.4286   2.4286   2.4286   2.4286
+
+RGB Color Histogram17
+  mean                    14.9829  19.9549   3.7517    1.113   2.1333   2.8444        0        0
+  std. dev.               15.9743  32.2266  11.8601   3.5699    5.767   6.1172   0.7111   0.7111
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.2667   4.2667   4.2667   4.2667   4.2667   4.2667   4.2667   4.2667
+
+RGB Color Histogram18
+  mean                          0        0        0   0.4891        0        0        0        0
+  std. dev.                0.3125   0.3125   0.3125   2.0228   0.3125   0.3125   0.3125   0.3125
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                 1.875    1.875    1.875    1.875    1.875    1.875    1.875    1.875
+
+RGB Color Histogram19
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram20
+  mean                    18.8994   3.1041  15.3645   0.1625  20.3708  17.7481        0        0
+  std. dev.               48.2285   7.9888  53.2575   1.9015  35.4815  25.6157   0.9341   0.9341
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                5.6047   5.6047   5.6047   5.6047   5.6047   5.6047   5.6047   5.6047
+
+RGB Color Histogram21
+  mean                   153.3389 108.6552  47.6162  11.3014 188.2727 131.1049        0        0
+  std. dev.               96.3608  97.6849  62.5574  27.2366  81.1226  80.8898   0.3795   0.3795
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                2.2768   2.2768   2.2768   2.2768   2.2768   2.2768   2.2768   2.2768
+
+RGB Color Histogram22
+  mean                    13.3628   6.9046  13.8931  31.4623   1.8962  22.3833        0        0
+  std. dev.               43.4757  21.6105   26.179  45.8266   2.6178  40.6808   0.5667   0.5667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   3.4      3.4      3.4      3.4      3.4      3.4      3.4      3.4
+
+RGB Color Histogram23
+  mean                          0        0        0   5.5401        0        0        0        0
+  std. dev.                1.3556   1.3556   1.3556  18.9099   1.3556   1.3556   1.3556   1.3556
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                8.1333   8.1333   8.1333   8.1333   8.1333   8.1333   8.1333   8.1333
+
+RGB Color Histogram24
+  mean                          0        0        0        0        0   1.6667        0        0
+  std. dev.                0.4167   0.4167   0.4167   0.4167   0.4167    3.118   0.4167   0.4167
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   2.5      2.5      2.5      2.5      2.5      2.5      2.5      2.5
+
+RGB Color Histogram25
+  mean                          0        0   0.1194        0   10.318  28.2692        0        0
+  std. dev.                0.5769   0.5769   0.6316   0.5769  19.3266  28.6784   0.5769   0.5769
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                3.4615   3.4615   3.4615   3.4615   3.4615   3.4615   3.4615   3.4615
+
+RGB Color Histogram26
+  mean                          0        0  15.9052    2.337   9.2308  38.4375        0        0
+  std. dev.                  1.25     1.25   43.086   5.2493  35.4115  66.5317     1.25     1.25
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   7.5      7.5      7.5      7.5      7.5      7.5      7.5      7.5
+
+RGB Color Histogram27
+  mean                          0        0        0   6.4674        0        0        0        0
+  std. dev.                2.3611   2.3611   2.3611  32.4541   2.3611   2.3611   2.3611   2.3611
+  weight sum                   43       65       58      138       52       24        0        0
+  precision               14.1667  14.1667  14.1667  14.1667  14.1667  14.1667  14.1667  14.1667
+
+RGB Color Histogram28
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram29
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram30
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram31
+  mean                          0        0        0    0.154        0        0        0        0
+  std. dev.                0.7083   0.7083   0.7083   1.4837   0.7083   0.7083   0.7083   0.7083
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  4.25     4.25     4.25     4.25     4.25     4.25     4.25     4.25
+
+RGB Color Histogram32
+  mean                    30.4344   1.7025  15.6783        0  70.1343        0        0        0
+  std. dev.               65.4099   7.7548  37.0165   0.8019  76.2452   0.8019   0.8019   0.8019
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.8113   4.8113   4.8113   4.8113   4.8113   4.8113   4.8113   4.8113
+
+RGB Color Histogram33
+  mean                     1.4555   0.1751   0.8829        0  21.3362        0        0        0
+  std. dev.                3.4908   0.9826   2.5449   0.9483  34.0443   0.9483   0.9483   0.9483
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                5.6897   5.6897   5.6897   5.6897   5.6897   5.6897   5.6897   5.6897
+
+RGB Color Histogram34
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram35
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram36
+  mean                    10.4186      1.4   3.3793        0   0.6731        0        0        0
+  std. dev.               22.7639   6.0404  20.4803   1.1667   2.0636   1.1667   1.1667   1.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     7        7        7        7        7        7        7        7
+
+RGB Color Histogram37
+  mean                    45.0921  12.4354   1.1614        0  25.6295   8.4198        0        0
+  std. dev.               63.9475  36.8831   4.4948   0.8019  31.6165  14.3165   0.8019   0.8019
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.8113   4.8113   4.8113   4.8113   4.8113   4.8113   4.8113   4.8113
+
+RGB Color Histogram38
+  mean                    10.3983  10.5256   1.1146   0.0781   0.2072        0        0        0
+  std. dev.               14.1051  28.0548   3.8431   0.8978    1.036   0.8978   0.8978   0.8978
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                5.3871   5.3871   5.3871   5.3871   5.3871   5.3871   5.3871   5.3871
+
+RGB Color Histogram39
+  mean                          0        0        0    0.029        0        0        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.2065   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram40
+  mean                          0        0   0.8793        0        0        0        0        0
+  std. dev.                2.8333   2.8333   6.6386   2.8333   2.8333   2.8333   2.8333   2.8333
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                    17       17       17       17       17       17       17       17
+
+RGB Color Histogram41
+  mean                     0.1225   0.0811   0.8176        0   9.2212  36.6651        0        0
+  std. dev.                0.8782   0.8782    6.173   0.8782  13.2287  46.1241   0.8782   0.8782
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                5.2692   5.2692   5.2692   5.2692   5.2692   5.2692   5.2692   5.2692
+
+RGB Color Histogram42
+  mean                    24.5389  21.6446  35.3746    1.062 131.1074  94.5259        0        0
+  std. dev.               44.1583  41.8784  62.0141   3.9599  90.0495  81.4088   0.4885   0.4885
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                 2.931    2.931    2.931    2.931    2.931    2.931    2.931    2.931
+
+RGB Color Histogram43
+  mean                     0.7952   2.6303  12.0267   2.7256   2.6303   2.8495        0        0
+  std. dev.                2.6422  13.5023  40.3648   6.8654   7.3648   4.3774   1.1398   1.1398
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                6.8387   6.8387   6.8387   6.8387   6.8387   6.8387   6.8387   6.8387
+
+RGB Color Histogram44
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram45
+  mean                          0        0        0        0        0   0.6667        0        0
+  std. dev.                0.6667   0.6667   0.6667   0.6667   0.6667   2.2111   0.6667   0.6667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     4        4        4        4        4        4        4        4
+
+RGB Color Histogram46
+  mean                          0        0        0        0   2.1462      3.1        0        0
+  std. dev.                0.5167   0.5167   0.5167   0.5167   6.4781   5.7996   0.5167   0.5167
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   3.1      3.1      3.1      3.1      3.1      3.1      3.1      3.1
+
+RGB Color Histogram47
+  mean                          0        0    8.165   1.7158   5.9547   2.2768        0        0
+  std. dev.                1.5179   1.5179  36.0612   5.8582  19.2269   3.9435   1.5179   1.5179
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                9.1071   9.1071   9.1071   9.1071   9.1071   9.1071   9.1071   9.1071
+
+RGB Color Histogram48
+  mean                          0        0  19.6074        0   0.3905        0        0        0
+  std. dev.                1.6923   1.6923  40.9146   1.6923   1.9527   1.6923   1.6923   1.6923
+  weight sum                   43       65       58      138       52       24        0        0
+  precision               10.1538  10.1538  10.1538  10.1538  10.1538  10.1538  10.1538  10.1538
+
+RGB Color Histogram49
+  mean                          0        0   0.7448        0   0.0923        0        0        0
+  std. dev.                   0.4      0.4   2.4896      0.4   0.4615      0.4      0.4      0.4
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   2.4      2.4      2.4      2.4      2.4      2.4      2.4      2.4
+
+RGB Color Histogram50
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram51
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram52
+  mean                          0        0   1.8621        0        0        0        0        0
+  std. dev.                    18       18       18       18       18       18       18       18
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   108      108      108      108      108      108      108      108
+
+RGB Color Histogram53
+  mean                     0.3327   0.2201   0.8223        0   4.4024        0        0        0
+  std. dev.                2.1564   1.0007   4.6978   0.7949   14.025   0.7949   0.7949   0.7949
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.7692   4.7692   4.7692   4.7692   4.7692   4.7692   4.7692   4.7692
+
+RGB Color Histogram54
+  mean                     0.0698   0.0231        0        0        0        0        0        0
+  std. dev.                0.4521     0.25     0.25     0.25     0.25     0.25     0.25     0.25
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.5      1.5      1.5      1.5      1.5      1.5      1.5      1.5
+
+RGB Color Histogram55
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram56
+  mean                          0        0    8.069        0        0        0        0        0
+  std. dev.                  19.5     19.5   42.697     19.5     19.5     19.5     19.5     19.5
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   117      117      117      117      117      117      117      117
+
+RGB Color Histogram57
+  mean                     2.3256        0   0.6897        0        0        0        0        0
+  std. dev.               15.0715   3.3333   3.6493   3.3333   3.3333   3.3333   3.3333   3.3333
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                    20       20       20       20       20       20       20       20
+
+RGB Color Histogram58
+  mean                          6   1.4554   0.1112        0   1.9433   3.4042        0        0
+  std. dev.                9.7435   5.7333   0.8396   0.3583   4.7566   5.9827   0.3583   0.3583
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  2.15     2.15     2.15     2.15     2.15     2.15     2.15     2.15
+
+RGB Color Histogram59
+  mean                     5.9726     2.21        0        0   0.0837        0        0        0
+  std. dev.               13.9567   9.1983   0.7255   0.7255   0.7255   0.7255   0.7255   0.7255
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.3529   4.3529   4.3529   4.3529   4.3529   4.3529   4.3529   4.3529
+
+RGB Color Histogram60
+  mean                          0        0        0        0        0        0        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram61
+  mean                          0        0        0        0        0   0.1667        0        0
+  std. dev.                0.3333   0.3333   0.3333   0.3333   0.3333   0.5528   0.3333   0.3333
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     2        2        2        2        2        2        2        2
+
+RGB Color Histogram62
+  mean                     0.6445        0        0        0   5.5962   8.0833        0        0
+  std. dev.                2.9182   2.3095   2.3095   2.3095  26.9386  15.4497   2.3095   2.3095
+  weight sum                   43       65       58      138       52       24        0        0
+  precision               13.8571  13.8571  13.8571  13.8571  13.8571  13.8571  13.8571  13.8571
+
+RGB Color Histogram63
+  mean                    43.3786  13.4402  42.1743   2.1216  50.5823   7.2801        0        0
+  std. dev.               75.5985  44.0127  90.0467   8.7346  84.5921  14.2959    0.787    0.787
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                4.7222   4.7222   4.7222   4.7222   4.7222   4.7222   4.7222   4.7222
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         281               73.9474 %
+Incorrectly Classified Instances        99               26.0526 %
+Kappa statistic                          0.6634
+Mean absolute error                      0.0647
+Root mean squared error                  0.2498
+Relative absolute error                 33.0683 %
+Root relative squared error             79.9911 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,326    0,062    0,400      0,326    0,359      0,288    0,874     0,465     K1
+                 0,677    0,159    0,468      0,677    0,553      0,452    0,887     0,563     K2
+                 0,534    0,009    0,912      0,534    0,674      0,662    0,954     0,798     K3
+                 0,928    0,074    0,877      0,928    0,901      0,844    0,989     0,984     K4
+                 0,769    0,009    0,930      0,769    0,842      0,825    0,985     0,899     K5
+                 1,000    0,011    0,857      1,000    0,923      0,921    0,996     0,889     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,739    0,065    0,764      0,739    0,739      0,688    0,953     0,807     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  14  26   0   1   2   0   0   0 |   a = K1
+   9  44   0  12   0   0   0   0 |   b = K2
+   2  19  31   5   1   0   0   0 |   c = K3
+   1   3   2 128   0   4   0   0 |   d = K4
+   9   2   1   0  40   0   0   0 |   e = K5
+   0   0   0   0   0  24   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

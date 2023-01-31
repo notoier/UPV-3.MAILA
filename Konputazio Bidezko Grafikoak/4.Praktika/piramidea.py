@@ -1,5 +1,6 @@
 
 from math import cos, sin, pi, sqrt
+from matplotlib import pyplot as plt
 import numpy as np
 import biraketak as bir
 
@@ -72,6 +73,44 @@ def piramidea_paraleloan(triangeluak_munduan, theta_x, theta_y, P, AB, AC, n, f)
     else:
         return triangeluak_paraleloan
 
+def koadroa_xy(x,y, m_zabal):
+    koad_1_x = -1
+    koad_1_y = 1
+    koad_l = 2
+    zatitz = float(m_zabal-1)
+    return koad_1_x + koad_l * y / zatitz, koad_1_y - koad_l * x / zatitz
 
-
+def main():
+    N = 24
+    triangeluak = piramidea_sortu(N, [1, 0.5, 0])
+    paraleloak = piramidea_paraleloan(triangeluak[0], pi/20, pi/4, [2, 0.5, 2], 5, 5, 1, 5)
+    
+    Mald = []
+    for triangelua in paraleloak:
+        column = np.column_stack((triangelua, [0, 0, -1]))
+        row = np.row_stack((column, [1, 1, 1, 0]))
+        inv = np.linalg.inv(row)
+        Mald.append(inv)
+    
+    m_zabal = 1000
+    piramidea = np.ones((m_zabal, m_zabal, 1))
+    
+    for i in range(m_zabal):
+        for j in range(m_zabal):
+            hurbil = float('+inf')
+            for triangelua in range(len(triangeluak[0])):
+                koord_barizentrikoa = Mald[triangelua].dot([koadroa_xy(i, j, m_zabal)[0], koadroa_xy(i, j, m_zabal)[1], 0, 1])
+                
+                if (koord_barizentrikoa[0] >= 0 and 
+                    koord_barizentrikoa[1] >= 0 and 
+                    koord_barizentrikoa[2] >= 0 and 
+                    koord_barizentrikoa[3] < hurbil):
+                    
+                    hurbil = -koord_barizentrikoa[3]
+                    piramidea[i, j] = triangeluak[1][triangelua]
+    plt.imshow(piramidea)
+    plt.show()
+    
+if __name__ == '__main__':
+    main()
 

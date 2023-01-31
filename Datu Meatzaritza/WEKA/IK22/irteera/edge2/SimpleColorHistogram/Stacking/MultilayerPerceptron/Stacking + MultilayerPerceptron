@@ -1,0 +1,1134 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Stacking -X 10 -M "weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a" -S 1 -num-slots 1 -B "weka.classifiers.lazy.IBk -K 3 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"" -B "weka.classifiers.bayes.NaiveBayes " -B "weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1"
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.SimpleColorHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/edge2-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   65
+              RGB Color Histogram0
+              RGB Color Histogram1
+              RGB Color Histogram2
+              RGB Color Histogram3
+              RGB Color Histogram4
+              RGB Color Histogram5
+              RGB Color Histogram6
+              RGB Color Histogram7
+              RGB Color Histogram8
+              RGB Color Histogram9
+              RGB Color Histogram10
+              RGB Color Histogram11
+              RGB Color Histogram12
+              RGB Color Histogram13
+              RGB Color Histogram14
+              RGB Color Histogram15
+              RGB Color Histogram16
+              RGB Color Histogram17
+              RGB Color Histogram18
+              RGB Color Histogram19
+              RGB Color Histogram20
+              RGB Color Histogram21
+              RGB Color Histogram22
+              RGB Color Histogram23
+              RGB Color Histogram24
+              RGB Color Histogram25
+              RGB Color Histogram26
+              RGB Color Histogram27
+              RGB Color Histogram28
+              RGB Color Histogram29
+              RGB Color Histogram30
+              RGB Color Histogram31
+              RGB Color Histogram32
+              RGB Color Histogram33
+              RGB Color Histogram34
+              RGB Color Histogram35
+              RGB Color Histogram36
+              RGB Color Histogram37
+              RGB Color Histogram38
+              RGB Color Histogram39
+              RGB Color Histogram40
+              RGB Color Histogram41
+              RGB Color Histogram42
+              RGB Color Histogram43
+              RGB Color Histogram44
+              RGB Color Histogram45
+              RGB Color Histogram46
+              RGB Color Histogram47
+              RGB Color Histogram48
+              RGB Color Histogram49
+              RGB Color Histogram50
+              RGB Color Histogram51
+              RGB Color Histogram52
+              RGB Color Histogram53
+              RGB Color Histogram54
+              RGB Color Histogram55
+              RGB Color Histogram56
+              RGB Color Histogram57
+              RGB Color Histogram58
+              RGB Color Histogram59
+              RGB Color Histogram60
+              RGB Color Histogram61
+              RGB Color Histogram62
+              RGB Color Histogram63
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Stacking
+
+Base classifiers
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                     K1       K2       K3       K4       K5       K6       K7       K8
+                          (0.11)   (0.17)   (0.15)   (0.36)   (0.14)   (0.06)      (0)      (0)
+================================================================================================
+RGB Color Histogram0
+  mean                        255      255      255      255      255      255        0        0
+  std. dev.                0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017   0.0017
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  0.01     0.01     0.01     0.01     0.01     0.01     0.01     0.01
+
+RGB Color Histogram1
+  mean                     3.8591    2.996   3.6887  16.1391  10.8659  23.5429        0        0
+  std. dev.                2.1786   2.2424   1.9093   7.2762   3.8022    3.811   0.2286   0.2286
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.3714   1.3714   1.3714   1.3714   1.3714   1.3714   1.3714   1.3714
+
+RGB Color Histogram2
+  mean                          0        0        0   3.4203   0.8462   7.1667        0        0
+  std. dev.                0.2222   0.2222   0.2222   4.4885   1.1407   3.4386   0.2222   0.2222
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333
+
+RGB Color Histogram3
+  mean                          0        0        0   1.8401   0.2452   5.1797        0        0
+  std. dev.                0.1771   0.1771   0.1771   3.4596   0.7689   3.6973   0.1771   0.1771
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.0625   1.0625   1.0625   1.0625   1.0625   1.0625   1.0625   1.0625
+
+RGB Color Histogram4
+  mean                     0.8372   0.7846   5.2241   4.9275   8.5577   8.6667        0        0
+  std. dev.                0.6796   1.0741   2.6525   2.6089   2.7902   2.0138   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram5
+  mean                     2.7907   2.4462   5.7069   5.1957   5.3269    5.375        0        0
+  std. dev.                1.5486   2.5782   2.1255   2.3494   1.5777   1.6282   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram6
+  mean                     0.0419        0   0.3103   1.8391   0.9346     1.95        0        0
+  std. dev.                   0.3      0.3   0.6799   2.4751   1.0286   1.1522      0.3      0.3
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.8      1.8      1.8      1.8      1.8      1.8      1.8      1.8
+
+RGB Color Histogram7
+  mean                          0        0        0   0.9764   0.1346   1.8958        0        0
+  std. dev.                0.2917   0.2917   0.2917   1.9425   0.4663   1.1202   0.2917   0.2917
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  1.75     1.75     1.75     1.75     1.75     1.75     1.75     1.75
+
+RGB Color Histogram8
+  mean                          0        0   0.1379   0.2512   0.4359   0.8889        0        0
+  std. dev.                0.2222   0.2222   0.4756   0.7097   0.7266   0.9938   0.2222   0.2222
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333
+
+RGB Color Histogram9
+  mean                          0        0   0.8103   0.3406   0.4808   0.3333        0        0
+  std. dev.                0.1667   0.1667   0.7759   0.6648   0.4996   0.4714   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram10
+  mean                     0.0279        0   0.7655   0.3304   0.3462      0.3        0        0
+  std. dev.                   0.2      0.2    1.038   0.6893   0.5437   0.5196      0.2      0.2
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.2      1.2      1.2      1.2      1.2      1.2      1.2      1.2
+
+RGB Color Histogram11
+  mean                          0        0        0   0.7174   0.2019     1.25        0        0
+  std. dev.                  0.25     0.25     0.25   1.6274    0.512    1.199     0.25     0.25
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.5      1.5      1.5      1.5      1.5      1.5      1.5      1.5
+
+RGB Color Histogram12
+  mean                          0        0   0.0345    0.029        0     0.25        0        0
+  std. dev.                0.1667   0.1667   0.1825    0.239   0.1667    0.433   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram13
+  mean                          0        0        0   0.0362   0.0385        0        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.1869   0.1923   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram14
+  mean                          0        0   0.2931    0.058   0.1154        0        0        0
+  std. dev.                0.1667   0.1667   0.4916   0.3132   0.3195   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram15
+  mean                          0        0   0.9379   0.9855   2.0923      1.6        0        0
+  std. dev.                0.2667   0.2667    1.516   1.9674   1.7054   1.8475   0.2667   0.2667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.6      1.6      1.6      1.6      1.6      1.6      1.6      1.6
+
+RGB Color Histogram16
+  mean                     4.6005    4.844  12.4643   6.5145  17.2287  11.6086        0        0
+  std. dev.                3.6451   6.7051   7.8947   3.6908   3.4352   3.6615   0.1726   0.1726
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.0357   1.0357   1.0357   1.0357   1.0357   1.0357   1.0357   1.0357
+
+RGB Color Histogram17
+  mean                     0.7907   0.8154   2.5862   3.5435   4.3077   3.8333        0        0
+  std. dev.                0.7008   0.9264    1.587   1.8616   1.2487    0.986   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram18
+  mean                          0        0        0   0.4493   0.0962   0.7917        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.6711   0.2948   0.5758   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram19
+  mean                          0        0        0   0.4327        0    0.131        0        0
+  std. dev.                0.2619   0.2619   0.2619      1.4   0.2619   0.4343   0.2619   0.2619
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.5714   1.5714   1.5714   1.5714   1.5714   1.5714   1.5714   1.5714
+
+RGB Color Histogram20
+  mean                     1.2023     0.66    2.181   2.5507   4.7808   5.3167        0        0
+  std. dev.                0.8492   0.8141   1.8887   1.6539    1.829    0.686   0.1833   0.1833
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.1      1.1      1.1      1.1      1.1      1.1      1.1      1.1
+
+RGB Color Histogram21
+  mean                    24.3876  23.3216   9.9885   8.8592  13.1355   9.9524        0        0
+  std. dev.                9.0412  10.4992   5.4339   4.7124   6.0651   5.5104   0.1746   0.1746
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.0476   1.0476   1.0476   1.0476   1.0476   1.0476   1.0476   1.0476
+
+RGB Color Histogram22
+  mean                        1.1     0.44   1.0241   2.8696   1.8827   2.0625        0        0
+  std. dev.                1.1622    0.767   1.0185   2.0146   1.1071    1.068   0.1833   0.1833
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.1      1.1      1.1      1.1      1.1      1.1      1.1      1.1
+
+RGB Color Histogram23
+  mean                          0        0    0.069   0.8696   0.0192    0.375        0        0
+  std. dev.                0.1667   0.1667   0.3649   1.6144   0.1667   0.4841   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram24
+  mean                          0        0    0.069   0.1159   0.3654   0.7083        0        0
+  std. dev.                0.1667   0.1667   0.2534   0.4353   0.5893    0.611   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram25
+  mean                     0.0543   0.0538   1.5891   1.0229   1.7724   1.5069        0        0
+  std. dev.                0.2457   0.2448   1.0322    1.092   1.1323   0.7128   0.1944   0.1944
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.1667   1.1667   1.1667   1.1667   1.1667   1.1667   1.1667   1.1667
+
+RGB Color Histogram26
+  mean                     1.3488   0.6308   2.4483   1.5217   1.4808   0.7917        0        0
+  std. dev.                 1.179   1.2474   1.9224   1.4656   0.8877   0.4061   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram27
+  mean                          0        0    0.047   1.2648    0.236   0.4545        0        0
+  std. dev.                0.2273   0.2273   0.2488     2.52   0.5159   0.6428   0.2273   0.2273
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.3636   1.3636   1.3636   1.3636   1.3636   1.3636   1.3636   1.3636
+
+RGB Color Histogram28
+  mean                          0        0        0   0.0145        0   0.0833        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.1667   0.1667   0.2764   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram29
+  mean                          0        0        0   0.0435        0        0        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.2368   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram30
+  mean                          0        0   0.3362   0.2065        0        0        0        0
+  std. dev.                  0.25     0.25   0.6255   0.7038     0.25     0.25     0.25     0.25
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.5      1.5      1.5      1.5      1.5      1.5      1.5      1.5
+
+RGB Color Histogram31
+  mean                     0.0543   0.0538   1.6695   1.3611   2.1314   1.1667        0        0
+  std. dev.                0.3517   0.3191   2.0451     2.21   1.1604   1.1667   0.1944   0.1944
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.1667   1.1667   1.1667   1.1667   1.1667   1.1667   1.1667   1.1667
+
+RGB Color Histogram32
+  mean                          0    0.116   3.5093   0.6243   3.9763   2.7821        0        0
+  std. dev.                0.1795   0.4674   3.7868   1.0027   1.8598   1.8889   0.1795   0.1795
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.0769   1.0769   1.0769   1.0769   1.0769   1.0769   1.0769   1.0769
+
+RGB Color Histogram33
+  mean                          0        0   0.6897   0.2464   0.2885   0.3333        0        0
+  std. dev.                0.1667   0.1667   0.6748   0.5221    0.453   0.4714   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram34
+  mean                          0        0        0    0.058        0        0        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.2629   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram35
+  mean                          0        0        0   0.0797        0        0        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.3624   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram36
+  mean                          0        0   0.1552   0.1159   0.6154   1.1667        0        0
+  std. dev.                0.1667   0.1667   0.4473   0.3626   0.7378   0.7993   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram37
+  mean                     0.3953   0.4769   1.8966   1.0942   2.0769   0.9167        0        0
+  std. dev.                0.7818   1.1383   1.0617   0.9697    1.124    0.493   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram38
+  mean                          0        0   0.8966   0.8696   0.8269    0.625        0        0
+  std. dev.                0.1667   0.1667    0.781    0.806   0.6421   0.4841   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram39
+  mean                          0        0        0   0.4348   0.0462      0.1        0        0
+  std. dev.                   0.2      0.2      0.2   0.9898   0.2308   0.3317      0.2      0.2
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   1.2      1.2      1.2      1.2      1.2      1.2      1.2      1.2
+
+RGB Color Histogram40
+  mean                          0        0   0.0345   0.0362   0.1346   0.5833        0        0
+  std. dev.                0.1667   0.1667   0.1825   0.2223   0.3413   0.9538   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram41
+  mean                      0.124   0.0205   0.7586   0.9082   2.0513   1.6667        0        0
+  std. dev.                0.3873   0.2222   1.0537    1.294   1.0282   0.7935   0.2222   0.2222
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333
+
+RGB Color Histogram42
+  mean                     7.4419   4.1026   5.5939   3.2045   4.8077   3.1019        0        0
+  std. dev.                3.7472   3.8781   4.7499   2.1279   2.3643   2.1749   0.1852   0.1852
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.1111   1.1111   1.1111   1.1111   1.1111   1.1111   1.1111   1.1111
+
+RGB Color Histogram43
+  mean                     0.3953   0.0769   0.6034   2.0652   0.8654     0.75        0        0
+  std. dev.                0.5344   0.2665   0.9815   2.6952   0.7079   0.7773   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram44
+  mean                          0        0   0.0172   0.0217   0.0385      0.5        0        0
+  std. dev.                0.1667   0.1667   0.1667   0.1667   0.1923   0.6455   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram45
+  mean                          0        0   0.0345   0.1304   0.0769   0.1667        0        0
+  std. dev.                0.1667   0.1667   0.1825   0.4635   0.2665   0.3727   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram46
+  mean                          0   0.0154   0.9655   0.6159   0.6346   0.7917        0        0
+  std. dev.                0.1667   0.1667    0.742    0.973   0.5893   0.4061   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram47
+  mean                     1.3953   0.4308   4.3103   3.6812   3.6923   2.1667        0        0
+  std. dev.                1.9546   1.5489   2.0944   4.2682   1.5877   1.5184   0.3333   0.3333
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     2        2        2        2        2        2        2        2
+
+RGB Color Histogram48
+  mean                          0        0   2.2931   0.1836   2.0705   2.6389        0        0
+  std. dev.                0.2639   0.2639   3.9136   0.6049   2.3348   2.4472   0.2639   0.2639
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.5833   1.5833   1.5833   1.5833   1.5833   1.5833   1.5833   1.5833
+
+RGB Color Histogram49
+  mean                          0        0   0.5517   0.0507   0.1346   0.0833        0        0
+  std. dev.                0.1667   0.1667   0.8744   0.2194   0.3413   0.2764   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram50
+  mean                          0        0    0.069   0.0435        0        0        0        0
+  std. dev.                0.1667   0.1667   0.3142   0.2368   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram51
+  mean                          0        0   0.0345   0.0942        0        0        0        0
+  std. dev.                0.1667   0.1667   0.2603   0.4486   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram52
+  mean                          0        0   0.1379        0   0.1026   1.7778        0        0
+  std. dev.                0.2222   0.2222   0.4756   0.2222   0.4411   1.3699   0.2222   0.2222
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333   1.3333
+
+RGB Color Histogram53
+  mean                          0        0   0.3448    0.058   0.1154     0.25        0        0
+  std. dev.                0.1667   0.1667   0.6311   0.2629   0.3195   0.5951   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram54
+  mean                          0        0   0.4828    0.058   0.0577   0.1667        0        0
+  std. dev.                0.1667   0.1667   0.6497   0.2337   0.2332   0.3727   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram55
+  mean                          0        0   0.1034   0.2101        0        0        0        0
+  std. dev.                0.1667   0.1667    0.578   0.7367   0.1667   0.1667   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram56
+  mean                          0        0   0.0647   0.0543   0.1202   1.9792        0        0
+  std. dev.                0.2083   0.2083   0.3613    0.296   0.4426   1.6503   0.2083   0.2083
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                  1.25     1.25     1.25     1.25     1.25     1.25     1.25     1.25
+
+RGB Color Histogram57
+  mean                          0        0   0.1034   0.1304     0.25   0.6667        0        0
+  std. dev.                0.1667   0.1667   0.3045   0.4476   0.4754   0.7454   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram58
+  mean                     0.0465   0.0615   1.5862   0.5725   0.9808   0.5833        0        0
+  std. dev.                0.3014   0.2403    1.051   0.8243   0.7719    0.493   0.1667   0.1667
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                     1        1        1        1        1        1        1        1
+
+RGB Color Histogram59
+  mean                          0        0   1.7816   1.3768   0.9188   0.9722        0        0
+  std. dev.                0.1852   0.1852   1.3202   1.8657   0.9677   0.8674   0.1852   0.1852
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.1111   1.1111   1.1111   1.1111   1.1111   1.1111   1.1111   1.1111
+
+RGB Color Histogram60
+  mean                          0        0   0.1086   0.3196   0.1212      5.6        0        0
+  std. dev.                  0.35     0.35   0.6069   1.2867   0.4896   5.7083     0.35     0.35
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                   2.1      2.1      2.1      2.1      2.1      2.1      2.1      2.1
+
+RGB Color Histogram61
+  mean                          0        0   0.1681   0.8243      0.5   3.9722        0        0
+  std. dev.                0.1806   0.1806   0.6612   2.2946   0.7795   3.0428   0.1806   0.1806
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.0833   1.0833   1.0833   1.0833   1.0833   1.0833   1.0833   1.0833
+
+RGB Color Histogram62
+  mean                     0.1279        0   0.9009   2.2817    2.274   6.1875        0        0
+  std. dev.                0.3994   0.2292   1.2391   3.7583   1.5697   3.7656   0.2292   0.2292
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                 1.375    1.375    1.375    1.375    1.375    1.375    1.375    1.375
+
+RGB Color Histogram63
+  mean                    14.3563   4.4815  89.7047    68.68  44.8153  64.0633        0        0
+  std. dev.               10.0655    6.259  48.1768  40.8714  22.7429  27.6658   0.3215   0.3215
+  weight sum                   43       65       58      138       52       24        0        0
+  precision                1.9291   1.9291   1.9291   1.9291   1.9291   1.9291   1.9291   1.9291
+
+
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+
+
+Meta classifier
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.43578895593277667
+    Node 8    -2.825350327030063
+    Node 9    -5.2317346104691165
+    Node 10    0.82169389428579
+    Node 11    2.6214997144839436
+    Node 12    -1.7292763284170705
+    Node 13    0.23248345526397934
+    Node 14    -2.8964037311710533
+    Node 15    2.8456811735623044
+    Node 16    1.2669883283256484
+    Node 17    -0.27303161856512703
+    Node 18    -4.1885618309157255
+    Node 19    1.0571116008707544
+    Node 20    3.178812858727315
+    Node 21    0.41789473958948326
+    Node 22    -2.145940411927731
+    Node 23    -2.9211549697131955
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.9599304763987118
+    Node 8    0.7695972622812458
+    Node 9    5.091702776505964
+    Node 10    -1.7250335550597071
+    Node 11    -1.8728366603992885
+    Node 12    0.03936367282609617
+    Node 13    -0.37726345793648863
+    Node 14    2.068318055149648
+    Node 15    -4.605080919660457
+    Node 16    1.3226078298045172
+    Node 17    -3.2672742344989447
+    Node 18    3.9251635248716323
+    Node 19    -0.6199502899712547
+    Node 20    1.2524415479386304
+    Node 21    0.1575057889282962
+    Node 22    -2.986190304761112
+    Node 23    -3.5838858042000985
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.7498800650062987
+    Node 8    0.8948056498723316
+    Node 9    -2.088247301228335
+    Node 10    -0.996591506044379
+    Node 11    -2.549352545333086
+    Node 12    -2.3382891307306286
+    Node 13    3.1866275071664427
+    Node 14    -3.1366240334359436
+    Node 15    -1.4423968202289275
+    Node 16    1.7312345814737427
+    Node 17    -0.5475231217274005
+    Node 18    -2.331555564429023
+    Node 19    0.21346175169784834
+    Node 20    -2.898604998992433
+    Node 21    -5.106861723004645
+    Node 22    2.582318081707681
+    Node 23    1.5397838188051174
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.9950106099554852
+    Node 8    -0.4829824644832387
+    Node 9    -1.03527266179064
+    Node 10    2.561844399307339
+    Node 11    -1.290140054631704
+    Node 12    4.473778626636622
+    Node 13    -3.7388918188847637
+    Node 14    -3.15668323400582
+    Node 15    -1.3336841619089375
+    Node 16    -2.565442997032862
+    Node 17    3.4561836845962746
+    Node 18    0.46130494930236016
+    Node 19    -0.20404419230815835
+    Node 20    1.952700134179184
+    Node 21    0.06652438332006061
+    Node 22    -0.9249297996055394
+    Node 23    1.662209510333437
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.3583190479844922
+    Node 8    -1.5100876943866064
+    Node 9    -0.22072476505150254
+    Node 10    -1.8263745279167334
+    Node 11    -2.607717768282544
+    Node 12    -1.5123811267518863
+    Node 13    1.1593679930581227
+    Node 14    1.1759626241531653
+    Node 15    0.6718950154880174
+    Node 16    -4.36650281695401
+    Node 17    0.7362944848817377
+    Node 18    3.223670868665024
+    Node 19    -1.3637351088276517
+    Node 20    -4.166474200529846
+    Node 21    3.5133720974855636
+    Node 22    -2.157986192694625
+    Node 23    0.9017748016649986
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.5466144853536388
+    Node 8    -2.7822387549338967
+    Node 9    1.6862087887667174
+    Node 10    -1.380632498068771
+    Node 11    2.610071932215045
+    Node 12    -0.6025292032538746
+    Node 13    -2.669986027288464
+    Node 14    0.821669650927625
+    Node 15    2.2056972298530932
+    Node 16    -1.4157009611992462
+    Node 17    -1.1127462786642037
+    Node 18    -2.7500185818371423
+    Node 19    -0.010188331747043018
+    Node 20    -3.9328789658352674
+    Node 21    -1.8247860471605732
+    Node 22    2.6295175069220393
+    Node 23    -1.0728712963212026
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.5869560336859214
+    Node 8    -1.0114191108304056
+    Node 9    -0.7171511077073228
+    Node 10    -0.5404845739739794
+    Node 11    -0.699639128888583
+    Node 12    -0.398983701227491
+    Node 13    -0.7770773075024004
+    Node 14    -0.9825445332853967
+    Node 15    -0.7184273526073295
+    Node 16    -0.8355313935169989
+    Node 17    -0.533379943766986
+    Node 18    -0.6995865092725787
+    Node 19    -0.7296414869346646
+    Node 20    -0.8883405754658334
+    Node 21    -0.6485067932326207
+    Node 22    -0.7250891159079503
+    Node 23    -0.6969644334724824
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.5869844956200558
+    Node 8    -1.0565668594654074
+    Node 9    -0.7199532243129875
+    Node 10    -0.5180407842799705
+    Node 11    -0.7024042813945328
+    Node 12    -0.4406413755904003
+    Node 13    -0.7700566542301632
+    Node 14    -0.9621350709508918
+    Node 15    -0.6823435407768442
+    Node 16    -0.7818234779224035
+    Node 17    -0.5561493079662503
+    Node 18    -0.6706002024024592
+    Node 19    -0.7430435354379291
+    Node 20    -0.8936675732763489
+    Node 21    -0.6374491181066891
+    Node 22    -0.7327727702941453
+    Node 23    -0.6622624218707557
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    0.2835063806652649
+    Attrib weka.classifiers.lazy.IBk-1:K1    -3.449936330228206
+    Attrib weka.classifiers.lazy.IBk-1:K2    3.051957717546344
+    Attrib weka.classifiers.lazy.IBk-1:K3    0.41734163570419347
+    Attrib weka.classifiers.lazy.IBk-1:K4    -0.05398369989100092
+    Attrib weka.classifiers.lazy.IBk-1:K5    -0.23295824576805854
+    Attrib weka.classifiers.lazy.IBk-1:K6    -0.7819736475593337
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.42987067915690286
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.36899774112048683
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -2.397664693039974
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    2.3751118187592977
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    0.30455646321076574
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -0.10882523020629023
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.9278748990398232
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.26156738457460516
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    -0.2824906050649863
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    -0.1905585138285002
+    Attrib weka.classifiers.trees.RandomForest-3:K1    0.21630635662433692
+    Attrib weka.classifiers.trees.RandomForest-3:K2    0.7909812993797009
+    Attrib weka.classifiers.trees.RandomForest-3:K3    0.8958903278498233
+    Attrib weka.classifiers.trees.RandomForest-3:K4    0.14398768976481163
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -1.134821498005915
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -1.9912033422821631
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.007862927689236021
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.04228963210137946
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.04898126013710386
+    Attrib weka.classifiers.lazy.IBk-1:K1    5.079688636522396
+    Attrib weka.classifiers.lazy.IBk-1:K2    -3.5440090188387714
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.6272783891774533
+    Attrib weka.classifiers.lazy.IBk-1:K4    -0.38505348178368887
+    Attrib weka.classifiers.lazy.IBk-1:K5    -1.1755872303191677
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.5106497577436249
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.5611584847900277
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.5404330047040021
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    1.9487333583424697
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -2.4174424785390634
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    0.8171099556584118
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.13252401622648471
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.44023008579964457
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.2646928698775
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.015582467888608861
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.04410349552120773
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -10.161662917535237
+    Attrib weka.classifiers.trees.RandomForest-3:K2    8.052420439396219
+    Attrib weka.classifiers.trees.RandomForest-3:K3    0.545431551986157
+    Attrib weka.classifiers.trees.RandomForest-3:K4    -0.16856764838876076
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -0.09475692841903124
+    Attrib weka.classifiers.trees.RandomForest-3:K6    0.7298621955389567
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.04167201385764717
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.027999476233965016
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.0932765109506258
+    Attrib weka.classifiers.lazy.IBk-1:K1    3.9542109648023858
+    Attrib weka.classifiers.lazy.IBk-1:K2    -3.1378333944199053
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.6389246713139837
+    Attrib weka.classifiers.lazy.IBk-1:K4    0.05007936844304382
+    Attrib weka.classifiers.lazy.IBk-1:K5    -0.5482727540044384
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.8565341050148592
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.10442010879066527
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.09177536755557336
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -0.9789207112772402
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    1.1767282588823167
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    0.6361446811851013
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -0.7168182096468806
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.01833110812304522
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.3556601866329812
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.08435685027424357
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.061364038159362935
+    Attrib weka.classifiers.trees.RandomForest-3:K1    5.711665533154289
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -0.42381809548943733
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -2.1833108442599984
+    Attrib weka.classifiers.trees.RandomForest-3:K4    0.5352325769703606
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -1.8408540023871114
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -0.9516216228317528
+    Attrib weka.classifiers.trees.RandomForest-3:K7    -0.04870534335039309
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.009480590194872261
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.014988219251547922
+    Attrib weka.classifiers.lazy.IBk-1:K1    2.013785077072385
+    Attrib weka.classifiers.lazy.IBk-1:K2    -0.23135576190003818
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.7525054085764885
+    Attrib weka.classifiers.lazy.IBk-1:K4    1.1859090391559395
+    Attrib weka.classifiers.lazy.IBk-1:K5    -2.2559397701305466
+    Attrib weka.classifiers.lazy.IBk-1:K6    -0.12475671362115215
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.57893159035979
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.5560680033289296
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -3.53539939435894
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    3.236806342116999
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    0.3193835743503089
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.6999210875853421
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.230638676962622
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.5528447270007697
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    -0.009864614810346721
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.045933572520549595
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -2.182925583837465
+    Attrib weka.classifiers.trees.RandomForest-3:K2    2.6412215620149793
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -0.46890508216656157
+    Attrib weka.classifiers.trees.RandomForest-3:K4    -1.5318610565991957
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -1.191345421823461
+    Attrib weka.classifiers.trees.RandomForest-3:K6    2.4202895513796703
+    Attrib weka.classifiers.trees.RandomForest-3:K7    -0.023866806192559844
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.04470998985673476
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.3471422802421731
+    Attrib weka.classifiers.lazy.IBk-1:K1    -0.0935062487213251
+    Attrib weka.classifiers.lazy.IBk-1:K2    -0.11375671058988648
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.5403909099721373
+    Attrib weka.classifiers.lazy.IBk-1:K4    3.0352333748116003
+    Attrib weka.classifiers.lazy.IBk-1:K5    -2.099364072654204
+    Attrib weka.classifiers.lazy.IBk-1:K6    1.378101977075889
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.0013378170224851427
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.025544123945251872
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -0.03260353879593882
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    1.6246256703781183
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -1.0810664777016115
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.22871286341838143
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.023046825564474793
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.7903861207725916
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.3452911178688902
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.3161069967887308
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.17864934963298046
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -0.47637172591499327
+    Attrib weka.classifiers.trees.RandomForest-3:K3    0.07270909254020579
+    Attrib weka.classifiers.trees.RandomForest-3:K4    3.6068060187339617
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -0.4701763145007544
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -1.3705801329427556
+    Attrib weka.classifiers.trees.RandomForest-3:K7    -0.0047253372586356646
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.034948742229733334
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.08331979877212108
+    Attrib weka.classifiers.lazy.IBk-1:K1    0.8686443324614945
+    Attrib weka.classifiers.lazy.IBk-1:K2    -0.9105037589055187
+    Attrib weka.classifiers.lazy.IBk-1:K3    1.1162198308745566
+    Attrib weka.classifiers.lazy.IBk-1:K4    -3.119886260465861
+    Attrib weka.classifiers.lazy.IBk-1:K5    3.0968641492101208
+    Attrib weka.classifiers.lazy.IBk-1:K6    -1.383045937318193
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.4890358824586252
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.49011211562001694
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    0.2422217825117527
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -1.7311541553365446
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    1.1167445374157918
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -0.5052135291774501
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    0.4768606497098146
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.06552720224066748
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    -0.0937962282454992
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    -0.08341462498787532
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.18049551669052305
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -0.28798852850834666
+    Attrib weka.classifiers.trees.RandomForest-3:K3    0.9486199986426227
+    Attrib weka.classifiers.trees.RandomForest-3:K4    -1.0715229604569123
+    Attrib weka.classifiers.trees.RandomForest-3:K5    1.686249084809349
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -1.430122924687409
+    Attrib weka.classifiers.trees.RandomForest-3:K7    -0.03158773846969546
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.009472087138097128
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    0.15746069722416556
+    Attrib weka.classifiers.lazy.IBk-1:K1    1.2070868367572964
+    Attrib weka.classifiers.lazy.IBk-1:K2    -1.8033634446293783
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.16245380243007296
+    Attrib weka.classifiers.lazy.IBk-1:K4    0.4191371245831124
+    Attrib weka.classifiers.lazy.IBk-1:K5    0.7673014600114675
+    Attrib weka.classifiers.lazy.IBk-1:K6    -1.0676733382100676
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.2130380845671196
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.2273095402645909
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -2.1997479733135124
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    2.416319943141875
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -1.0595892053084142
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    1.43472215519378
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.6286742746806764
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.7235169671392189
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    -0.1769928925819556
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    -0.1915041140256052
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.8015911472643216
+    Attrib weka.classifiers.trees.RandomForest-3:K2    5.292526740456469
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -3.059556544415097
+    Attrib weka.classifiers.trees.RandomForest-3:K4    -3.984251188092839
+    Attrib weka.classifiers.trees.RandomForest-3:K5    0.21093780030368997
+    Attrib weka.classifiers.trees.RandomForest-3:K6    1.440569878294187
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.030433420650848947
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.04934023441720228
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.11715529682568204
+    Attrib weka.classifiers.lazy.IBk-1:K1    3.856130557870661
+    Attrib weka.classifiers.lazy.IBk-1:K2    -4.897265320959306
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.26341077976298327
+    Attrib weka.classifiers.lazy.IBk-1:K4    0.5461452049877039
+    Attrib weka.classifiers.lazy.IBk-1:K5    0.7725347184178977
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.4145006058410866
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.26389970001226865
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.2413378571968045
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    2.8967945394332295
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -3.323748417430319
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -0.20105984924221992
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.49954303220884866
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    0.3536900261010853
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.20656816054513127
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.043502039410454406
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.06456368527970353
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -1.2773391186769079
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -1.8963131020462156
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -1.2620858128616403
+    Attrib weka.classifiers.trees.RandomForest-3:K4    1.6107975860781427
+    Attrib weka.classifiers.trees.RandomForest-3:K5    1.4628821281328586
+    Attrib weka.classifiers.trees.RandomForest-3:K6    1.5949151399103298
+    Attrib weka.classifiers.trees.RandomForest-3:K7    -0.0015260240281349535
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.008924508707079615
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.07564058441334559
+    Attrib weka.classifiers.lazy.IBk-1:K1    1.2590518058247024
+    Attrib weka.classifiers.lazy.IBk-1:K2    0.8916661162353301
+    Attrib weka.classifiers.lazy.IBk-1:K3    1.0951518505168474
+    Attrib weka.classifiers.lazy.IBk-1:K4    -1.4611348578914174
+    Attrib weka.classifiers.lazy.IBk-1:K5    -1.466388782180015
+    Attrib weka.classifiers.lazy.IBk-1:K6    -0.2511703956341071
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.13166355174346459
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.13692678516135096
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    0.0025444714516173425
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -0.36532012703739536
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -0.8092812868079029
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -0.02287917403075624
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    0.9208923562373494
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.43564230828068834
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.06363248075921799
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.13278132574993345
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.017509066461271268
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -1.5947305902517752
+    Attrib weka.classifiers.trees.RandomForest-3:K3    3.7920123733687174
+    Attrib weka.classifiers.trees.RandomForest-3:K4    -1.1293530101290192
+    Attrib weka.classifiers.trees.RandomForest-3:K5    0.0020415765477357958
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -0.6146408071867898
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.0276553460908998
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.002002110159697111
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.14229821929916994
+    Attrib weka.classifiers.lazy.IBk-1:K1    -1.0612252636972415
+    Attrib weka.classifiers.lazy.IBk-1:K2    -0.9123952486297381
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.09236658383413904
+    Attrib weka.classifiers.lazy.IBk-1:K4    1.064894443792138
+    Attrib weka.classifiers.lazy.IBk-1:K5    1.1453297713729482
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.3086660503616081
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.4120092217686195
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.4326215391008021
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    0.6467774382622724
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -1.1726498104894683
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    1.33513794673383
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -0.48554322106811354
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.0785480215760456
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.2605124600732942
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.10838254485413967
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.08051894275861626
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.10577642398839215
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -1.6914163130308146
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -0.26009879484832776
+    Attrib weka.classifiers.trees.RandomForest-3:K4    3.736184820013233
+    Attrib weka.classifiers.trees.RandomForest-3:K5    0.5080004556932843
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -1.9216433957695251
+    Attrib weka.classifiers.trees.RandomForest-3:K7    -0.03401916517585302
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.0376548669728992
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -0.20067542623390766
+    Attrib weka.classifiers.lazy.IBk-1:K1    0.9583972422701734
+    Attrib weka.classifiers.lazy.IBk-1:K2    0.2661935119370339
+    Attrib weka.classifiers.lazy.IBk-1:K3    0.03358011234190272
+    Attrib weka.classifiers.lazy.IBk-1:K4    -1.8099214750699393
+    Attrib weka.classifiers.lazy.IBk-1:K5    1.5488836371808439
+    Attrib weka.classifiers.lazy.IBk-1:K6    -0.09361497077344184
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.0028194236278529304
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.0307556275144491
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -1.5939878924968143
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    5.156268893872168
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -0.6782722707094088
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -1.056964426309528
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.8091100272234448
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.06258633995607132
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.2551140444986539
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.22652125315091293
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -6.712708553744695
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -3.134713625375228
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -0.3244490241278096
+    Attrib weka.classifiers.trees.RandomForest-3:K4    6.4189822628314355
+    Attrib weka.classifiers.trees.RandomForest-3:K5    5.08416094464854
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -1.1232359874174596
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.031485750263621506
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.03336311922240877
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    0.19205147309078915
+    Attrib weka.classifiers.lazy.IBk-1:K1    3.485010671856591
+    Attrib weka.classifiers.lazy.IBk-1:K2    -2.886328464552118
+    Attrib weka.classifiers.lazy.IBk-1:K3    0.0014217564417514069
+    Attrib weka.classifiers.lazy.IBk-1:K4    -0.3076620284801532
+    Attrib weka.classifiers.lazy.IBk-1:K5    -0.7134572962773802
+    Attrib weka.classifiers.lazy.IBk-1:K6    -0.4521167709336564
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.1871989697648826
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.2188785581827573
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -2.3059807311124807
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -0.11071455739112537
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    2.076999036691902
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.009059094630326088
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.3012694386772009
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.3015528436802516
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    -0.2843934123942256
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    -0.25957685648441153
+    Attrib weka.classifiers.trees.RandomForest-3:K1    3.9167395957286057
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -1.8710810287962183
+    Attrib weka.classifiers.trees.RandomForest-3:K3    0.15103394415469568
+    Attrib weka.classifiers.trees.RandomForest-3:K4    -0.9458245887255489
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -1.4244228697779335
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -0.4275879728448748
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.010273386019766628
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.04398563352529236
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    0.005010552101501011
+    Attrib weka.classifiers.lazy.IBk-1:K1    1.1668938926589116
+    Attrib weka.classifiers.lazy.IBk-1:K2    2.4589419853852195
+    Attrib weka.classifiers.lazy.IBk-1:K3    -1.3933142833503727
+    Attrib weka.classifiers.lazy.IBk-1:K4    0.5926704421923554
+    Attrib weka.classifiers.lazy.IBk-1:K5    -2.944756484568109
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.18436850227244136
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.20243609279155428
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.20818169616518956
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    0.3978971723062555
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    0.6133073206752078
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -0.48519819588762625
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -0.08058607725276953
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.44765529363694195
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.025444544345612243
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.06423579398118569
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.026652569901294484
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.3515290850827517
+    Attrib weka.classifiers.trees.RandomForest-3:K2    0.9226590331165375
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -0.4817606749330149
+    Attrib weka.classifiers.trees.RandomForest-3:K4    2.9962731939511458
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -0.8280688360481758
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -2.2145943969113118
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.0027731774393598835
+    Attrib weka.classifiers.trees.RandomForest-3:K8    -0.04956091631294676
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -0.1559049079738624
+    Attrib weka.classifiers.lazy.IBk-1:K1    1.2345869285431839
+    Attrib weka.classifiers.lazy.IBk-1:K2    0.0993438482664246
+    Attrib weka.classifiers.lazy.IBk-1:K3    -0.5010576276140151
+    Attrib weka.classifiers.lazy.IBk-1:K4    -1.4537480676610341
+    Attrib weka.classifiers.lazy.IBk-1:K5    1.7318848929613195
+    Attrib weka.classifiers.lazy.IBk-1:K6    -0.5112449091967922
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.18134479509512702
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.18647463311241358
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    0.4055054692837639
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -1.1243827718030257
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    1.437792686022669
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.10645699725181497
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    -0.055943671092848014
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    -0.051618238222711596
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.1373489356277823
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.20745603973107166
+    Attrib weka.classifiers.trees.RandomForest-3:K1    0.1594687736530997
+    Attrib weka.classifiers.trees.RandomForest-3:K2    0.7222427089291923
+    Attrib weka.classifiers.trees.RandomForest-3:K3    -4.198026591685974
+    Attrib weka.classifiers.trees.RandomForest-3:K4    0.622950323847204
+    Attrib weka.classifiers.trees.RandomForest-3:K5    2.932231154234708
+    Attrib weka.classifiers.trees.RandomForest-3:K6    0.09466091622268896
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.03950051032827058
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.009847048744263051
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    0.005361528124751574
+    Attrib weka.classifiers.lazy.IBk-1:K1    -1.0909940329347054
+    Attrib weka.classifiers.lazy.IBk-1:K2    -1.1546157457819113
+    Attrib weka.classifiers.lazy.IBk-1:K3    0.4975317788436873
+    Attrib weka.classifiers.lazy.IBk-1:K4    1.6746585544934243
+    Attrib weka.classifiers.lazy.IBk-1:K5    -0.737426878295008
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.7343294799980475
+    Attrib weka.classifiers.lazy.IBk-1:K7    -0.26429377547991356
+    Attrib weka.classifiers.lazy.IBk-1:K8    -0.2405458568020926
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -0.23475175709264048
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -0.829576630993902
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    -0.30116037575841886
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    0.3447442421204714
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    0.43436311515591786
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.34639392308803196
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    -0.024395698817981603
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    -0.08684114036924984
+    Attrib weka.classifiers.trees.RandomForest-3:K1    -0.13150082031432356
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -1.7932481308139874
+    Attrib weka.classifiers.trees.RandomForest-3:K3    2.4434587446908997
+    Attrib weka.classifiers.trees.RandomForest-3:K4    0.3064166261859833
+    Attrib weka.classifiers.trees.RandomForest-3:K5    -1.6300504734266807
+    Attrib weka.classifiers.trees.RandomForest-3:K6    0.696864000645357
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.017872980387439313
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.017910443057474704
+Sigmoid Node 23
+    Inputs    Weights
+    Threshold    -0.05846535647914546
+    Attrib weka.classifiers.lazy.IBk-1:K1    -0.9386741959410313
+    Attrib weka.classifiers.lazy.IBk-1:K2    -1.9045680015881956
+    Attrib weka.classifiers.lazy.IBk-1:K3    0.7819977804131691
+    Attrib weka.classifiers.lazy.IBk-1:K4    -0.1786254466753354
+    Attrib weka.classifiers.lazy.IBk-1:K5    1.928389722005083
+    Attrib weka.classifiers.lazy.IBk-1:K6    0.6119365239203091
+    Attrib weka.classifiers.lazy.IBk-1:K7    0.37238798562969594
+    Attrib weka.classifiers.lazy.IBk-1:K8    0.3364578489685946
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K1    -0.5629895294910608
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K2    -0.4500571318292121
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K3    1.1626424335254764
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K4    -1.0363066489548756
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K5    0.3444108373572186
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K6    0.9384778187067481
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K7    0.08026350673663547
+    Attrib weka.classifiers.bayes.NaiveBayes-2:K8    0.06243869348133558
+    Attrib weka.classifiers.trees.RandomForest-3:K1    0.24059838090226374
+    Attrib weka.classifiers.trees.RandomForest-3:K2    -1.4485831860193172
+    Attrib weka.classifiers.trees.RandomForest-3:K3    0.9797243111009081
+    Attrib weka.classifiers.trees.RandomForest-3:K4    1.7024984795056715
+    Attrib weka.classifiers.trees.RandomForest-3:K5    0.15834364478797222
+    Attrib weka.classifiers.trees.RandomForest-3:K6    -1.217143194674704
+    Attrib weka.classifiers.trees.RandomForest-3:K7    0.04232681109808774
+    Attrib weka.classifiers.trees.RandomForest-3:K8    0.03985164753018654
+Class K1
+    Input
+    Node 0
+Class K2
+    Input
+    Node 1
+Class K3
+    Input
+    Node 2
+Class K4
+    Input
+    Node 3
+Class K5
+    Input
+    Node 4
+Class K6
+    Input
+    Node 5
+Class K7
+    Input
+    Node 6
+Class K8
+    Input
+    Node 7
+
+
+Time taken to build model: 1.2 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         347               91.3158 %
+Incorrectly Classified Instances        33                8.6842 %
+Kappa statistic                          0.8884
+Mean absolute error                      0.0272
+Root mean squared error                  0.1338
+Relative absolute error                 13.9169 %
+Root relative squared error             42.8403 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,721    0,042    0,689      0,721    0,705      0,666    0,960     0,666     K1
+                 0,800    0,038    0,813      0,800    0,806      0,767    0,967     0,887     K2
+                 0,966    0,006    0,966      0,966    0,966      0,959    0,999     0,993     K3
+                 0,993    0,017    0,972      0,993    0,982      0,972    0,995     0,967     K4
+                 0,962    0,003    0,980      0,962    0,971      0,966    0,997     0,988     K5
+                 0,875    0,000    1,000      0,875    0,933      0,931    0,962     0,955     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,913    0,019    0,914      0,913    0,913      0,897    0,985     0,925     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  31  12   0   0   0   0   0   0 |   a = K1
+  13  52   0   0   0   0   0   0 |   b = K2
+   0   0  56   1   1   0   0   0 |   c = K3
+   1   0   0 137   0   0   0   0 |   d = K4
+   0   0   2   0  50   0   0   0 |   e = K5
+   0   0   0   3   0  21   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

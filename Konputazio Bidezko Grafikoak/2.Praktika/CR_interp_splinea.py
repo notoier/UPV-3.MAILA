@@ -27,21 +27,35 @@ def gamma_CR(p, r, t):
     elif k == n:
         return p[:,n]
 
+
 puntuak = np.array([[1, 1, 2], [2, 2, 3], [3, 3, 3], [3, 4, 3], [3, 4, 5]]).T
+puntuak_0 = np.array([[1],[0],[0],[0],[0]]).T
+puntuak_1 = np.array([[0],[1],[0],[0],[0]]).T
+puntuak_2 = np.array([[0],[0],[1],[0],[0]]).T
+puntuak_3 = np.array([[0],[0],[0],[1],[0]]).T
+puntuak_4 = np.array([[0],[0],[0],[0],[1]]).T
 
 t_kurba = np.linspace(0, 4, 100)
 
 cr_kurba = np.zeros((3,100))
+cr_0 = np.zeros((1,100))
+cr_1 = np.zeros((1,100))
+cr_2 = np.zeros((1,100))
+cr_3 = np.zeros((1,100))
+cr_4 = np.zeros((1,100))
+
+
 for k in range(100):
     cr_kurba[:,k] = gamma_CR(puntuak, 1/3, t_kurba[k])
 
 fig = plt.figure()
-ax = fig.gca(projection='3d')
+#ax = fig.gca(projection='3d')
+ax = fig.add_subplot(projection='3d')
 
 ax.plot(puntuak[0,:], puntuak[1,:], puntuak[2,:], 'ro')
 ax.plot(cr_kurba[0], cr_kurba[1], cr_kurba[2], 'b-')
 
-ax.set_xlim(0, 5)      
+ax.set_xlim(0, 5)
 ax.set_ylim(0, 5)
 ax.set_zlim(0, 5)
 ax.set_xlabel('X')
@@ -49,4 +63,36 @@ ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 
 plt.show()
+
+for k in range(100):
+    cr_kurba[:,k] = gamma_CR(puntuak, 1/3, t_kurba[k])
+
+for k in range(100):
+    cr_0[:,k] = gamma_CR(puntuak_0, 1/3, t_kurba[k])
+
+for k in range(100):
+    cr_1[:,k] = gamma_CR(puntuak_1, 1/3, t_kurba[k])
+
+for k in range(100):
+    cr_2[:,k] = gamma_CR(puntuak_2, 1/3, t_kurba[k])
+
+for k in range(100):
+    cr_3[:,k] = gamma_CR(puntuak_3, 1/3, t_kurba[k])
+
+for k in range(100):
+    cr_4[:,k] = gamma_CR(puntuak_4, 1/3, t_kurba[k])
+
+
+plt.plot(t_kurba, cr_0[0])
+plt.plot(t_kurba, cr_1[0])
+plt.plot(t_kurba, cr_2[0])
+plt.plot(t_kurba, cr_3[0])
+plt.plot(t_kurba, cr_4[0])
+
+plt.show()
+
+
+plt.plot(t_kurba, (cr_0 + cr_1 + cr_2 + cr_3 + cr_4)[0])
+plt.show()
+
 

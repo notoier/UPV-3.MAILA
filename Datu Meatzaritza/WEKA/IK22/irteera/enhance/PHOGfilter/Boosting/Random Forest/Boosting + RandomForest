@@ -1,0 +1,111 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/enhance-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S -1155869325 -do-not-check-capabilities
+
+Weight: 4.32
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 431529176 -do-not-check-capabilities
+
+Weight: 1.93
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1761283695 -do-not-check-capabilities
+
+Weight: 0.75
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1749940626 -do-not-check-capabilities
+
+Weight: 0.27
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 892128508 -do-not-check-capabilities
+
+Weight: 0.09
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 155629808 -do-not-check-capabilities
+
+Weight: 0.04
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1429008869 -do-not-check-capabilities
+
+Weight: 0.01
+
+Number of performed Iterations: 7
+
+
+Time taken to build model: 0.91 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         340               89.4737 %
+Incorrectly Classified Instances        40               10.5263 %
+Kappa statistic                          0.8646
+Mean absolute error                      0.0296
+Root mean squared error                  0.152 
+Relative absolute error                 15.145  %
+Root relative squared error             48.6687 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,674    0,000    1,000      0,674    0,806      0,805    0,927     0,823     K1
+                 0,892    0,063    0,744      0,892    0,811      0,773    0,941     0,833     K2
+                 0,948    0,006    0,965      0,948    0,957      0,949    0,992     0,980     K3
+                 0,906    0,058    0,899      0,906    0,903      0,847    0,973     0,937     K4
+                 0,962    0,009    0,943      0,962    0,952      0,945    0,988     0,956     K5
+                 0,958    0,003    0,958      0,958    0,958      0,956    0,990     0,967     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,895    0,034    0,904      0,895    0,895      0,865    0,968     0,917     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  29   6   0   6   1   1   0   0 |   a = K1
+   0  58   1   4   2   0   0   0 |   b = K2
+   0   0  55   3   0   0   0   0 |   c = K3
+   0  13   0 125   0   0   0   0 |   d = K4
+   0   1   1   0  50   0   0   0 |   e = K5
+   0   0   0   1   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

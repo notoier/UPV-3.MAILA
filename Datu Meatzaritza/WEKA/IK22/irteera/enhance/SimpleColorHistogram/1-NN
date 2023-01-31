@@ -1,0 +1,118 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.SimpleColorHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/enhance-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   65
+              RGB Color Histogram0
+              RGB Color Histogram1
+              RGB Color Histogram2
+              RGB Color Histogram3
+              RGB Color Histogram4
+              RGB Color Histogram5
+              RGB Color Histogram6
+              RGB Color Histogram7
+              RGB Color Histogram8
+              RGB Color Histogram9
+              RGB Color Histogram10
+              RGB Color Histogram11
+              RGB Color Histogram12
+              RGB Color Histogram13
+              RGB Color Histogram14
+              RGB Color Histogram15
+              RGB Color Histogram16
+              RGB Color Histogram17
+              RGB Color Histogram18
+              RGB Color Histogram19
+              RGB Color Histogram20
+              RGB Color Histogram21
+              RGB Color Histogram22
+              RGB Color Histogram23
+              RGB Color Histogram24
+              RGB Color Histogram25
+              RGB Color Histogram26
+              RGB Color Histogram27
+              RGB Color Histogram28
+              RGB Color Histogram29
+              RGB Color Histogram30
+              RGB Color Histogram31
+              RGB Color Histogram32
+              RGB Color Histogram33
+              RGB Color Histogram34
+              RGB Color Histogram35
+              RGB Color Histogram36
+              RGB Color Histogram37
+              RGB Color Histogram38
+              RGB Color Histogram39
+              RGB Color Histogram40
+              RGB Color Histogram41
+              RGB Color Histogram42
+              RGB Color Histogram43
+              RGB Color Histogram44
+              RGB Color Histogram45
+              RGB Color Histogram46
+              RGB Color Histogram47
+              RGB Color Histogram48
+              RGB Color Histogram49
+              RGB Color Histogram50
+              RGB Color Histogram51
+              RGB Color Histogram52
+              RGB Color Histogram53
+              RGB Color Histogram54
+              RGB Color Histogram55
+              RGB Color Histogram56
+              RGB Color Histogram57
+              RGB Color Histogram58
+              RGB Color Histogram59
+              RGB Color Histogram60
+              RGB Color Histogram61
+              RGB Color Histogram62
+              RGB Color Histogram63
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         339               89.2105 %
+Incorrectly Classified Instances        41               10.7895 %
+Kappa statistic                          0.8616
+Mean absolute error                      0.0313
+Root mean squared error                  0.1625
+Relative absolute error                 15.9861 %
+Root relative squared error             52.0388 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,605    0,033    0,703      0,605    0,650      0,611    0,794     0,471     K1
+                 0,815    0,054    0,757      0,815    0,785      0,740    0,885     0,661     K2
+                 0,931    0,019    0,900      0,931    0,915      0,900    0,958     0,849     K3
+                 0,971    0,012    0,978      0,971    0,975      0,960    0,980     0,961     K4
+                 0,942    0,012    0,925      0,942    0,933      0,923    0,966     0,887     K5
+                 0,958    0,000    1,000      0,958    0,979      0,978    0,980     0,961     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,892    0,022    0,891      0,892    0,891      0,870    0,937     0,827     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  26  12   1   1   3   0   0   0 |   a = K1
+  10  53   2   0   0   0   0   0 |   b = K2
+   0   2  54   1   1   0   0   0 |   c = K3
+   0   1   3 134   0   0   0   0 |   d = K4
+   1   2   0   0  49   0   0   0 |   e = K5
+   0   0   0   1   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

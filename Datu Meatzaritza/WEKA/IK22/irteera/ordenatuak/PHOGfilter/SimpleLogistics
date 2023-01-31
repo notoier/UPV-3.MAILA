@@ -1,0 +1,226 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/ordenatuak-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class K1 :
+-0.83 + 
+[PHOG27] * -0.08 +
+[PHOG48] * -0.2 +
+[PHOG60] * 0.08 +
+[PHOG148] * -0.11 +
+[PHOG170] * 0.07 +
+[PHOG201] * 0.09 +
+[PHOG222] * -0.13 +
+[PHOG291] * 0.1  +
+[PHOG292] * 0.14 +
+[PHOG296] * -0.11 +
+[PHOG297] * -0.17 +
+[PHOG304] * 0.15 +
+[PHOG330] * -0.1 +
+[PHOG369] * 0.1  +
+[PHOG401] * 0.18 +
+[PHOG427] * 0.16 +
+[PHOG436] * 0.1  +
+[PHOG447] * 0.19 +
+[PHOG481] * 0.16 +
+[PHOG502] * 0.24 +
+[PHOG545] * 0.09 +
+[PHOG548] * 0.08 +
+[PHOG551] * -0.09 +
+[PHOG552] * -0.08
+
+Class K2 :
+1.98 + 
+[PHOG2] * -0.06 +
+[PHOG6] * 0.3  +
+[PHOG13] * -0.09 +
+[PHOG19] * -0.1 +
+[PHOG75] * -0.12 +
+[PHOG165] * 0.12 +
+[PHOG224] * -0.18 +
+[PHOG247] * -0.1 +
+[PHOG275] * 0.13 +
+[PHOG294] * 0.07 +
+[PHOG332] * 0.1  +
+[PHOG375] * 0.05 +
+[PHOG376] * 0.09 +
+[PHOG399] * -0.1 +
+[PHOG418] * -0.09 +
+[PHOG419] * -0.09 +
+[PHOG457] * -0.19 +
+[PHOG469] * 0.12 +
+[PHOG511] * 0.08 +
+[PHOG517] * -0.13 +
+[PHOG581] * 0.16 +
+[PHOG619] * -0.12 +
+[PHOG622] * -0.11
+
+Class K3 :
+-7.73 + 
+[PHOG23] * -0.13 +
+[PHOG66] * 0.11 +
+[PHOG79] * -0.3 +
+[PHOG92] * 0.13 +
+[PHOG110] * -0.58 +
+[PHOG125] * -0.23 +
+[PHOG129] * -0.26 +
+[PHOG194] * -0.12 +
+[PHOG219] * 0.13 +
+[PHOG221] * 0.11 +
+[PHOG222] * 0.09 +
+[PHOG223] * 0.11 +
+[PHOG330] * 0.17 +
+[PHOG338] * -0.19 +
+[PHOG353] * -0.11 +
+[PHOG366] * 0.16 +
+[PHOG367] * 0.18 +
+[PHOG389] * -0.13 +
+[PHOG509] * 0.21 +
+[PHOG516] * 0.09 +
+[PHOG517] * 0.08 +
+[PHOG622] * 0.15 +
+[PHOG623] * 0.11
+
+Class K4 :
+-0.08 + 
+[PHOG2] * 0.09 +
+[PHOG7] * 0.08 +
+[PHOG13] * 0.2  +
+[PHOG31] * -0.11 +
+[PHOG32] * -0.25 +
+[PHOG90] * -0.14 +
+[PHOG350] * 0.13 +
+[PHOG352] * 0.19 +
+[PHOG396] * -0.09 +
+[PHOG399] * 0.1  +
+[PHOG418] * 0.1  +
+[PHOG430] * -0.26 +
+[PHOG452] * 0.07 +
+[PHOG454] * 0.35 +
+[PHOG455] * 0.17 +
+[PHOG457] * 0.12 +
+[PHOG459] * 0.11 +
+[PHOG513] * 0.13 +
+[PHOG517] * 0.06 +
+[PHOG549] * -0.08 +
+[PHOG554] * -0.06 +
+[PHOG561] * -0.13
+
+Class K5 :
+-6.26 + 
+[PHOG7] * -0.21 +
+[PHOG21] * -0.2 +
+[PHOG30] * 0.08 +
+[PHOG141] * -0.15 +
+[PHOG197] * 0.19 +
+[PHOG212] * 0.23 +
+[PHOG250] * -0.14 +
+[PHOG298] * 0.09 +
+[PHOG299] * 0.11 +
+[PHOG302] * -0.38 +
+[PHOG328] * -0.16 +
+[PHOG359] * 0.21 +
+[PHOG374] * 0.09 +
+[PHOG430] * 0.12 +
+[PHOG449] * 0.09 +
+[PHOG478] * -0.33 +
+[PHOG479] * 0.07 +
+[PHOG494] * 0.37 +
+[PHOG540] * 0.11 +
+[PHOG555] * 0.09 +
+[PHOG570] * 0.08
+
+Class K6 :
+-15.54 + 
+[PHOG28] * 0.22 +
+[PHOG36] * 0.27 +
+[PHOG47] * 0.12 +
+[PHOG92] * -0.16 +
+[PHOG137] * 0.17 +
+[PHOG139] * 0.2  +
+[PHOG327] * 0.27 +
+[PHOG330] * -0.14 +
+[PHOG332] * -0.23 +
+[PHOG339] * 0.28 +
+[PHOG340] * 0.12 +
+[PHOG372] * 0.19 +
+[PHOG373] * 0.35 +
+[PHOG374] * 0.25 +
+[PHOG423] * 0.44 +
+[PHOG448] * -0.25 +
+[PHOG450] * -0.13 +
+[PHOG549] * 0.11 +
+[PHOG587] * 0.13 +
+[PHOG588] * 0.14 +
+[PHOG612] * 0.23 +
+[PHOG614] * 0.14
+
+Class K7 :
+-22.95 + 
+[PHOG7] * -0 +
+[PHOG247] * -0 +
+[PHOG303] * 0    +
+[PHOG329] * 0    +
+[PHOG415] * -0 +
+[PHOG444] * -0 +
+[PHOG454] * 0.01
+
+Class K8 :
+-22.95 + 
+[PHOG7] * -0 +
+[PHOG247] * -0 +
+[PHOG303] * 0    +
+[PHOG329] * 0    +
+[PHOG415] * -0 +
+[PHOG444] * -0 +
+[PHOG454] * 0.01
+
+
+Time taken to build model: 0.71 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         339               89.2105 %
+Incorrectly Classified Instances        41               10.7895 %
+Kappa statistic                          0.8625
+Mean absolute error                      0.0313
+Root mean squared error                  0.1473
+Relative absolute error                 16.0135 %
+Root relative squared error             47.1525 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,767    0,021    0,825      0,767    0,795      0,771    0,971     0,870     K1
+                 0,892    0,067    0,734      0,892    0,806      0,766    0,958     0,804     K2
+                 0,966    0,006    0,966      0,966    0,966      0,959    0,998     0,992     K3
+                 0,862    0,033    0,937      0,862    0,898      0,845    0,981     0,972     K4
+                 0,962    0,009    0,943      0,962    0,952      0,945    0,994     0,971     K5
+                 0,958    0,000    1,000      0,958    0,979      0,978    1,000     0,994     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,892    0,028    0,899      0,892    0,893      0,863    0,981     0,936     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  33   7   0   3   0   0   0   0 |   a = K1
+   1  58   0   4   2   0   0   0 |   b = K2
+   0   1  56   1   0   0   0   0 |   c = K3
+   5  11   2 119   1   0   0   0 |   d = K4
+   0   2   0   0  50   0   0   0 |   e = K5
+   1   0   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

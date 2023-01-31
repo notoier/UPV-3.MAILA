@@ -1,0 +1,119 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/ordenatuak-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+PHOG495 <= 0
+|   PHOG623 <= 3
+|   |   PHOG506 <= 7
+|   |   |   PHOG502 <= 6
+|   |   |   |   PHOG350 <= 3
+|   |   |   |   |   PHOG436 <= 6
+|   |   |   |   |   |   PHOG247 <= 1
+|   |   |   |   |   |   |   PHOG592 <= 4
+|   |   |   |   |   |   |   |   PHOG322 <= 9
+|   |   |   |   |   |   |   |   |   PHOG459 <= 3
+|   |   |   |   |   |   |   |   |   |   PHOG252 <= 4
+|   |   |   |   |   |   |   |   |   |   |   PHOG19 <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   PHOG365 <= 9
+|   |   |   |   |   |   |   |   |   |   |   |   |   PHOG517 <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG483 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG13 <= 6: K2 (62.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG13 > 6: K4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG483 > 0: K2 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PHOG517 > 12: K4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PHOG365 > 9: K4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   PHOG19 > 11: K1 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PHOG252 > 4: K4 (2.0)
+|   |   |   |   |   |   |   |   |   PHOG459 > 3: K4 (4.0)
+|   |   |   |   |   |   |   |   PHOG322 > 9: K1 (2.0)
+|   |   |   |   |   |   |   PHOG592 > 4: K1 (4.0)
+|   |   |   |   |   |   PHOG247 > 1: K4 (9.0)
+|   |   |   |   |   PHOG436 > 6: K1 (6.0)
+|   |   |   |   PHOG350 > 3: K4 (16.0)
+|   |   |   PHOG502 > 6: K1 (7.0)
+|   |   PHOG506 > 7
+|   |   |   PHOG5 <= 2: K5 (4.0/1.0)
+|   |   |   PHOG5 > 2: K2 (2.0/1.0)
+|   PHOG623 > 3
+|   |   PHOG628 <= 7
+|   |   |   PHOG218 <= 13
+|   |   |   |   PHOG353 <= 3
+|   |   |   |   |   PHOG455 <= 5
+|   |   |   |   |   |   PHOG330 <= 1: K4 (8.0/1.0)
+|   |   |   |   |   |   PHOG330 > 1: K3 (53.0)
+|   |   |   |   |   PHOG455 > 5: K4 (13.0)
+|   |   |   |   PHOG353 > 3: K4 (71.0)
+|   |   |   PHOG218 > 13: K1 (4.0/1.0)
+|   |   PHOG628 > 7: K1 (3.0)
+PHOG495 > 0
+|   PHOG517 <= 12
+|   |   PHOG52 <= 11
+|   |   |   PHOG217 <= 10
+|   |   |   |   PHOG458 <= 1
+|   |   |   |   |   PHOG423 <= 3
+|   |   |   |   |   |   PHOG307 <= 3
+|   |   |   |   |   |   |   PHOG140 <= 7: K5 (50.0/1.0)
+|   |   |   |   |   |   |   PHOG140 > 7: K2 (2.0)
+|   |   |   |   |   |   PHOG307 > 3: K6 (4.0)
+|   |   |   |   |   PHOG423 > 3: K6 (21.0/1.0)
+|   |   |   |   PHOG458 > 1: K2 (4.0/1.0)
+|   |   |   PHOG217 > 10: K1 (3.0)
+|   |   PHOG52 > 11: K1 (8.0)
+|   PHOG517 > 12
+|   |   PHOG21 <= 8: K3 (3.0/1.0)
+|   |   PHOG21 > 8: K4 (3.0)
+
+Number of Leaves  : 	31
+
+Size of the tree : 	61
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         282               74.2105 %
+Incorrectly Classified Instances        98               25.7895 %
+Kappa statistic                          0.6718
+Mean absolute error                      0.0678
+Root mean squared error                  0.2431
+Relative absolute error                 34.6522 %
+Root relative squared error             77.849  %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,465    0,045    0,571      0,465    0,513      0,461    0,730     0,397     K1
+                 0,738    0,105    0,593      0,738    0,658      0,583    0,829     0,459     K2
+                 0,810    0,050    0,746      0,810    0,777      0,736    0,901     0,697     K3
+                 0,790    0,066    0,872      0,790    0,829      0,741    0,889     0,823     K4
+                 0,750    0,037    0,765      0,750    0,757      0,719    0,852     0,581     K5
+                 0,792    0,017    0,760      0,792    0,776      0,760    0,928     0,668     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,742    0,061    0,749      0,742    0,743      0,680    0,860     0,650     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  20   8   3   8   4   0   0   0 |   a = K1
+   6  48   4   2   3   2   0   0 |   b = K2
+   1   3  47   5   2   0   0   0 |   c = K3
+   5  13   7 109   3   1   0   0 |   d = K4
+   3   4   2   1  39   3   0   0 |   e = K5
+   0   5   0   0   0  19   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

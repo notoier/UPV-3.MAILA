@@ -1,0 +1,134 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.EdgeHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/edge2-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   81
+              MPEG-7 Edge Histogram0
+              MPEG-7 Edge Histogram1
+              MPEG-7 Edge Histogram2
+              MPEG-7 Edge Histogram3
+              MPEG-7 Edge Histogram4
+              MPEG-7 Edge Histogram5
+              MPEG-7 Edge Histogram6
+              MPEG-7 Edge Histogram7
+              MPEG-7 Edge Histogram8
+              MPEG-7 Edge Histogram9
+              MPEG-7 Edge Histogram10
+              MPEG-7 Edge Histogram11
+              MPEG-7 Edge Histogram12
+              MPEG-7 Edge Histogram13
+              MPEG-7 Edge Histogram14
+              MPEG-7 Edge Histogram15
+              MPEG-7 Edge Histogram16
+              MPEG-7 Edge Histogram17
+              MPEG-7 Edge Histogram18
+              MPEG-7 Edge Histogram19
+              MPEG-7 Edge Histogram20
+              MPEG-7 Edge Histogram21
+              MPEG-7 Edge Histogram22
+              MPEG-7 Edge Histogram23
+              MPEG-7 Edge Histogram24
+              MPEG-7 Edge Histogram25
+              MPEG-7 Edge Histogram26
+              MPEG-7 Edge Histogram27
+              MPEG-7 Edge Histogram28
+              MPEG-7 Edge Histogram29
+              MPEG-7 Edge Histogram30
+              MPEG-7 Edge Histogram31
+              MPEG-7 Edge Histogram32
+              MPEG-7 Edge Histogram33
+              MPEG-7 Edge Histogram34
+              MPEG-7 Edge Histogram35
+              MPEG-7 Edge Histogram36
+              MPEG-7 Edge Histogram37
+              MPEG-7 Edge Histogram38
+              MPEG-7 Edge Histogram39
+              MPEG-7 Edge Histogram40
+              MPEG-7 Edge Histogram41
+              MPEG-7 Edge Histogram42
+              MPEG-7 Edge Histogram43
+              MPEG-7 Edge Histogram44
+              MPEG-7 Edge Histogram45
+              MPEG-7 Edge Histogram46
+              MPEG-7 Edge Histogram47
+              MPEG-7 Edge Histogram48
+              MPEG-7 Edge Histogram49
+              MPEG-7 Edge Histogram50
+              MPEG-7 Edge Histogram51
+              MPEG-7 Edge Histogram52
+              MPEG-7 Edge Histogram53
+              MPEG-7 Edge Histogram54
+              MPEG-7 Edge Histogram55
+              MPEG-7 Edge Histogram56
+              MPEG-7 Edge Histogram57
+              MPEG-7 Edge Histogram58
+              MPEG-7 Edge Histogram59
+              MPEG-7 Edge Histogram60
+              MPEG-7 Edge Histogram61
+              MPEG-7 Edge Histogram62
+              MPEG-7 Edge Histogram63
+              MPEG-7 Edge Histogram64
+              MPEG-7 Edge Histogram65
+              MPEG-7 Edge Histogram66
+              MPEG-7 Edge Histogram67
+              MPEG-7 Edge Histogram68
+              MPEG-7 Edge Histogram69
+              MPEG-7 Edge Histogram70
+              MPEG-7 Edge Histogram71
+              MPEG-7 Edge Histogram72
+              MPEG-7 Edge Histogram73
+              MPEG-7 Edge Histogram74
+              MPEG-7 Edge Histogram75
+              MPEG-7 Edge Histogram76
+              MPEG-7 Edge Histogram77
+              MPEG-7 Edge Histogram78
+              MPEG-7 Edge Histogram79
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         305               80.2632 %
+Incorrectly Classified Instances        75               19.7368 %
+Kappa statistic                          0.7488
+Mean absolute error                      0.0531
+Root mean squared error                  0.2197
+Relative absolute error                 27.1736 %
+Root relative squared error             70.3494 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,419    0,036    0,600      0,419    0,493      0,450    0,700     0,319     K1
+                 0,723    0,079    0,653      0,723    0,686      0,619    0,826     0,521     K2
+                 0,897    0,065    0,712      0,897    0,794      0,759    0,917     0,655     K3
+                 0,833    0,041    0,920      0,833    0,875      0,811    0,899     0,829     K4
+                 0,962    0,018    0,893      0,962    0,926      0,915    0,973     0,874     K5
+                 0,958    0,003    0,958      0,958    0,958      0,956    0,978     0,930     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,803    0,045    0,805      0,803    0,799      0,752    0,882     0,704     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  18  20   1   2   1   1   0   0 |   a = K1
+  10  47   1   2   5   0   0   0 |   b = K2
+   0   0  52   6   0   0   0   0 |   c = K3
+   1   3  19 115   0   0   0   0 |   d = K4
+   0   2   0   0  50   0   0   0 |   e = K5
+   1   0   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

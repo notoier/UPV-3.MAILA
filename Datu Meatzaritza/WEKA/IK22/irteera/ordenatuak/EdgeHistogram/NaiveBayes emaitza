@@ -1,0 +1,618 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.EdgeHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/ordenatuak-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   81
+              MPEG-7 Edge Histogram0
+              MPEG-7 Edge Histogram1
+              MPEG-7 Edge Histogram2
+              MPEG-7 Edge Histogram3
+              MPEG-7 Edge Histogram4
+              MPEG-7 Edge Histogram5
+              MPEG-7 Edge Histogram6
+              MPEG-7 Edge Histogram7
+              MPEG-7 Edge Histogram8
+              MPEG-7 Edge Histogram9
+              MPEG-7 Edge Histogram10
+              MPEG-7 Edge Histogram11
+              MPEG-7 Edge Histogram12
+              MPEG-7 Edge Histogram13
+              MPEG-7 Edge Histogram14
+              MPEG-7 Edge Histogram15
+              MPEG-7 Edge Histogram16
+              MPEG-7 Edge Histogram17
+              MPEG-7 Edge Histogram18
+              MPEG-7 Edge Histogram19
+              MPEG-7 Edge Histogram20
+              MPEG-7 Edge Histogram21
+              MPEG-7 Edge Histogram22
+              MPEG-7 Edge Histogram23
+              MPEG-7 Edge Histogram24
+              MPEG-7 Edge Histogram25
+              MPEG-7 Edge Histogram26
+              MPEG-7 Edge Histogram27
+              MPEG-7 Edge Histogram28
+              MPEG-7 Edge Histogram29
+              MPEG-7 Edge Histogram30
+              MPEG-7 Edge Histogram31
+              MPEG-7 Edge Histogram32
+              MPEG-7 Edge Histogram33
+              MPEG-7 Edge Histogram34
+              MPEG-7 Edge Histogram35
+              MPEG-7 Edge Histogram36
+              MPEG-7 Edge Histogram37
+              MPEG-7 Edge Histogram38
+              MPEG-7 Edge Histogram39
+              MPEG-7 Edge Histogram40
+              MPEG-7 Edge Histogram41
+              MPEG-7 Edge Histogram42
+              MPEG-7 Edge Histogram43
+              MPEG-7 Edge Histogram44
+              MPEG-7 Edge Histogram45
+              MPEG-7 Edge Histogram46
+              MPEG-7 Edge Histogram47
+              MPEG-7 Edge Histogram48
+              MPEG-7 Edge Histogram49
+              MPEG-7 Edge Histogram50
+              MPEG-7 Edge Histogram51
+              MPEG-7 Edge Histogram52
+              MPEG-7 Edge Histogram53
+              MPEG-7 Edge Histogram54
+              MPEG-7 Edge Histogram55
+              MPEG-7 Edge Histogram56
+              MPEG-7 Edge Histogram57
+              MPEG-7 Edge Histogram58
+              MPEG-7 Edge Histogram59
+              MPEG-7 Edge Histogram60
+              MPEG-7 Edge Histogram61
+              MPEG-7 Edge Histogram62
+              MPEG-7 Edge Histogram63
+              MPEG-7 Edge Histogram64
+              MPEG-7 Edge Histogram65
+              MPEG-7 Edge Histogram66
+              MPEG-7 Edge Histogram67
+              MPEG-7 Edge Histogram68
+              MPEG-7 Edge Histogram69
+              MPEG-7 Edge Histogram70
+              MPEG-7 Edge Histogram71
+              MPEG-7 Edge Histogram72
+              MPEG-7 Edge Histogram73
+              MPEG-7 Edge Histogram74
+              MPEG-7 Edge Histogram75
+              MPEG-7 Edge Histogram76
+              MPEG-7 Edge Histogram77
+              MPEG-7 Edge Histogram78
+              MPEG-7 Edge Histogram79
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                           Class
+Attribute                     K1     K2     K3     K4     K5     K6     K7     K8
+                          (0.11) (0.17) (0.15) (0.36) (0.14) (0.06)    (0)    (0)
+==================================================================================
+MPEG-7 Edge Histogram0
+  mean                     1.3953 0.7231 0.3793 0.4855 2.5577    2.5      0      0
+  std. dev.                1.8942 1.2342 0.6905 1.0716 1.9157 1.9149 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram1
+  mean                     1.3953 0.7692 0.0517 0.2971 2.0577 1.9167      0      0
+  std. dev.                1.7933 1.1337 0.2215 0.8961 1.6102 1.3819 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram2
+  mean                     2.1395 1.6769 5.3966 3.9275 2.6154  3.625      0      0
+  std. dev.                2.1521 1.7463 1.1438 2.0095 1.9918 1.6786 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram3
+  mean                     1.2326 1.0769 0.0862 0.2029   2.75  3.375      0      0
+  std. dev.                1.8151 1.5222 0.3365 0.8354 2.0463 1.8666 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram4
+  mean                      0.907 0.6462 2.8103 3.1812 2.6346 3.3333      0      0
+  std. dev.                1.2354 0.7929 1.0415 1.5891  2.434 1.8856 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram5
+  mean                     0.8605 0.1231 0.1897 0.3116 1.5962 1.8333      0      0
+  std. dev.                1.2682 0.3724 0.7061 0.7102 1.6439  1.724 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram6
+  mean                     2.3721 1.8769 4.8103 3.3551 2.7308 2.9167      0      0
+  std. dev.                  1.51 1.3645 1.2926 1.6888 1.3026 1.2219 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram7
+  mean                     3.8605 2.6308 4.7586 3.1304 3.3269 3.6667      0      0
+  std. dev.                1.6647 1.7415 1.9415 2.1563  1.424 1.4337 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram8
+  mean                      0.814    0.6 0.5862  0.942 1.7692 1.9167      0      0
+  std. dev.                1.1464 1.0198 0.9832 1.7058 1.7054 1.8008 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram9
+  mean                     1.1163 0.5846 2.5862 2.4275 2.8462    3.5      0      0
+  std. dev.                1.1455 0.8393 1.2039 1.8173 2.1066 1.6073 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram10
+  mean                     1.1938 0.1974 0.1006 0.3973 1.8173 1.9931      0      0
+  std. dev.                1.7155  0.483 0.3274 0.9781 1.9335  1.408 0.1944 0.1944
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                1.1667 1.1667 1.1667 1.1667 1.1667 1.1667 1.1667 1.1667
+
+MPEG-7 Edge Histogram11
+  mean                     2.5581 1.6462 4.5517 2.8188 2.2885  2.875      0      0
+  std. dev.                1.3172 1.2941 1.3284 1.6207 1.3493 1.0129 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram12
+  mean                     0.9535 0.4462 0.3621 0.7754 1.9231      2      0      0
+  std. dev.                1.2567 0.8233 0.7812 1.6286 1.8795 1.4434 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram13
+  mean                     3.9535 2.6308      5 3.0217 3.2885 4.5833      0      0
+  std. dev.                1.8038 2.0871 1.5866 2.1818 1.5484 1.1517 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram14
+  mean                     1.1163 0.5692 2.7759  2.471   2.75 3.2917      0      0
+  std. dev.                1.0828 0.8407 1.4025 1.7495 1.7527 1.3379 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram15
+  mean                     1.3488    0.4 0.3621 0.7029 2.5577  2.125      0      0
+  std. dev.                1.8663  0.819 0.6351 1.5247 2.0135 1.1659 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram16
+  mean                     1.5349 0.7077 0.1207 0.2536   2.25 2.1667      0      0
+  std. dev.                1.8721 1.0915 0.3258  0.956 1.7961 1.3437 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram17
+  mean                     1.1628 0.6769 0.0862 0.1377 2.9808 4.1667      0      0
+  std. dev.                1.7108 1.1247 0.3844 0.6615 2.1076 1.8856 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram18
+  mean                     1.6279 1.1385 4.9655 3.0145 2.5769 3.5833      0      0
+  std. dev.                1.9293 1.7618 1.5753 2.1332 2.0694 1.1149 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram19
+  mean                     0.9767 0.5692 2.8621 2.7971 2.8269  3.875      0      0
+  std. dev.                1.5172  1.095 1.3576 1.8539 2.2508 1.7868 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram20
+  mean                     3.9535 1.6308 5.7759 4.5435 3.5769 3.2917      0      0
+  std. dev.                 1.446 1.6785 0.7666 1.5375 1.4189 1.3988 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram21
+  mean                     0.7674 0.2769 0.4828  0.413 1.5769 1.3333      0      0
+  std. dev.                0.9845 0.7747 0.6226 0.8906 1.3636 1.4907 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram22
+  mean                     3.6279 1.6154 5.4483 4.4493 2.9808 2.9167      0      0
+  std. dev.                1.6985  1.903 1.5776 1.9452 1.8239 1.9561 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram23
+  mean                     1.4186 0.7846 0.5862 0.7101 2.1731 2.5417      0      0
+  std. dev.                1.4822 1.4411  1.051 1.2465 1.7729 2.0408 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram24
+  mean                     1.2558 0.5692 2.6034 2.6377 2.4423 3.0833      0      0
+  std. dev.                1.2026 0.8222 1.1588 1.5968 1.9554 1.9347 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram25
+  mean                     1.8605 1.2923 2.3621 2.5942 0.2885 1.2083      0      0
+  std. dev.                 1.173 1.2976 1.2134 1.6402 0.5992 0.9991 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram26
+  mean                      1.814    1.6 4.7414 3.4565 1.8846  1.125      0      0
+  std. dev.                0.6561 1.1476 1.4451 1.5976 0.8003 0.7806 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram27
+  mean                     2.7442 2.8769 3.6034 4.6667 0.9615  1.875      0      0
+  std. dev.                1.5416 1.9415 1.8932  1.994 1.2241 1.3636 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram28
+  mean                     2.4419 0.7231 3.2414 4.9493 0.2692    1.5      0      0
+  std. dev.                 1.386 0.7747 1.8598 2.0863  0.485 0.9574 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram29
+  mean                     0.9535 0.4154  1.569 2.5652 0.5962 2.0833      0      0
+  std. dev.                0.7456 0.6993 1.0523 1.6372 0.7908 0.8122 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram30
+  mean                     2.2791 1.5231 2.7759 2.5797 1.3077 1.1667      0      0
+  std. dev.                 1.245  1.097 1.3902 1.6673 1.1526 0.7993 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram31
+  mean                     1.4186 1.7692 4.4828 3.4783 1.9615 0.9583      0      0
+  std. dev.                0.7228 0.9887 1.5227 1.6116 0.8077 0.6757 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram32
+  mean                     1.8837 0.7538  2.431 4.4928 0.3846 1.3333      0      0
+  std. dev.                1.0611 0.7851 1.6094 1.9346 0.7882 1.2134 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram33
+  mean                     3.3953 3.3846 3.9828 4.4203      2 3.1667      0      0
+  std. dev.                1.3833 1.9509 1.7859 1.8951 1.6525 1.2134 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram34
+  mean                     1.2558 0.4462 1.8276 2.3913 0.9423 2.7917      0      0
+  std. dev.                0.8652 0.6801 1.2054 1.6438 0.9075 1.1173 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram35
+  mean                     3.4419 1.4462 5.6552 3.8478 3.7692  3.125      0      0
+  std. dev.                1.4989 1.6458 1.1379 1.9887 1.9277 1.4234 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram36
+  mean                     1.2093 0.4462 0.3793 0.4348    1.5 1.9583      0      0
+  std. dev.                1.6503 0.8418 0.5517 0.9703 1.0284 1.4283 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram37
+  mean                     1.4186 0.7692 0.3793 0.7319      3 3.3333      0      0
+  std. dev.                1.7013 1.4008 0.6651  1.482 2.0381 2.2111 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram38
+  mean                     3.5814 1.3538 5.2414  4.058 3.1538 3.5833      0      0
+  std. dev.                1.8581 1.8266 1.6641 2.1256 1.8541  1.441 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram39
+  mean                     1.1395 0.4154 2.5862 2.5217 2.7692   3.75      0      0
+  std. dev.                 1.173 0.8393 1.3135  1.862 2.1269 1.8764 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram40
+  mean                     3.5581 1.2308 5.4483 4.8406 2.9615 3.4167      0      0
+  std. dev.                1.5892 1.4117 0.8939 1.2232 1.5186 1.6562 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram41
+  mean                          1 0.4615 0.4138 0.5652 2.0385   1.75      0      0
+  std. dev.                1.0997 0.9935 0.5882 0.9924  1.344 2.1262 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram42
+  mean                     1.6512 0.8154 0.2759 1.1087 2.8654    2.5      0      0
+  std. dev.                1.6122 1.3461 0.5811 1.4228 1.8296 2.1213 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram43
+  mean                     4.3256    1.2 5.3621 4.8188 3.3654 3.9583      0      0
+  std. dev.                1.9013  1.638 1.5724 1.8503 1.8814 1.3687 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram44
+  mean                     1.4419 0.4769 2.6897 3.0217   2.75 3.0417      0      0
+  std. dev.                1.2446   0.93 1.0206 1.7256 1.9002 1.5937 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram45
+  mean                     2.0698    1.2 3.0517 2.9638 0.3077 1.4167      0      0
+  std. dev.                1.3536 1.0842 1.7852 1.5576 0.7478 1.2883 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram46
+  mean                     0.8605 1.0154 4.7241 2.2174 1.8654 0.7917      0      0
+  std. dev.                0.5533 0.8857 1.5843 1.5215 0.9205 0.4061 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram47
+  mean                     1.3721 0.5538 2.4138 4.6159 0.1538 1.2917      0      0
+  std. dev.                0.9889 0.7239 1.5651 2.0548 0.4551 0.7348 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram48
+  mean                     3.0465 3.3538 3.3966 3.5652 1.4808 4.0833      0      0
+  std. dev.                1.7515 2.0564 2.0337 1.9962 1.1847 1.5253 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram49
+  mean                     0.8372 0.3077 1.7069 2.5072 1.0192 3.4167      0      0
+  std. dev.                 0.713 0.6057 1.0829 1.8386 0.8658 1.2883 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram50
+  mean                     1.6977 1.5538 2.3448 1.8333 0.6346 1.0417      0      0
+  std. dev.                1.2111 1.0081 1.3964 1.5538 0.8093  0.611 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram51
+  mean                     0.9535 1.0462 4.8103 3.4783 1.5577 0.7917      0      0
+  std. dev.                0.5262 0.7929 1.3577 1.4357   0.77 0.8154 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram52
+  mean                     3.9302 3.6308 3.4828 4.0435 2.0192      4      0      0
+  std. dev.                1.4531 1.9656 1.8406   1.88 1.5126 1.6073 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram53
+  mean                     1.5116 0.9385 3.3966 4.9638    0.5 0.7917      0      0
+  std. dev.                1.0201 0.9094 1.7998 2.2567 0.6934 0.8154 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram54
+  mean                     1.1163 0.4154 1.8276 2.4855 1.2885 3.4583      0      0
+  std. dev.                0.8411 0.6298 1.0527 1.8147 0.9872 1.2903 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram55
+  mean                     3.3721 1.1846 5.3793 4.6812 3.4808 3.4167      0      0
+  std. dev.                  1.51 1.3231   1.08 1.4939 1.9562 1.0769 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram56
+  mean                     1.1938  0.359 0.4425 0.5157 1.9071 2.0417      0      0
+  std. dev.                 1.295 0.8166 0.8342 0.9424 1.3347 1.3152 0.1944 0.1944
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                1.1667 1.1667 1.1667 1.1667 1.1667 1.1667 1.1667 1.1667
+
+MPEG-7 Edge Histogram57
+  mean                     3.7442 1.0154 5.3103 4.4565 3.6346 4.4167      0      0
+  std. dev.                 1.918 1.4411 1.8956 2.0149 1.8608 1.8465 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram58
+  mean                     1.7209 0.7692 0.5862 1.8043 3.6538 3.4167      0      0
+  std. dev.                1.8341 1.5168 0.9291 1.8212 1.8385 1.6562 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram59
+  mean                     1.3953 0.4308 2.8966 3.0507 2.5769 3.9167      0      0
+  std. dev.                1.2226 0.8588 1.4585 1.8894 1.6796  1.754 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram60
+  mean                     1.7209    0.4  0.069 0.4058 2.3462 3.9167      0      0
+  std. dev.                2.1602 0.9081 0.3142 1.1587 1.8799 1.8911 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram61
+  mean                     1.2326 0.6154 0.1207 0.4565 2.6346 2.1667      0      0
+  std. dev.                1.6259 1.1595 0.4578 1.3466   1.84 1.4625 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram62
+  mean                     1.5581 1.0154 0.0862 0.2101 2.9808 3.7083      0      0
+  std. dev.                2.1491 1.6313 0.4269 0.8466 1.9264 2.0712 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram63
+  mean                      1.907 1.0308 4.8621 3.1812 2.4423 3.7083      0      0
+  std. dev.                 2.133 1.5289 1.2656 2.1204 1.8648 1.7673 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram64
+  mean                     0.8372 0.4308 2.9483 2.8261 2.0769   2.75      0      0
+  std. dev.                1.2746 0.8407 1.4905 1.6936 1.9399 1.6894 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram65
+  mean                     1.2326 0.6462 0.1207 0.4203 3.2308  3.625      0      0
+  std. dev.                1.1172 0.9676  0.375 1.1345 1.4756  1.317 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram66
+  mean                      2.814 1.3077 4.3793 2.5217 2.6731 2.0417      0      0
+  std. dev.                1.3164  1.435 1.4719 1.9826 1.5282 1.0598 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram67
+  mean                     1.2093 0.8308 0.7069  1.087    2.5 2.3333      0      0
+  std. dev.                1.6921 1.2098 1.1297 1.9872  1.824 0.9428 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram68
+  mean                     3.8837    1.4 5.1034 2.8116 3.0385 3.1667      0      0
+  std. dev.                 1.895 1.6436 1.6577 2.2508 1.5928 1.1785 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram69
+  mean                     0.9535 0.3846 2.7586 2.4783 2.2308 2.7917      0      0
+  std. dev.                0.9634 0.7584 1.2907 1.9081 1.7278 1.2903 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram70
+  mean                     1.7209 0.7231 0.2241 0.3406 3.0385  3.125      0      0
+  std. dev.                1.7431 1.1301 0.5584 1.0321  1.901  1.536 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram71
+  mean                     2.7674 1.1231 4.1207 2.2464 2.4423    2.5      0      0
+  std. dev.                1.5377 1.1702 1.4273 1.6974 1.5862  1.118 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram72
+  mean                          4 1.3385 5.2586 2.4493 2.9231  4.375      0      0
+  std. dev.                1.7118   1.46  1.677 2.2685 1.4121 1.1837 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram73
+  mean                     1.2558 0.5385 0.4138 0.7681 2.1731 3.5833      0      0
+  std. dev.                1.8312 1.0681 0.9104 1.6519 1.5899  1.441 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram74
+  mean                     1.3953 0.3846 2.9655 2.8841 2.0577 2.9583      0      0
+  std. dev.                1.1642 0.6724 1.1592 2.0609 1.5862 1.3064 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram75
+  mean                     1.3721 0.4308 0.3276 0.4638 2.4231 3.7917      0      0
+  std. dev.                1.6428 0.9918 1.0568 1.2462 2.0694 1.5806 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram76
+  mean                     1.7907 0.7692 0.1034 0.2464 2.0192   2.25      0      0
+  std. dev.                1.9596 1.3216 0.4021 1.0272 1.2479 1.2332 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram77
+  mean                      2.093 0.9692 4.0345 2.3116 3.4231   4.25      0      0
+  std. dev.                2.2289 1.3919 1.8286 1.9884 1.8224 1.7381 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram78
+  mean                     1.8372 0.7692 0.0345 0.1594   3.75   4.25      0      0
+  std. dev.                2.3221 1.2982 0.1825 0.7732 1.7417 1.4216 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+MPEG-7 Edge Histogram79
+  mean                     1.2558 0.4462 3.0862 2.7536 2.6731  3.375      0      0
+  std. dev.                1.5566 0.9928 1.4772 1.8447 2.0822 1.6786 0.1667 0.1667
+  weight sum                   43     65     58    138     52     24      0      0
+  precision                     1      1      1      1      1      1      1      1
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         306               80.5263 %
+Incorrectly Classified Instances        74               19.4737 %
+Kappa statistic                          0.7546
+Mean absolute error                      0.0494
+Root mean squared error                  0.2155
+Relative absolute error                 25.2354 %
+Root relative squared error             68.9981 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,651    0,050    0,622      0,651    0,636      0,589    0,933     0,667     K1
+                 0,800    0,048    0,776      0,800    0,788      0,743    0,968     0,852     K2
+                 0,914    0,078    0,679      0,914    0,779      0,745    0,962     0,909     K3
+                 0,790    0,025    0,948      0,790    0,862      0,801    0,967     0,930     K4
+                 0,827    0,012    0,915      0,827    0,869      0,851    0,976     0,868     K5
+                 0,875    0,020    0,750      0,875    0,808      0,796    0,974     0,844     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,805    0,038    0,824      0,805    0,809      0,765    0,964     0,870     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  28   9   0   0   2   4   0   0 |   a = K1
+  11  52   0   1   1   0   0   0 |   b = K2
+   0   0  53   5   0   0   0   0 |   c = K3
+   3   0  25 109   1   0   0   0 |   d = K4
+   1   5   0   0  43   3   0   0 |   e = K5
+   2   1   0   0   0  21   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

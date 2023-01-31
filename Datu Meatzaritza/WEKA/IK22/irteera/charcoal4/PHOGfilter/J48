@@ -1,0 +1,111 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/charcoal4-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+PHOG152 <= 2
+|   PHOG602 <= 4
+|   |   PHOG189 <= 5
+|   |   |   PHOG91 <= 10
+|   |   |   |   PHOG434 <= 10
+|   |   |   |   |   PHOG119 <= 10
+|   |   |   |   |   |   PHOG176 <= 7
+|   |   |   |   |   |   |   PHOG22 <= 8
+|   |   |   |   |   |   |   |   PHOG591 <= 2: K4 (9.0)
+|   |   |   |   |   |   |   |   PHOG591 > 2: K3 (6.0/1.0)
+|   |   |   |   |   |   |   PHOG22 > 8: K4 (121.0)
+|   |   |   |   |   |   PHOG176 > 7: K3 (2.0)
+|   |   |   |   |   PHOG119 > 10: K3 (4.0)
+|   |   |   |   PHOG434 > 10: K3 (4.0)
+|   |   |   PHOG91 > 10
+|   |   |   |   PHOG579 <= 3: K3 (43.0/1.0)
+|   |   |   |   PHOG579 > 3: K4 (7.0/1.0)
+|   |   PHOG189 > 5: K6 (4.0)
+|   PHOG602 > 4
+|   |   PHOG467 <= 4: K5 (4.0)
+|   |   PHOG467 > 4
+|   |   |   PHOG617 <= 3: K2 (2.0/1.0)
+|   |   |   PHOG617 > 3: K1 (10.0)
+PHOG152 > 2
+|   PHOG90 <= 3: K6 (8.0)
+|   PHOG90 > 3
+|   |   PHOG339 <= 14
+|   |   |   PHOG308 <= 7
+|   |   |   |   PHOG465 <= 7
+|   |   |   |   |   PHOG437 <= 10
+|   |   |   |   |   |   PHOG359 <= 9
+|   |   |   |   |   |   |   PHOG61 <= 10: K5 (2.0)
+|   |   |   |   |   |   |   PHOG61 > 10: K2 (18.0)
+|   |   |   |   |   |   PHOG359 > 9
+|   |   |   |   |   |   |   PHOG333 <= 8: K5 (47.0/2.0)
+|   |   |   |   |   |   |   PHOG333 > 8: K2 (2.0)
+|   |   |   |   |   PHOG437 > 10: K1 (2.0/1.0)
+|   |   |   |   PHOG465 > 7
+|   |   |   |   |   PHOG297 <= 8
+|   |   |   |   |   |   PHOG221 <= 8
+|   |   |   |   |   |   |   PHOG308 <= 1: K2 (3.0/1.0)
+|   |   |   |   |   |   |   PHOG308 > 1
+|   |   |   |   |   |   |   |   PHOG486 <= 6: K1 (23.0)
+|   |   |   |   |   |   |   |   PHOG486 > 6: K2 (2.0)
+|   |   |   |   |   |   PHOG221 > 8: K2 (5.0)
+|   |   |   |   |   PHOG297 > 8: K2 (33.0/1.0)
+|   |   |   PHOG308 > 7
+|   |   |   |   PHOG72 <= 7: K1 (5.0)
+|   |   |   |   PHOG72 > 7: K6 (4.0)
+|   |   PHOG339 > 14
+|   |   |   PHOG474 <= 6: K6 (8.0)
+|   |   |   PHOG474 > 6: K2 (2.0)
+
+Number of Leaves  : 	27
+
+Size of the tree : 	53
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         281               73.9474 %
+Incorrectly Classified Instances        99               26.0526 %
+Kappa statistic                          0.6681
+Mean absolute error                      0.0681
+Root mean squared error                  0.2477
+Relative absolute error                 34.8192 %
+Root relative squared error             79.3261 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,442    0,059    0,487      0,442    0,463      0,399    0,710     0,309     K1
+                 0,615    0,092    0,580      0,615    0,597      0,511    0,775     0,427     K2
+                 0,810    0,040    0,783      0,810    0,797      0,759    0,894     0,699     K3
+                 0,891    0,037    0,932      0,891    0,911      0,863    0,937     0,884     K4
+                 0,654    0,037    0,739      0,654    0,694      0,650    0,798     0,476     K5
+                 0,750    0,045    0,529      0,750    0,621      0,601    0,916     0,574     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,739    0,050    0,747      0,739    0,741      0,689    0,857     0,637     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  19  12   3   1   2   6   0   0 |   a = K1
+   8  40   1   0  10   6   0   0 |   b = K2
+   2   2  47   7   0   0   0   0 |   c = K3
+   5   0   9 123   0   1   0   0 |   d = K4
+   5  10   0   0  34   3   0   0 |   e = K5
+   0   5   0   1   0  18   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

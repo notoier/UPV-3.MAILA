@@ -1,0 +1,115 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.lazy.IBk -- -K 3 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/enhance-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 2.06
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 1.55
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.3
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.78
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 1.22
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.48
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.12
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.1
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.1
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.04
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 3.42 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         319               83.9474 %
+Incorrectly Classified Instances        61               16.0526 %
+Kappa statistic                          0.7975
+Mean absolute error                      0.0488
+Root mean squared error                  0.1789
+Relative absolute error                 24.964  %
+Root relative squared error             57.2882 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,744    0,033    0,744      0,744    0,744      0,712    0,920     0,748     K1
+                 0,846    0,108    0,618      0,846    0,714      0,656    0,920     0,701     K2
+                 0,966    0,019    0,903      0,966    0,933      0,922    0,963     0,919     K3
+                 0,783    0,021    0,956      0,783    0,861      0,802    0,945     0,913     K4
+                 0,865    0,012    0,918      0,865    0,891      0,875    0,984     0,947     K5
+                 0,958    0,003    0,958      0,958    0,958      0,956    0,965     0,865     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,839    0,034    0,861      0,839    0,844      0,805    0,947     0,861     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  32   9   0   0   2   0   0   0 |   a = K1
+   3  55   0   4   2   1   0   0 |   b = K2
+   0   1  56   1   0   0   0   0 |   c = K3
+   5  20   5 108   0   0   0   0 |   d = K4
+   2   4   1   0  45   0   0   0 |   e = K5
+   1   0   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

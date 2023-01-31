@@ -1,0 +1,177 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.EdgeHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/ordenatuak-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   81
+              MPEG-7 Edge Histogram0
+              MPEG-7 Edge Histogram1
+              MPEG-7 Edge Histogram2
+              MPEG-7 Edge Histogram3
+              MPEG-7 Edge Histogram4
+              MPEG-7 Edge Histogram5
+              MPEG-7 Edge Histogram6
+              MPEG-7 Edge Histogram7
+              MPEG-7 Edge Histogram8
+              MPEG-7 Edge Histogram9
+              MPEG-7 Edge Histogram10
+              MPEG-7 Edge Histogram11
+              MPEG-7 Edge Histogram12
+              MPEG-7 Edge Histogram13
+              MPEG-7 Edge Histogram14
+              MPEG-7 Edge Histogram15
+              MPEG-7 Edge Histogram16
+              MPEG-7 Edge Histogram17
+              MPEG-7 Edge Histogram18
+              MPEG-7 Edge Histogram19
+              MPEG-7 Edge Histogram20
+              MPEG-7 Edge Histogram21
+              MPEG-7 Edge Histogram22
+              MPEG-7 Edge Histogram23
+              MPEG-7 Edge Histogram24
+              MPEG-7 Edge Histogram25
+              MPEG-7 Edge Histogram26
+              MPEG-7 Edge Histogram27
+              MPEG-7 Edge Histogram28
+              MPEG-7 Edge Histogram29
+              MPEG-7 Edge Histogram30
+              MPEG-7 Edge Histogram31
+              MPEG-7 Edge Histogram32
+              MPEG-7 Edge Histogram33
+              MPEG-7 Edge Histogram34
+              MPEG-7 Edge Histogram35
+              MPEG-7 Edge Histogram36
+              MPEG-7 Edge Histogram37
+              MPEG-7 Edge Histogram38
+              MPEG-7 Edge Histogram39
+              MPEG-7 Edge Histogram40
+              MPEG-7 Edge Histogram41
+              MPEG-7 Edge Histogram42
+              MPEG-7 Edge Histogram43
+              MPEG-7 Edge Histogram44
+              MPEG-7 Edge Histogram45
+              MPEG-7 Edge Histogram46
+              MPEG-7 Edge Histogram47
+              MPEG-7 Edge Histogram48
+              MPEG-7 Edge Histogram49
+              MPEG-7 Edge Histogram50
+              MPEG-7 Edge Histogram51
+              MPEG-7 Edge Histogram52
+              MPEG-7 Edge Histogram53
+              MPEG-7 Edge Histogram54
+              MPEG-7 Edge Histogram55
+              MPEG-7 Edge Histogram56
+              MPEG-7 Edge Histogram57
+              MPEG-7 Edge Histogram58
+              MPEG-7 Edge Histogram59
+              MPEG-7 Edge Histogram60
+              MPEG-7 Edge Histogram61
+              MPEG-7 Edge Histogram62
+              MPEG-7 Edge Histogram63
+              MPEG-7 Edge Histogram64
+              MPEG-7 Edge Histogram65
+              MPEG-7 Edge Histogram66
+              MPEG-7 Edge Histogram67
+              MPEG-7 Edge Histogram68
+              MPEG-7 Edge Histogram69
+              MPEG-7 Edge Histogram70
+              MPEG-7 Edge Histogram71
+              MPEG-7 Edge Histogram72
+              MPEG-7 Edge Histogram73
+              MPEG-7 Edge Histogram74
+              MPEG-7 Edge Histogram75
+              MPEG-7 Edge Histogram76
+              MPEG-7 Edge Histogram77
+              MPEG-7 Edge Histogram78
+              MPEG-7 Edge Histogram79
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+MPEG-7 Edge Histogram51 < 2.5
+|   MPEG-7 Edge Histogram54 < 2.5
+|   |   MPEG-7 Edge Histogram28 < 2.5
+|   |   |   MPEG-7 Edge Histogram15 < 1.5
+|   |   |   |   MPEG-7 Edge Histogram46 < 1.5
+|   |   |   |   |   MPEG-7 Edge Histogram40 < 1.5 : K2 (25/0) [14/2]
+|   |   |   |   |   MPEG-7 Edge Histogram40 >= 1.5
+|   |   |   |   |   |   MPEG-7 Edge Histogram72 < 2.5 : K2 (8/1) [1/0]
+|   |   |   |   |   |   MPEG-7 Edge Histogram72 >= 2.5 : K1 (6/1) [6/2]
+|   |   |   |   MPEG-7 Edge Histogram46 >= 1.5
+|   |   |   |   |   MPEG-7 Edge Histogram28 < 0.5 : K5 (8/2) [1/0]
+|   |   |   |   |   MPEG-7 Edge Histogram28 >= 0.5 : K2 (8/1) [3/0]
+|   |   |   MPEG-7 Edge Histogram15 >= 1.5
+|   |   |   |   MPEG-7 Edge Histogram52 < 2.5 : K5 (16/0) [10/2]
+|   |   |   |   MPEG-7 Edge Histogram52 >= 2.5
+|   |   |   |   |   MPEG-7 Edge Histogram31 < 1.5
+|   |   |   |   |   |   MPEG-7 Edge Histogram35 < 3.5 : K6 (3/1) [2/0]
+|   |   |   |   |   |   MPEG-7 Edge Histogram35 >= 3.5 : K1 (8/1) [1/0]
+|   |   |   |   |   MPEG-7 Edge Histogram31 >= 1.5 : K5 (7/2) [6/4]
+|   |   MPEG-7 Edge Histogram28 >= 2.5
+|   |   |   MPEG-7 Edge Histogram24 < 2.5 : K1 (12/0) [10/5]
+|   |   |   MPEG-7 Edge Histogram24 >= 2.5 : K4 (3/0) [1/0]
+|   MPEG-7 Edge Histogram54 >= 2.5
+|   |   MPEG-7 Edge Histogram17 < 1 : K4 (13/2) [3/0]
+|   |   MPEG-7 Edge Histogram17 >= 1
+|   |   |   MPEG-7 Edge Histogram47 < 0.5 : K5 (5/2) [1/0]
+|   |   |   MPEG-7 Edge Histogram47 >= 0.5 : K6 (12/0) [6/1]
+MPEG-7 Edge Histogram51 >= 2.5
+|   MPEG-7 Edge Histogram32 < 3.5
+|   |   MPEG-7 Edge Histogram35 < 3.5
+|   |   |   MPEG-7 Edge Histogram46 < 2.5 : K4 (8/0) [5/2]
+|   |   |   MPEG-7 Edge Histogram46 >= 2.5 : K5 (4/2) [3/1]
+|   |   MPEG-7 Edge Histogram35 >= 3.5
+|   |   |   MPEG-7 Edge Histogram77 < 0.5 : K4 (6/1) [3/1]
+|   |   |   MPEG-7 Edge Histogram77 >= 0.5 : K3 (31/2) [16/3]
+|   MPEG-7 Edge Histogram32 >= 3.5
+|   |   MPEG-7 Edge Histogram46 < 3.5 : K4 (53/0) [29/0]
+|   |   MPEG-7 Edge Histogram46 >= 3.5
+|   |   |   MPEG-7 Edge Histogram28 < 5.5 : K3 (9/2) [4/0]
+|   |   |   MPEG-7 Edge Histogram28 >= 5.5 : K4 (8/0) [2/1]
+
+Size of the tree : 41
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         271               71.3158 %
+Incorrectly Classified Instances       109               28.6842 %
+Kappa statistic                          0.6329
+Mean absolute error                      0.0895
+Root mean squared error                  0.2399
+Relative absolute error                 45.7795 %
+Root relative squared error             76.8048 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,651    0,083    0,500      0,651    0,566      0,508    0,861     0,486     K1
+                 0,662    0,051    0,729      0,662    0,694      0,635    0,880     0,651     K2
+                 0,741    0,050    0,729      0,741    0,735      0,687    0,906     0,722     K3
+                 0,826    0,095    0,832      0,826    0,829      0,732    0,906     0,810     K4
+                 0,519    0,064    0,563      0,519    0,540      0,471    0,797     0,432     K5
+                 0,667    0,014    0,762      0,667    0,711      0,695    0,977     0,740     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,713    0,070    0,720      0,713    0,715      0,645    0,886     0,677     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  28   5   1   2   7   0   0   0 |   a = K1
+  10  43   1   2   9   0   0   0 |   b = K2
+   0   0  43  15   0   0   0   0 |   c = K3
+   6   4  10 114   3   1   0   0 |   d = K4
+   9   5   4   3  27   4   0   0 |   e = K5
+   3   2   0   1   2  16   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

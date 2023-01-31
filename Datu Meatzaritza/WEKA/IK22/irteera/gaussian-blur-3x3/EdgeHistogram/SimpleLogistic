@@ -1,0 +1,280 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.EdgeHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/gaussian-blur-3x3-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   81
+              MPEG-7 Edge Histogram0
+              MPEG-7 Edge Histogram1
+              MPEG-7 Edge Histogram2
+              MPEG-7 Edge Histogram3
+              MPEG-7 Edge Histogram4
+              MPEG-7 Edge Histogram5
+              MPEG-7 Edge Histogram6
+              MPEG-7 Edge Histogram7
+              MPEG-7 Edge Histogram8
+              MPEG-7 Edge Histogram9
+              MPEG-7 Edge Histogram10
+              MPEG-7 Edge Histogram11
+              MPEG-7 Edge Histogram12
+              MPEG-7 Edge Histogram13
+              MPEG-7 Edge Histogram14
+              MPEG-7 Edge Histogram15
+              MPEG-7 Edge Histogram16
+              MPEG-7 Edge Histogram17
+              MPEG-7 Edge Histogram18
+              MPEG-7 Edge Histogram19
+              MPEG-7 Edge Histogram20
+              MPEG-7 Edge Histogram21
+              MPEG-7 Edge Histogram22
+              MPEG-7 Edge Histogram23
+              MPEG-7 Edge Histogram24
+              MPEG-7 Edge Histogram25
+              MPEG-7 Edge Histogram26
+              MPEG-7 Edge Histogram27
+              MPEG-7 Edge Histogram28
+              MPEG-7 Edge Histogram29
+              MPEG-7 Edge Histogram30
+              MPEG-7 Edge Histogram31
+              MPEG-7 Edge Histogram32
+              MPEG-7 Edge Histogram33
+              MPEG-7 Edge Histogram34
+              MPEG-7 Edge Histogram35
+              MPEG-7 Edge Histogram36
+              MPEG-7 Edge Histogram37
+              MPEG-7 Edge Histogram38
+              MPEG-7 Edge Histogram39
+              MPEG-7 Edge Histogram40
+              MPEG-7 Edge Histogram41
+              MPEG-7 Edge Histogram42
+              MPEG-7 Edge Histogram43
+              MPEG-7 Edge Histogram44
+              MPEG-7 Edge Histogram45
+              MPEG-7 Edge Histogram46
+              MPEG-7 Edge Histogram47
+              MPEG-7 Edge Histogram48
+              MPEG-7 Edge Histogram49
+              MPEG-7 Edge Histogram50
+              MPEG-7 Edge Histogram51
+              MPEG-7 Edge Histogram52
+              MPEG-7 Edge Histogram53
+              MPEG-7 Edge Histogram54
+              MPEG-7 Edge Histogram55
+              MPEG-7 Edge Histogram56
+              MPEG-7 Edge Histogram57
+              MPEG-7 Edge Histogram58
+              MPEG-7 Edge Histogram59
+              MPEG-7 Edge Histogram60
+              MPEG-7 Edge Histogram61
+              MPEG-7 Edge Histogram62
+              MPEG-7 Edge Histogram63
+              MPEG-7 Edge Histogram64
+              MPEG-7 Edge Histogram65
+              MPEG-7 Edge Histogram66
+              MPEG-7 Edge Histogram67
+              MPEG-7 Edge Histogram68
+              MPEG-7 Edge Histogram69
+              MPEG-7 Edge Histogram70
+              MPEG-7 Edge Histogram71
+              MPEG-7 Edge Histogram72
+              MPEG-7 Edge Histogram73
+              MPEG-7 Edge Histogram74
+              MPEG-7 Edge Histogram75
+              MPEG-7 Edge Histogram76
+              MPEG-7 Edge Histogram77
+              MPEG-7 Edge Histogram78
+              MPEG-7 Edge Histogram79
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class K1 :
+0.14 + 
+[MPEG-7 Edge Histogram5] * 0.25 +
+[MPEG-7 Edge Histogram6] * -0.39 +
+[MPEG-7 Edge Histogram10] * 0.32 +
+[MPEG-7 Edge Histogram18] * -0.35 +
+[MPEG-7 Edge Histogram22] * 0.14 +
+[MPEG-7 Edge Histogram25] * 0.2  +
+[MPEG-7 Edge Histogram28] * 0.5  +
+[MPEG-7 Edge Histogram32] * 0.15 +
+[MPEG-7 Edge Histogram38] * -0.1 +
+[MPEG-7 Edge Histogram42] * 0.18 +
+[MPEG-7 Edge Histogram46] * -1.13 +
+[MPEG-7 Edge Histogram48] * -0.13 +
+[MPEG-7 Edge Histogram54] * 1.37 +
+[MPEG-7 Edge Histogram58] * -0.44 +
+[MPEG-7 Edge Histogram68] * 0.34 +
+[MPEG-7 Edge Histogram70] * 0.38 +
+[MPEG-7 Edge Histogram71] * 0.15 +
+[MPEG-7 Edge Histogram74] * 0.54 +
+[MPEG-7 Edge Histogram77] * -0.17
+
+Class K2 :
+2.38 + 
+[MPEG-7 Edge Histogram5] * -0.42 +
+[MPEG-7 Edge Histogram6] * 0.17 +
+[MPEG-7 Edge Histogram18] * -0.15 +
+[MPEG-7 Edge Histogram22] * -0.26 +
+[MPEG-7 Edge Histogram26] * -0.16 +
+[MPEG-7 Edge Histogram28] * -0.38 +
+[MPEG-7 Edge Histogram33] * 0.28 +
+[MPEG-7 Edge Histogram34] * 0.63 +
+[MPEG-7 Edge Histogram42] * 0.3  +
+[MPEG-7 Edge Histogram43] * -0.23 +
+[MPEG-7 Edge Histogram50] * 0.66 +
+[MPEG-7 Edge Histogram51] * -0.4 +
+[MPEG-7 Edge Histogram52] * 0.07 +
+[MPEG-7 Edge Histogram55] * -0.17 +
+[MPEG-7 Edge Histogram57] * -0.44 +
+[MPEG-7 Edge Histogram61] * 0.19 +
+[MPEG-7 Edge Histogram67] * 0.17 +
+[MPEG-7 Edge Histogram68] * -0.2 +
+[MPEG-7 Edge Histogram71] * -0.15 +
+[MPEG-7 Edge Histogram76] * 0.23 +
+[MPEG-7 Edge Histogram77] * -0.12 +
+[MPEG-7 Edge Histogram78] * 0.13
+
+Class K3 :
+-6.17 + 
+[MPEG-7 Edge Histogram7] * 0.16 +
+[MPEG-7 Edge Histogram8] * -0.27 +
+[MPEG-7 Edge Histogram9] * 0.77 +
+[MPEG-7 Edge Histogram10] * -0.38 +
+[MPEG-7 Edge Histogram11] * 0.55 +
+[MPEG-7 Edge Histogram15] * -0.42 +
+[MPEG-7 Edge Histogram16] * -0.76 +
+[MPEG-7 Edge Histogram18] * 0.4  +
+[MPEG-7 Edge Histogram26] * 0.2  +
+[MPEG-7 Edge Histogram27] * -0.25 +
+[MPEG-7 Edge Histogram31] * 0.42 +
+[MPEG-7 Edge Histogram33] * -0.53 +
+[MPEG-7 Edge Histogram46] * 0.55 +
+[MPEG-7 Edge Histogram47] * -0.16 +
+[MPEG-7 Edge Histogram50] * 0.3  +
+[MPEG-7 Edge Histogram53] * -0.35 +
+[MPEG-7 Edge Histogram65] * -0.37 +
+[MPEG-7 Edge Histogram68] * 0.57 +
+[MPEG-7 Edge Histogram70] * -0.41 +
+[MPEG-7 Edge Histogram79] * 0.82
+
+Class K4 :
+-0.43 + 
+[MPEG-7 Edge Histogram2] * 0.23 +
+[MPEG-7 Edge Histogram4] * -0.52 +
+[MPEG-7 Edge Histogram7] * -0.32 +
+[MPEG-7 Edge Histogram11] * -0.14 +
+[MPEG-7 Edge Histogram13] * -0.16 +
+[MPEG-7 Edge Histogram14] * -0.67 +
+[MPEG-7 Edge Histogram15] * 0.21 +
+[MPEG-7 Edge Histogram18] * 0.34 +
+[MPEG-7 Edge Histogram23] * -1.21 +
+[MPEG-7 Edge Histogram27] * 0.32 +
+[MPEG-7 Edge Histogram30] * -0.16 +
+[MPEG-7 Edge Histogram31] * -0.37 +
+[MPEG-7 Edge Histogram41] * -0.46 +
+[MPEG-7 Edge Histogram45] * -0.24 +
+[MPEG-7 Edge Histogram53] * 0.16 +
+[MPEG-7 Edge Histogram63] * 0.67 +
+[MPEG-7 Edge Histogram70] * -1.45
+
+Class K5 :
+-3.57 + 
+[MPEG-7 Edge Histogram2] * -0.14 +
+[MPEG-7 Edge Histogram5] * 0.28 +
+[MPEG-7 Edge Histogram15] * 0.2  +
+[MPEG-7 Edge Histogram18] * -0.4 +
+[MPEG-7 Edge Histogram26] * 0.78 +
+[MPEG-7 Edge Histogram27] * -0.21 +
+[MPEG-7 Edge Histogram31] * 0.4  +
+[MPEG-7 Edge Histogram34] * -0.84 +
+[MPEG-7 Edge Histogram41] * 0.39 +
+[MPEG-7 Edge Histogram46] * 0.58 +
+[MPEG-7 Edge Histogram47] * -0.75 +
+[MPEG-7 Edge Histogram53] * -2.38 +
+[MPEG-7 Edge Histogram56] * 0.7  +
+[MPEG-7 Edge Histogram57] * -0.17 +
+[MPEG-7 Edge Histogram60] * 0.2  +
+[MPEG-7 Edge Histogram65] * 0.93
+
+Class K6 :
+-7.48 + 
+[MPEG-7 Edge Histogram7] * 0.25 +
+[MPEG-7 Edge Histogram13] * 0.37 +
+[MPEG-7 Edge Histogram27] * -0.21 +
+[MPEG-7 Edge Histogram31] * -0.7 +
+[MPEG-7 Edge Histogram32] * 0.38 +
+[MPEG-7 Edge Histogram35] * -0.5 +
+[MPEG-7 Edge Histogram44] * -3.3 +
+[MPEG-7 Edge Histogram48] * 0.19 +
+[MPEG-7 Edge Histogram50] * 0.37 +
+[MPEG-7 Edge Histogram51] * -1.25 +
+[MPEG-7 Edge Histogram52] * 0.35 +
+[MPEG-7 Edge Histogram55] * 0.52 +
+[MPEG-7 Edge Histogram65] * 0.89 +
+[MPEG-7 Edge Histogram66] * -0.31 +
+[MPEG-7 Edge Histogram67] * 0.27 +
+[MPEG-7 Edge Histogram75] * 0.43 +
+[MPEG-7 Edge Histogram78] * 0.43
+
+Class K7 :
+-23.83 + 
+[MPEG-7 Edge Histogram12] * -0 +
+[MPEG-7 Edge Histogram19] * -0 +
+[MPEG-7 Edge Histogram21] * -0 +
+[MPEG-7 Edge Histogram27] * 0    +
+[MPEG-7 Edge Histogram46] * 0    +
+[MPEG-7 Edge Histogram63] * 0   
+
+Class K8 :
+-23.83 + 
+[MPEG-7 Edge Histogram12] * -0 +
+[MPEG-7 Edge Histogram19] * -0 +
+[MPEG-7 Edge Histogram21] * -0 +
+[MPEG-7 Edge Histogram27] * 0    +
+[MPEG-7 Edge Histogram46] * 0    +
+[MPEG-7 Edge Histogram63] * 0   
+
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         345               90.7895 %
+Incorrectly Classified Instances        35                9.2105 %
+Kappa statistic                          0.8824
+Mean absolute error                      0.0309
+Root mean squared error                  0.1358
+Relative absolute error                 15.7809 %
+Root relative squared error             43.4773 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,721    0,021    0,816      0,721    0,765      0,739    0,967     0,862     K1
+                 0,862    0,044    0,800      0,862    0,830      0,794    0,956     0,833     K2
+                 0,983    0,006    0,966      0,983    0,974      0,970    1,000     0,998     K3
+                 0,928    0,017    0,970      0,928    0,948      0,920    0,987     0,977     K4
+                 0,962    0,015    0,909      0,962    0,935      0,924    0,994     0,970     K5
+                 0,958    0,008    0,885      0,958    0,920      0,915    0,988     0,937     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,908    0,020    0,909      0,908    0,908      0,886    0,982     0,939     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  31   7   0   1   2   2   0   0 |   a = K1
+   5  56   0   2   2   0   0   0 |   b = K2
+   0   0  57   1   0   0   0   0 |   c = K3
+   1   6   2 128   1   0   0   0 |   d = K4
+   0   1   0   0  50   1   0   0 |   e = K5
+   1   0   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

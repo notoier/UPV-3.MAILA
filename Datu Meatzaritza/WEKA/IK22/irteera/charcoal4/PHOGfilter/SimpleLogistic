@@ -1,0 +1,322 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SimpleLogistic -I 0 -M 500 -H 50 -W 0.0
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/charcoal4-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SimpleLogistic:
+
+Class K1 :
+-2.68 + 
+[PHOG48] * -0.19 +
+[PHOG199] * -0.12 +
+[PHOG202] * 0.4  +
+[PHOG216] * 0.1  +
+[PHOG271] * 0.13 +
+[PHOG291] * 0.11 +
+[PHOG292] * 0.09 +
+[PHOG296] * -0.27 +
+[PHOG297] * -1.02 +
+[PHOG298] * -0.15 +
+[PHOG300] * -0.13 +
+[PHOG305] * 0.32 +
+[PHOG319] * -0.46 +
+[PHOG320] * -0.16 +
+[PHOG337] * 0.11 +
+[PHOG349] * 0.47 +
+[PHOG359] * -0.11 +
+[PHOG364] * -0.76 +
+[PHOG368] * 0.13 +
+[PHOG369] * 0.28 +
+[PHOG389] * 0.22 +
+[PHOG398] * 0.12 +
+[PHOG435] * 0.34 +
+[PHOG442] * 0.28 +
+[PHOG443] * 0.32 +
+[PHOG444] * 0.27 +
+[PHOG464] * 0.21 +
+[PHOG465] * 0.2  +
+[PHOG481] * 0.21 +
+[PHOG501] * 0.21 +
+[PHOG506] * -0.86 +
+[PHOG516] * 0.08 +
+[PHOG547] * 0.12 +
+[PHOG568] * -0.1 +
+[PHOG593] * 0.16 +
+[PHOG608] * 0.13
+
+Class K2 :
+-36.41 + 
+[PHOG30] * 0.17 +
+[PHOG59] * -0.21 +
+[PHOG60] * 0.17 +
+[PHOG136] * -0.1 +
+[PHOG150] * 0.07 +
+[PHOG163] * 0.2  +
+[PHOG196] * -0.1 +
+[PHOG216] * -0.08 +
+[PHOG279] * -0.09 +
+[PHOG297] * 0.12 +
+[PHOG298] * 0.12 +
+[PHOG305] * -0.29 +
+[PHOG306] * -0.17 +
+[PHOG317] * 0.2  +
+[PHOG327] * 0.37 +
+[PHOG332] * 0.13 +
+[PHOG333] * 0.15 +
+[PHOG334] * 0.6  +
+[PHOG335] * 0.12 +
+[PHOG341] * 0.25 +
+[PHOG342] * 0.1  +
+[PHOG351] * -0.35 +
+[PHOG374] * -0.06 +
+[PHOG386] * 0.21 +
+[PHOG416] * -0.12 +
+[PHOG420] * 0.88 +
+[PHOG422] * 0.14 +
+[PHOG445] * -0.2 +
+[PHOG454] * -0.19 +
+[PHOG457] * -0.14 +
+[PHOG462] * -0.12 +
+[PHOG476] * 0.28 +
+[PHOG482] * 0.25 +
+[PHOG497] * 0.46 +
+[PHOG510] * 0.2  +
+[PHOG552] * 0.24 +
+[PHOG553] * 0.35 +
+[PHOG555] * 0.13 +
+[PHOG570] * 0.22 +
+[PHOG581] * 0.22 +
+[PHOG588] * 0.09
+
+Class K3 :
+-10.66 + 
+[PHOG56] * 0.57 +
+[PHOG61] * 0.29 +
+[PHOG67] * 0.14 +
+[PHOG82] * -0.16 +
+[PHOG83] * -0.57 +
+[PHOG91] * 0.12 +
+[PHOG93] * 0.16 +
+[PHOG109] * -0.22 +
+[PHOG111] * -0.26 +
+[PHOG127] * -0.37 +
+[PHOG205] * -0.25 +
+[PHOG222] * 0.23 +
+[PHOG248] * 0.19 +
+[PHOG255] * -0.32 +
+[PHOG272] * -0.17 +
+[PHOG295] * 0.37 +
+[PHOG336] * -0.19 +
+[PHOG351] * -0.34 +
+[PHOG352] * -0.8 +
+[PHOG355] * -0.08 +
+[PHOG365] * 0.14 +
+[PHOG382] * -0.51 +
+[PHOG434] * 0.16 +
+[PHOG442] * -0.17 +
+[PHOG454] * -0.14 +
+[PHOG455] * -0.54 +
+[PHOG470] * -0.16 +
+[PHOG473] * -0.15 +
+[PHOG479] * 0.22 +
+[PHOG508] * 0.19 +
+[PHOG510] * -0.11 +
+[PHOG517] * 0.11 +
+[PHOG523] * -0.16 +
+[PHOG538] * -0.5 +
+[PHOG539] * -0.15 +
+[PHOG589] * 0.2  +
+[PHOG600] * -0.1 +
+[PHOG601] * -0.1 +
+[PHOG623] * 0.21
+
+Class K4 :
+17.64 + 
+[PHOG23] * 0.13 +
+[PHOG59] * -0.11 +
+[PHOG91] * -0.1 +
+[PHOG93] * -0.13 +
+[PHOG121] * -0.22 +
+[PHOG150] * -0.25 +
+[PHOG152] * -0.16 +
+[PHOG163] * -0.52 +
+[PHOG165] * -0.1 +
+[PHOG199] * 0.08 +
+[PHOG241] * -0.13 +
+[PHOG254] * -0.12 +
+[PHOG255] * -0.1 +
+[PHOG258] * -0.17 +
+[PHOG262] * -0.18 +
+[PHOG267] * -0.24 +
+[PHOG301] * -0.63 +
+[PHOG307] * 0.09 +
+[PHOG328] * -0.09 +
+[PHOG331] * -0.08 +
+[PHOG349] * 0.29 +
+[PHOG350] * 0.32 +
+[PHOG352] * 0.12 +
+[PHOG353] * 0.28 +
+[PHOG354] * 0.3  +
+[PHOG355] * 0.3  +
+[PHOG359] * -0.09 +
+[PHOG364] * -0.08 +
+[PHOG368] * -0.25 +
+[PHOG413] * 0.12 +
+[PHOG421] * -0.17 +
+[PHOG428] * -0.13 +
+[PHOG434] * -0.42 +
+[PHOG436] * -0.11 +
+[PHOG442] * 0.14 +
+[PHOG455] * 0.12 +
+[PHOG456] * 0.13 +
+[PHOG479] * -0.11 +
+[PHOG507] * -0.08 +
+[PHOG530] * -0.15 +
+[PHOG571] * -0.14 +
+[PHOG628] * -0.25
+
+Class K5 :
+-15.64 + 
+[PHOG29] * 0.5  +
+[PHOG59] * 1    +
+[PHOG61] * -0.18 +
+[PHOG119] * 0.17 +
+[PHOG136] * 0.2  +
+[PHOG172] * -0.14 +
+[PHOG173] * -0.09 +
+[PHOG231] * 0.08 +
+[PHOG233] * 0.2  +
+[PHOG278] * 0.11 +
+[PHOG279] * 0.12 +
+[PHOG331] * 0.21 +
+[PHOG332] * -0.47 +
+[PHOG334] * -0.12 +
+[PHOG345] * -0.1 +
+[PHOG359] * 0.56 +
+[PHOG374] * 0.36 +
+[PHOG391] * -0.11 +
+[PHOG420] * -0.14 +
+[PHOG422] * -0.66 +
+[PHOG423] * -0.16 +
+[PHOG452] * -0.18 +
+[PHOG457] * 0.19 +
+[PHOG465] * -0.2 +
+[PHOG466] * -0.75 +
+[PHOG478] * -0.16 +
+[PHOG479] * 0.43 +
+[PHOG497] * -0.12 +
+[PHOG501] * -0.14 +
+[PHOG551] * -0.09 +
+[PHOG552] * -0.1 +
+[PHOG555] * -0.23 +
+[PHOG581] * -0.1 +
+[PHOG604] * 0.11 +
+[PHOG610] * 0.21 +
+[PHOG612] * 0.11
+
+Class K6 :
+-8.46 + 
+[PHOG84] * 0.21 +
+[PHOG161] * 0.13 +
+[PHOG176] * 0.18 +
+[PHOG217] * -0.31 +
+[PHOG218] * -0.15 +
+[PHOG233] * -0.17 +
+[PHOG270] * -0.12 +
+[PHOG295] * 0.18 +
+[PHOG296] * 0.28 +
+[PHOG304] * 0.6  +
+[PHOG305] * 0.79 +
+[PHOG315] * -0.13 +
+[PHOG339] * 0.24 +
+[PHOG345] * -0.09 +
+[PHOG354] * -0.46 +
+[PHOG373] * 0.32 +
+[PHOG420] * -0.15 +
+[PHOG422] * 0.15 +
+[PHOG423] * 0.17 +
+[PHOG424] * 0.32 +
+[PHOG425] * 0.16 +
+[PHOG431] * -0.18 +
+[PHOG432] * -0.18 +
+[PHOG433] * -0.16 +
+[PHOG448] * -0.22 +
+[PHOG449] * -0.64 +
+[PHOG451] * -0.36 +
+[PHOG453] * -0.62 +
+[PHOG464] * -0.14 +
+[PHOG470] * 0.31 +
+[PHOG479] * -0.91 +
+[PHOG494] * 0.12 +
+[PHOG532] * 0.13 +
+[PHOG533] * 0.23 +
+[PHOG535] * 0.16 +
+[PHOG536] * 0.26 +
+[PHOG613] * 0.14
+
+Class K7 :
+-56.2 + 
+[PHOG9] * 0    +
+[PHOG17] * 0    +
+[PHOG142] * 0    +
+[PHOG205] * -0 +
+[PHOG353] * 0    +
+[PHOG447] * -0 +
+[PHOG608] * -0
+
+Class K8 :
+-56.2 + 
+[PHOG9] * 0    +
+[PHOG17] * 0    +
+[PHOG142] * 0    +
+[PHOG205] * -0 +
+[PHOG353] * 0    +
+[PHOG447] * -0 +
+[PHOG608] * -0
+
+
+Time taken to build model: 0.67 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         364               95.7895 %
+Incorrectly Classified Instances        16                4.2105 %
+Kappa statistic                          0.9462
+Mean absolute error                      0.0126
+Root mean squared error                  0.0855
+Relative absolute error                  6.4654 %
+Root relative squared error             27.3634 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,953    0,015    0,891      0,953    0,921      0,912    0,997     0,980     K1
+                 0,969    0,010    0,955      0,969    0,962      0,954    0,999     0,997     K2
+                 0,948    0,006    0,965      0,948    0,957      0,949    0,999     0,995     K3
+                 0,964    0,008    0,985      0,964    0,974      0,960    0,999     0,998     K4
+                 0,942    0,009    0,942      0,942    0,942      0,933    0,998     0,989     K5
+                 0,958    0,003    0,958      0,958    0,958      0,956    1,000     0,998     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,958    0,009    0,959      0,958    0,958      0,948    0,999     0,994     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  41   1   0   0   1   0   0   0 |   a = K1
+   1  63   1   0   0   0   0   0 |   b = K2
+   0   0  55   2   1   0   0   0 |   c = K3
+   2   0   1 133   1   1   0   0 |   d = K4
+   1   2   0   0  49   0   0   0 |   e = K5
+   1   0   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

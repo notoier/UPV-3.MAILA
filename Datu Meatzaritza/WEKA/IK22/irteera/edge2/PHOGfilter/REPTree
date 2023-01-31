@@ -1,0 +1,75 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/edge2-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+PHOG248 < 7.5
+|   PHOG0 < 13.5
+|   |   PHOG307 < 1.5
+|   |   |   PHOG359 < 5.5 : K4 (9/2) [3/2]
+|   |   |   PHOG359 >= 5.5
+|   |   |   |   PHOG332 < 7 : K5 (29/1) [13/1]
+|   |   |   |   PHOG332 >= 7 : K2 (3/0) [2/1]
+|   |   PHOG307 >= 1.5
+|   |   |   PHOG463 < 4.5 : K6 (14/1) [11/5]
+|   |   |   PHOG463 >= 4.5 : K1 (14/3) [8/5]
+|   PHOG0 >= 13.5 : K2 (54/16) [17/5]
+PHOG248 >= 7.5
+|   PHOG350 < 4.5
+|   |   PHOG331 < 7.5 : K4 (25/4) [6/3]
+|   |   PHOG331 >= 7.5
+|   |   |   PHOG623 < 9.5 : K5 (9/3) [9/6]
+|   |   |   PHOG623 >= 9.5 : K3 (32/1) [21/4]
+|   PHOG350 >= 4.5 : K4 (64/2) [37/0]
+
+Size of the tree : 19
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         278               73.1579 %
+Incorrectly Classified Instances       102               26.8421 %
+Kappa statistic                          0.6568
+Mean absolute error                      0.0854
+Root mean squared error                  0.2302
+Relative absolute error                 43.6727 %
+Root relative squared error             73.6939 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,326    0,059    0,412      0,326    0,364      0,295    0,789     0,314     K1
+                 0,708    0,114    0,561      0,708    0,626      0,543    0,868     0,534     K2
+                 0,810    0,047    0,758      0,810    0,783      0,743    0,922     0,710     K3
+                 0,870    0,045    0,916      0,870    0,892      0,834    0,930     0,883     K4
+                 0,673    0,034    0,761      0,673    0,714      0,674    0,901     0,681     K5
+                 0,667    0,025    0,640      0,667    0,653      0,629    0,956     0,671     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,732    0,056    0,735      0,732    0,731      0,675    0,900     0,691     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  14  20   1   2   1   5   0   0 |   a = K1
+  12  46   1   0   6   0   0   0 |   b = K2
+   0   2  47   8   1   0   0   0 |   c = K3
+   3   5   7 120   2   1   0   0 |   d = K4
+   1   6   6   1  35   3   0   0 |   e = K5
+   4   3   0   0   1  16   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

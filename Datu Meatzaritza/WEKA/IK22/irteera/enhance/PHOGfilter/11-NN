@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 11 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/enhance-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 11 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         309               81.3158 %
+Incorrectly Classified Instances        71               18.6842 %
+Kappa statistic                          0.7658
+Mean absolute error                      0.0624
+Root mean squared error                  0.1827
+Relative absolute error                 31.9146 %
+Root relative squared error             58.5131 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,698    0,003    0,968      0,698    0,811      0,804    0,899     0,827     K1
+                 0,969    0,152    0,568      0,969    0,716      0,676    0,939     0,745     K2
+                 0,983    0,040    0,814      0,983    0,891      0,874    0,998     0,992     K3
+                 0,696    0,004    0,990      0,696    0,817      0,763    0,974     0,960     K4
+                 0,865    0,024    0,849      0,865    0,857      0,834    0,990     0,927     K5
+                 0,750    0,000    1,000      0,750    0,857      0,859    0,984     0,954     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,813    0,037    0,870      0,813    0,818      0,786    0,966     0,908     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+ 30 11  0  0  2  0  0  0 |  a = K1
+  0 63  1  0  1  0  0  0 |  b = K2
+  0  0 57  1  0  0  0  0 |  c = K3
+  0 34  8 96  0  0  0  0 |  d = K4
+  0  3  4  0 45  0  0  0 |  e = K5
+  1  0  0  0  5 18  0  0 |  f = K6
+  0  0  0  0  0  0  0  0 |  g = K7
+  0  0  0  0  0  0  0  0 |  h = K8
+

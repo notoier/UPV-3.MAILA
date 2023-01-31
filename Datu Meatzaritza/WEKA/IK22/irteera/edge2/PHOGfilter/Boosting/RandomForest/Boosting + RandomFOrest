@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/edge2-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: No boosting possible, one classifier used!
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S -1155869325 -do-not-check-capabilities
+
+
+Time taken to build model: 0.15 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         360               94.7368 %
+Incorrectly Classified Instances        20                5.2632 %
+Kappa statistic                          0.9321
+Mean absolute error                      0.0887
+Root mean squared error                  0.1688
+Relative absolute error                 45.3655 %
+Root relative squared error             54.0571 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,814    0,009    0,921      0,814    0,864      0,850    0,980     0,902     K1
+                 0,969    0,022    0,900      0,969    0,933      0,920    0,987     0,886     K2
+                 0,879    0,000    1,000      0,879    0,936      0,928    0,998     0,990     K3
+                 0,993    0,037    0,938      0,993    0,965      0,945    0,997     0,994     K4
+                 0,981    0,003    0,981      0,981    0,981      0,978    0,998     0,991     K5
+                 0,958    0,000    1,000      0,958    0,979      0,978    0,999     0,986     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,947    0,019    0,949      0,947    0,947      0,934    0,994     0,964     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  35   6   0   2   0   0   0   0 |   a = K1
+   2  63   0   0   0   0   0   0 |   b = K2
+   0   0  51   7   0   0   0   0 |   c = K3
+   0   0   0 137   1   0   0   0 |   d = K4
+   0   1   0   0  51   0   0   0 |   e = K5
+   1   0   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

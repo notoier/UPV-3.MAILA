@@ -2,6 +2,8 @@
     "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
         "glut.h": "c",
-        "freeglut_std.h": "c"
+        "freeglut_std.h": "c",
+        "definitions.h": "c",
+        "kamera_kudeatu.h": "c"
     }
 }

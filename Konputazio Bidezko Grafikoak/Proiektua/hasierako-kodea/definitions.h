@@ -19,9 +19,12 @@
 #define KG_MSSG_NOOBJECT                    "Ez dago objekturik aukeratuta"
 
 //#define KG_STEP_MOVE                        5.0f
-//#define KG_STEP_ROTATE                      10.0f
+#define KG_STEP_ROTATE                      10.0f
 #define KG_STEP_ZOOM                        0.75
 #define KG_STEP_ZOOM_OUT                    1.25
+#define KG_TRAN_STEP                        0.5f
+#define KG_ROT_ANGLE                        0.0872665f //5º in radians (5 * π/180)
+#define KG_SCALE_NUM                        1.1
 #define KG_STEP_CAMERA_ANGLE                5.0f
 
 #define KG_ORTHO_X_MIN_INIT                -5
@@ -55,10 +58,6 @@
 #define KG_COL_Z_AXIS_R                     0.0f
 #define KG_COL_Z_AXIS_G                     1.0f    //Color: cian
 #define KG_COL_Z_AXIS_B                     1.0f
-
-#define KG_TRAN_STEP                        0.5f
-#define KG_ROT_ANGLE                        0.0872665f //5º in radians (5 * π/180)
-#define KG_SCALE_NUM                        1.1
 
 #define KG_GRID_LAYOUT                      1000
 
@@ -97,6 +96,7 @@ typedef struct {
 typedef struct {
     point3 coord;                       /* coordinates,x, y, z */
     GLint num_faces;                    /* number of faces that share this vertex */
+    vector3 v_norm;
 } vertex;
 
 
@@ -104,6 +104,26 @@ typedef struct MZ{
     double M[16];
     struct MZ *hptr;
 } MZ;
+
+typedef struct {
+    GLfloat diffuse[4];
+    GLfloat ambient[4];
+    GLfloat specular[4];
+    GLfloat shininess[1];
+} material;
+
+typedef struct
+{
+    GLfloat diffuse[4];
+    GLfloat ambient[4];
+    GLfloat specular[4];
+    GLfloat position[4];
+    GLint is_on;
+    GLint type;
+    GLfloat spot_direction[3];
+    GLfloat m_obj[16];
+    GLfloat cut_off;
+}light;
 
 /****************************
  * Structure to store       *
@@ -113,6 +133,7 @@ typedef struct MZ{
 typedef struct {
     GLint num_vertices;                 /* number of vertices in the face */
     GLint *vertex_table;                /* table with the index of each vertex */
+    vector3 v_norm;
 } face;
 
 /****************************
@@ -125,23 +146,8 @@ typedef struct {
 } AZ;
  */
 
-/****************************
- * Structure to store a     *
- * pile of 3D objects       *
- ****************************/
-struct object3d{
-    GLint num_vertices;                 /* number of vertices in the object*/
-    vertex *vertex_table;               /* table of vertices */
-    GLint num_faces;                    /* number of faces in the object */
-    face *face_table;                   /* table of faces */
-    point3 min;                         /* coordinates' lower bounds */
-    point3 max;                         /* coordinates' bigger bounds */
-    struct object3d *next;              /* next element in the pile of objects */
-    MZ *MZptr;
-    //AZ *AZptr;
-};
 
-struct camera{
+/* struct camera{
     double x_max;   // Max X coordinate
     double x_min;   // Min X coordinate
     double y_max;   // Max Y coordinate
@@ -151,9 +157,27 @@ struct camera{
     int projection; // Type of projection
     MZ *MZptr;      // Matrix list
     struct camera *hptr;  // Camera list
+}; */
+
+/****************************
+ * Structure to store a     *
+ * pile of 3D objects       *
+ ****************************/
+struct object3d{
+    GLint num_vertices;                 /* number of vertices in the object*/
+    vertex *vertex_table;               /* table of vertices */
+    GLint num_faces;                    /* number of faces in the object */
+    face *face_table;                   /* table of faces */
+    MZ *MZptr;                          /* List of matrixes*/
+    point3 min;                         /* coordinates' lower bounds */
+    point3 max;            
+    material *material;
+    GLint flat_smooth;
+    MZ *MB;             /* coordinates' bigger bounds */
+    struct object3d *next;              /* next element in the pile of objects */
 };
 
 typedef struct object3d object3d;
-typedef struct camera camera;
+typedef struct object3d camera;
 
 #endif // DEFINITIONS_H

@@ -1,0 +1,121 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/gaussian-blur-3x3-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+PHOG616 <= 1
+|   PHOG494 <= 0
+|   |   PHOG403 <= 0
+|   |   |   PHOG235 <= 2
+|   |   |   |   PHOG375 <= 1
+|   |   |   |   |   PHOG603 <= 0
+|   |   |   |   |   |   PHOG211 <= 0
+|   |   |   |   |   |   |   PHOG457 <= 4
+|   |   |   |   |   |   |   |   PHOG186 <= 0
+|   |   |   |   |   |   |   |   |   PHOG570 <= 0
+|   |   |   |   |   |   |   |   |   |   PHOG217 <= 2
+|   |   |   |   |   |   |   |   |   |   |   PHOG598 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   PHOG30 <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   PHOG203 <= 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG299 <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG562 <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG435 <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG170 <= 14
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG199 <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG271 <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG357 <= 1: K4 (117.0/57.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG357 > 1: K2 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG271 > 0: K2 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG199 > 6: K4 (25.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG170 > 14: K1 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG435 > 5: K1 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG562 > 6: K3 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PHOG299 > 10: K3 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PHOG203 > 11: K1 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PHOG30 > 10: K2 (14.0)
+|   |   |   |   |   |   |   |   |   |   |   PHOG598 > 0: K3 (4.0)
+|   |   |   |   |   |   |   |   |   |   PHOG217 > 2: K1 (5.0)
+|   |   |   |   |   |   |   |   |   PHOG570 > 0
+|   |   |   |   |   |   |   |   |   |   PHOG2 <= 3: K1 (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PHOG2 > 3: K3 (13.0)
+|   |   |   |   |   |   |   |   PHOG186 > 0: K1 (3.0)
+|   |   |   |   |   |   |   PHOG457 > 4: K4 (53.0)
+|   |   |   |   |   |   PHOG211 > 0
+|   |   |   |   |   |   |   PHOG150 <= 6: K3 (20.0/1.0)
+|   |   |   |   |   |   |   PHOG150 > 6: K2 (2.0)
+|   |   |   |   |   PHOG603 > 0
+|   |   |   |   |   |   PHOG0 <= 10: K5 (2.0)
+|   |   |   |   |   |   PHOG0 > 10: K1 (3.0)
+|   |   |   |   PHOG375 > 1
+|   |   |   |   |   PHOG35 <= 0
+|   |   |   |   |   |   PHOG41 <= 0: K5 (7.0/1.0)
+|   |   |   |   |   |   PHOG41 > 0: K2 (2.0)
+|   |   |   |   |   PHOG35 > 0: K1 (2.0/1.0)
+|   |   |   PHOG235 > 2: K5 (5.0)
+|   |   PHOG403 > 0: K1 (7.0)
+|   PHOG494 > 0
+|   |   PHOG618 <= 0
+|   |   |   PHOG98 <= 7
+|   |   |   |   PHOG122 <= 3: K5 (25.0)
+|   |   |   |   PHOG122 > 3: K2 (2.0)
+|   |   |   PHOG98 > 7: K1 (8.0/1.0)
+|   |   PHOG618 > 0: K6 (2.0)
+PHOG616 > 1
+|   PHOG458 <= 2
+|   |   PHOG27 <= 6: K5 (12.0)
+|   |   PHOG27 > 6: K6 (21.0)
+|   PHOG458 > 2: K1 (4.0)
+
+Number of Leaves  : 	32
+
+Size of the tree : 	63
+
+
+Time taken to build model: 0.12 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         248               65.2632 %
+Incorrectly Classified Instances       132               34.7368 %
+Kappa statistic                          0.5397
+Mean absolute error                      0.0967
+Root mean squared error                  0.2653
+Relative absolute error                 49.4362 %
+Root relative squared error             84.9459 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,512    0,030    0,688      0,512    0,587      0,550    0,721     0,487     K1
+                 0,123    0,054    0,320      0,123    0,178      0,105    0,704     0,292     K2
+                 0,638    0,059    0,661      0,638    0,649      0,587    0,825     0,492     K3
+                 0,841    0,285    0,627      0,841    0,718      0,534    0,823     0,721     K4
+                 0,846    0,049    0,733      0,846    0,786      0,752    0,882     0,714     K5
+                 0,875    0,003    0,955      0,875    0,913      0,908    0,977     0,906     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,653    0,132    0,622      0,653    0,622      0,524    0,809     0,597     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  22   2   4  10   5   0   0   0 |   a = K1
+   5   8   6  40   6   0   0   0 |   b = K2
+   1   1  37  18   1   0   0   0 |   c = K3
+   1  13   5 116   3   0   0   0 |   d = K4
+   1   1   4   1  44   1   0   0 |   e = K5
+   2   0   0   0   1  21   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

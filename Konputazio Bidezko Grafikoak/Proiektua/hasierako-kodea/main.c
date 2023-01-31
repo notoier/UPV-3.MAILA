@@ -2,7 +2,6 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/glut.h>
-
 #include "display.h"
 #include "io.h"
 #include "definitions.h"
@@ -21,9 +20,11 @@ camera * _first_camera;
 camera * _selected_camera;          /*Object currently selected*/
 
 char _change_type = 't';
-char _change_scope = 'g';
+char _change_scope = 'l';
 char _change_mode = 'o';
 char _camera_mode = 'a';
+
+int flat_smooth = 0;
 
 /** GENERAL INITIALIZATION **/
 void initialization (){
@@ -41,35 +42,30 @@ void initialization (){
     /*Definition of the background color*/
     glClearColor(KG_COL_BACK_R, KG_COL_BACK_G, KG_COL_BACK_B, KG_COL_BACK_A);
 
+
+    //Camera init
+    camera *aux_cam=0;
+    aux_cam = (camera *) malloc(sizeof (camera));
+    aux_cam->MZptr=(MZ*) malloc(sizeof(MZ));
+    aux_cam->MZptr -> hptr = 0;
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+    glGetDoublev(GL_MODELVIEW_MATRIX, aux_cam->MZptr->M);
+    _selected_camera = aux_cam;
+
     /*Definition of the method to draw the objects*/
+    
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glEnable ( GL_DEPTH_TEST );
 
-    //Initialize the camera
-    _first_camera = (camera*) malloc (sizeof(camera));
-    _first_camera->MZptr = (MZ*) malloc (sizeof(MZ));
+    if (flat_smooth)
+        glShadeModel(GL_SMOOTH);
+    else
+        glShadeModel(GL_FLAT);
 
-    for(int i; i < 10; i++){_first_camera->MZptr->M[i] = 0.0;}
-
-    _first_camera->MZptr->M[0] = 1.0;
-    _first_camera->MZptr->M[5] = 0.866025404; // sqrt(3)/2
-    _first_camera->MZptr->M[6] = -0.5;
-    _first_camera->MZptr->M[7] = 4.0;
-    _first_camera->MZptr->M[9] = 0.5;
-    _first_camera->MZptr->M[10] = 0.866025404; // sqrt(3)/2
-    _first_camera->MZptr->M[11] = 5.0;
-
-    //Camera scope coordinate initialization
-    _first_camera->x_max = 1; 
-    _first_camera->x_min = -1;
-    _first_camera->y_max = 0.5625;
-    _first_camera->y_min = -0.5625;
-    _first_camera->near = 0.15;
-    _first_camera->far = 1000;
-
-    _first_camera->projection = 1;
-
-    _first_camera->hptr = _first_camera;
-    _selected_camera = _first_camera;
+    lighting_init();
+    material_init();
+    camera_focus_init();
 }
 
 
@@ -81,7 +77,8 @@ int main(int argc, char** argv) {
 
     /* glut initializations */
     glutInit(&argc, argv);
-    glutInitDisplayMode(GLUT_RGB);
+    glutInitDisplayMode ( GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH );
+    glEnable ( GL_DEPTH_TEST );
 
     /** Change the window ratio by applying two integers before each window constant
       * @param int * KG_WINDOW_WIDTH and @param int * KG_WINDOW_HEIGHT
@@ -91,13 +88,20 @@ int main(int argc, char** argv) {
     glutInitWindowPosition(KG_WINDOW_X, KG_WINDOW_Y); //Set where the window will appear
     glutCreateWindow(KG_WINDOW_TITLE); //Create window
 
+    glPolygonMode ( GL_FRONT_AND_BACK, GL_FILL); //Fill object's polygons
+    glEnable(GL_DEPTH_TEST); //Enable depth
+    glEnable (GL_LIGHTING );
+    glShadeModel(GL_SMOOTH);
+    
     /* set the callback functions */
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
     glutKeyboardFunc(keyboard);
+    
     glutSpecialFunc(keyboard_func); //Set keyboard_func() as special function
     /* this initialization has to be AFTER the creation of the window */
     initialization();
+
     /* start the main loop */
     glutMainLoop();
     return 0;

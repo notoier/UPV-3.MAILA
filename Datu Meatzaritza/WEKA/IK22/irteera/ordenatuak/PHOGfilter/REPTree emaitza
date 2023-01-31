@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.PHOGFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/ordenatuak-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   631
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+PHOG495 < 0.5
+|   PHOG623 < 3.5
+|   |   PHOG503 < 0.5
+|   |   |   PHOG390 < 14.5
+|   |   |   |   PHOG455 < 3.5
+|   |   |   |   |   PHOG517 < 7.5
+|   |   |   |   |   |   PHOG31 < 1.5
+|   |   |   |   |   |   |   PHOG3 < 2 : K2 (21/4) [18/7]
+|   |   |   |   |   |   |   PHOG3 >= 2 : K4 (5/1) [2/0]
+|   |   |   |   |   |   PHOG31 >= 1.5 : K2 (21/0) [4/0]
+|   |   |   |   |   PHOG517 >= 7.5 : K4 (7/1) [1/1]
+|   |   |   |   PHOG455 >= 3.5 : K4 (13/2) [9/1]
+|   |   |   PHOG390 >= 14.5
+|   |   |   |   PHOG47 < 1.5 : K1 (4/0) [1/1]
+|   |   |   |   PHOG47 >= 1.5 : K4 (3/1) [1/0]
+|   |   PHOG503 >= 0.5 : K1 (11/3) [9/4]
+|   PHOG623 >= 3.5
+|   |   PHOG455 < 4.5
+|   |   |   PHOG353 < 4 : K3 (46/9) [20/3]
+|   |   |   PHOG353 >= 4 : K4 (10/0) [4/0]
+|   |   PHOG455 >= 4.5 : K4 (49/0) [23/1]
+PHOG495 >= 0.5
+|   PHOG140 < 5.5 : K5 (41/10) [22/6]
+|   PHOG140 >= 5.5
+|   |   PHOG464 < 2.5 : K6 (15/0) [10/3]
+|   |   PHOG464 >= 2.5 : K1 (7/5) [3/1]
+
+Size of the tree : 27
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         265               69.7368 %
+Incorrectly Classified Instances       115               30.2632 %
+Kappa statistic                          0.6181
+Mean absolute error                      0.0932
+Root mean squared error                  0.245 
+Relative absolute error                 47.6597 %
+Root relative squared error             78.4553 %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,372    0,039    0,552      0,372    0,444      0,398    0,734     0,417     K1
+                 0,708    0,092    0,613      0,708    0,657      0,582    0,863     0,550     K2
+                 0,828    0,078    0,658      0,828    0,733      0,685    0,892     0,663     K3
+                 0,703    0,074    0,843      0,703    0,767      0,658    0,891     0,837     K4
+                 0,769    0,055    0,690      0,769    0,727      0,683    0,900     0,730     K5
+                 0,750    0,034    0,600      0,750    0,667      0,646    0,879     0,590     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,697    0,069    0,706      0,697    0,695      0,622    0,869     0,684     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+ 16  8  6  5  6  2  0  0 |  a = K1
+  4 46  3  7  5  0  0  0 |  b = K2
+  1  1 48  6  1  1  0  0 |  c = K3
+  5 17 15 97  0  4  0  0 |  d = K4
+  3  3  1  0 40  5  0  0 |  e = K5
+  0  0  0  0  6 18  0  0 |  f = K6
+  0  0  0  0  0  0  0  0 |  g = K7
+  0  0  0  0  0  0  0  0 |  h = K8
+

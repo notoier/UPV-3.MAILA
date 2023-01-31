@@ -1,0 +1,143 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.lazy.IBk -- -K 3 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.SimpleColorHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/edge2-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   65
+              RGB Color Histogram0
+              RGB Color Histogram1
+              RGB Color Histogram2
+              RGB Color Histogram3
+              RGB Color Histogram4
+              RGB Color Histogram5
+              RGB Color Histogram6
+              RGB Color Histogram7
+              RGB Color Histogram8
+              RGB Color Histogram9
+              RGB Color Histogram10
+              RGB Color Histogram11
+              RGB Color Histogram12
+              RGB Color Histogram13
+              RGB Color Histogram14
+              RGB Color Histogram15
+              RGB Color Histogram16
+              RGB Color Histogram17
+              RGB Color Histogram18
+              RGB Color Histogram19
+              RGB Color Histogram20
+              RGB Color Histogram21
+              RGB Color Histogram22
+              RGB Color Histogram23
+              RGB Color Histogram24
+              RGB Color Histogram25
+              RGB Color Histogram26
+              RGB Color Histogram27
+              RGB Color Histogram28
+              RGB Color Histogram29
+              RGB Color Histogram30
+              RGB Color Histogram31
+              RGB Color Histogram32
+              RGB Color Histogram33
+              RGB Color Histogram34
+              RGB Color Histogram35
+              RGB Color Histogram36
+              RGB Color Histogram37
+              RGB Color Histogram38
+              RGB Color Histogram39
+              RGB Color Histogram40
+              RGB Color Histogram41
+              RGB Color Histogram42
+              RGB Color Histogram43
+              RGB Color Histogram44
+              RGB Color Histogram45
+              RGB Color Histogram46
+              RGB Color Histogram47
+              RGB Color Histogram48
+              RGB Color Histogram49
+              RGB Color Histogram50
+              RGB Color Histogram51
+              RGB Color Histogram52
+              RGB Color Histogram53
+              RGB Color Histogram54
+              RGB Color Histogram55
+              RGB Color Histogram56
+              RGB Color Histogram57
+              RGB Color Histogram58
+              RGB Color Histogram59
+              RGB Color Histogram60
+              RGB Color Histogram61
+              RGB Color Histogram62
+              RGB Color Histogram63
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 2.61
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 3.24
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 2.56
+
+IB1 instance-based classifier
+using 3 nearest neighbour(s) for classification
+
+
+Weight: 0.62
+
+Number of performed Iterations: 4
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         329               86.5789 %
+Incorrectly Classified Instances        51               13.4211 %
+Kappa statistic                          0.8284
+Mean absolute error                      0.0344
+Root mean squared error                  0.1747
+Relative absolute error                 17.5662 %
+Root relative squared error             55.946  %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,628    0,047    0,628      0,628    0,628      0,580    0,829     0,519     K1
+                 0,769    0,051    0,758      0,769    0,763      0,714    0,903     0,727     K2
+                 0,862    0,006    0,962      0,862    0,909      0,896    0,934     0,910     K3
+                 0,949    0,025    0,956      0,949    0,953      0,926    0,961     0,932     K4
+                 0,923    0,009    0,941      0,923    0,932      0,921    0,985     0,951     K5
+                 0,958    0,022    0,742      0,958    0,836      0,832    0,961     0,746     K6
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,866    0,027    0,870      0,866    0,867      0,839    0,935     0,838     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  27  16   0   0   0   0   0   0 |   a = K1
+  15  50   0   0   0   0   0   0 |   b = K2
+   0   0  50   5   3   0   0   0 |   c = K3
+   1   0   0 131   0   6   0   0 |   d = K4
+   0   0   2   0  48   2   0   0 |   e = K5
+   0   0   0   1   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+

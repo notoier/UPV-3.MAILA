@@ -1,0 +1,222 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     dm_prak-weka.filters.unsupervised.instance.imagefilter.EdgeHistogramFilter-D/home/oier/Universidad/DM/1.Praktika/IK22/irteera/ordenatuak-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    380
+Attributes:   81
+              MPEG-7 Edge Histogram0
+              MPEG-7 Edge Histogram1
+              MPEG-7 Edge Histogram2
+              MPEG-7 Edge Histogram3
+              MPEG-7 Edge Histogram4
+              MPEG-7 Edge Histogram5
+              MPEG-7 Edge Histogram6
+              MPEG-7 Edge Histogram7
+              MPEG-7 Edge Histogram8
+              MPEG-7 Edge Histogram9
+              MPEG-7 Edge Histogram10
+              MPEG-7 Edge Histogram11
+              MPEG-7 Edge Histogram12
+              MPEG-7 Edge Histogram13
+              MPEG-7 Edge Histogram14
+              MPEG-7 Edge Histogram15
+              MPEG-7 Edge Histogram16
+              MPEG-7 Edge Histogram17
+              MPEG-7 Edge Histogram18
+              MPEG-7 Edge Histogram19
+              MPEG-7 Edge Histogram20
+              MPEG-7 Edge Histogram21
+              MPEG-7 Edge Histogram22
+              MPEG-7 Edge Histogram23
+              MPEG-7 Edge Histogram24
+              MPEG-7 Edge Histogram25
+              MPEG-7 Edge Histogram26
+              MPEG-7 Edge Histogram27
+              MPEG-7 Edge Histogram28
+              MPEG-7 Edge Histogram29
+              MPEG-7 Edge Histogram30
+              MPEG-7 Edge Histogram31
+              MPEG-7 Edge Histogram32
+              MPEG-7 Edge Histogram33
+              MPEG-7 Edge Histogram34
+              MPEG-7 Edge Histogram35
+              MPEG-7 Edge Histogram36
+              MPEG-7 Edge Histogram37
+              MPEG-7 Edge Histogram38
+              MPEG-7 Edge Histogram39
+              MPEG-7 Edge Histogram40
+              MPEG-7 Edge Histogram41
+              MPEG-7 Edge Histogram42
+              MPEG-7 Edge Histogram43
+              MPEG-7 Edge Histogram44
+              MPEG-7 Edge Histogram45
+              MPEG-7 Edge Histogram46
+              MPEG-7 Edge Histogram47
+              MPEG-7 Edge Histogram48
+              MPEG-7 Edge Histogram49
+              MPEG-7 Edge Histogram50
+              MPEG-7 Edge Histogram51
+              MPEG-7 Edge Histogram52
+              MPEG-7 Edge Histogram53
+              MPEG-7 Edge Histogram54
+              MPEG-7 Edge Histogram55
+              MPEG-7 Edge Histogram56
+              MPEG-7 Edge Histogram57
+              MPEG-7 Edge Histogram58
+              MPEG-7 Edge Histogram59
+              MPEG-7 Edge Histogram60
+              MPEG-7 Edge Histogram61
+              MPEG-7 Edge Histogram62
+              MPEG-7 Edge Histogram63
+              MPEG-7 Edge Histogram64
+              MPEG-7 Edge Histogram65
+              MPEG-7 Edge Histogram66
+              MPEG-7 Edge Histogram67
+              MPEG-7 Edge Histogram68
+              MPEG-7 Edge Histogram69
+              MPEG-7 Edge Histogram70
+              MPEG-7 Edge Histogram71
+              MPEG-7 Edge Histogram72
+              MPEG-7 Edge Histogram73
+              MPEG-7 Edge Histogram74
+              MPEG-7 Edge Histogram75
+              MPEG-7 Edge Histogram76
+              MPEG-7 Edge Histogram77
+              MPEG-7 Edge Histogram78
+              MPEG-7 Edge Histogram79
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=81 #classindex=80
+Network structure (nodes followed by parents)
+MPEG-7 Edge Histogram0(2): class 
+MPEG-7 Edge Histogram1(2): class 
+MPEG-7 Edge Histogram2(2): class 
+MPEG-7 Edge Histogram3(2): class 
+MPEG-7 Edge Histogram4(3): class 
+MPEG-7 Edge Histogram5(2): class 
+MPEG-7 Edge Histogram6(2): class 
+MPEG-7 Edge Histogram7(2): class 
+MPEG-7 Edge Histogram8(1): class 
+MPEG-7 Edge Histogram9(2): class 
+MPEG-7 Edge Histogram10(2): class 
+MPEG-7 Edge Histogram11(2): class 
+MPEG-7 Edge Histogram12(2): class 
+MPEG-7 Edge Histogram13(2): class 
+MPEG-7 Edge Histogram14(3): class 
+MPEG-7 Edge Histogram15(2): class 
+MPEG-7 Edge Histogram16(2): class 
+MPEG-7 Edge Histogram17(2): class 
+MPEG-7 Edge Histogram18(2): class 
+MPEG-7 Edge Histogram19(2): class 
+MPEG-7 Edge Histogram20(3): class 
+MPEG-7 Edge Histogram21(2): class 
+MPEG-7 Edge Histogram22(3): class 
+MPEG-7 Edge Histogram23(2): class 
+MPEG-7 Edge Histogram24(2): class 
+MPEG-7 Edge Histogram25(2): class 
+MPEG-7 Edge Histogram26(5): class 
+MPEG-7 Edge Histogram27(3): class 
+MPEG-7 Edge Histogram28(3): class 
+MPEG-7 Edge Histogram29(2): class 
+MPEG-7 Edge Histogram30(2): class 
+MPEG-7 Edge Histogram31(5): class 
+MPEG-7 Edge Histogram32(3): class 
+MPEG-7 Edge Histogram33(2): class 
+MPEG-7 Edge Histogram34(2): class 
+MPEG-7 Edge Histogram35(3): class 
+MPEG-7 Edge Histogram36(2): class 
+MPEG-7 Edge Histogram37(2): class 
+MPEG-7 Edge Histogram38(2): class 
+MPEG-7 Edge Histogram39(3): class 
+MPEG-7 Edge Histogram40(3): class 
+MPEG-7 Edge Histogram41(3): class 
+MPEG-7 Edge Histogram42(2): class 
+MPEG-7 Edge Histogram43(3): class 
+MPEG-7 Edge Histogram44(2): class 
+MPEG-7 Edge Histogram45(3): class 
+MPEG-7 Edge Histogram46(3): class 
+MPEG-7 Edge Histogram47(4): class 
+MPEG-7 Edge Histogram48(2): class 
+MPEG-7 Edge Histogram49(3): class 
+MPEG-7 Edge Histogram50(2): class 
+MPEG-7 Edge Histogram51(3): class 
+MPEG-7 Edge Histogram52(2): class 
+MPEG-7 Edge Histogram53(3): class 
+MPEG-7 Edge Histogram54(3): class 
+MPEG-7 Edge Histogram55(3): class 
+MPEG-7 Edge Histogram56(2): class 
+MPEG-7 Edge Histogram57(3): class 
+MPEG-7 Edge Histogram58(2): class 
+MPEG-7 Edge Histogram59(2): class 
+MPEG-7 Edge Histogram60(2): class 
+MPEG-7 Edge Histogram61(2): class 
+MPEG-7 Edge Histogram62(2): class 
+MPEG-7 Edge Histogram63(2): class 
+MPEG-7 Edge Histogram64(2): class 
+MPEG-7 Edge Histogram65(3): class 
+MPEG-7 Edge Histogram66(2): class 
+MPEG-7 Edge Histogram67(2): class 
+MPEG-7 Edge Histogram68(3): class 
+MPEG-7 Edge Histogram69(2): class 
+MPEG-7 Edge Histogram70(2): class 
+MPEG-7 Edge Histogram71(2): class 
+MPEG-7 Edge Histogram72(3): class 
+MPEG-7 Edge Histogram73(2): class 
+MPEG-7 Edge Histogram74(4): class 
+MPEG-7 Edge Histogram75(2): class 
+MPEG-7 Edge Histogram76(2): class 
+MPEG-7 Edge Histogram77(2): class 
+MPEG-7 Edge Histogram78(2): class 
+MPEG-7 Edge Histogram79(2): class 
+class(8): 
+LogScore Bayes: -18464.90444614746
+LogScore BDeu: -20845.613350116964
+LogScore MDL: -20741.858155758047
+LogScore ENTROPY: -18059.870835154798
+LogScore AIC: -18962.870835154794
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         327               86.0526 %
+Incorrectly Classified Instances        53               13.9474 %
+Kappa statistic                          0.8236
+Mean absolute error                      0.0355
+Root mean squared error                  0.1758
+Relative absolute error                 18.1366 %
+Root relative squared error             56.295  %
+Total Number of Instances              380     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,698    0,027    0,769      0,698    0,732      0,700    0,943     0,780     K1
+                 0,785    0,051    0,761      0,785    0,773      0,725    0,964     0,861     K2
+                 0,948    0,025    0,873      0,948    0,909      0,893    0,996     0,976     K3
+                 0,884    0,012    0,976      0,884    0,928      0,892    0,989     0,985     K4
+                 0,885    0,012    0,920      0,885    0,902      0,887    0,969     0,924     K5
+                 0,958    0,014    0,821      0,958    0,885      0,879    0,961     0,948     K6
+                 ?        0,021    0,000      ?        ?          ?        ?         ?         K7
+                 ?        0,000    ?          ?        ?          ?        ?         ?         K8
+Weighted Avg.    0,861    0,023    0,883      0,861    0,870      0,841    0,976     0,928     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+  30   8   0   0   2   3   0   0 |   a = K1
+   9  51   0   0   2   1   2   0 |   b = K2
+   0   0  55   3   0   0   0   0 |   c = K3
+   0   2   8 122   0   0   6   0 |   d = K4
+   0   5   0   0  46   1   0   0 |   e = K5
+   0   1   0   0   0  23   0   0 |   f = K6
+   0   0   0   0   0   0   0   0 |   g = K7
+   0   0   0   0   0   0   0   0 |   h = K8
+
