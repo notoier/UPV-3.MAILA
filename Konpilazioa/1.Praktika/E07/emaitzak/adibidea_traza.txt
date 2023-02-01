@@ -1,0 +1,46 @@
+[ID] [ID]([ID],[ID]);
+[ID] [ID],[ID],[ID],[ID],[ID]:[ID];
+    [ID],[ID],[ID]_[ID]_[ID]_[ID]:[ID];
+
+[PROCEDURE] [ID] ([ID] [ID]:[ID];[ID]:[ID]);
+[ID] [ID]:[ID];
+# [ID] [ID] [ID] [ID] [ID] [ID]
+# [ID] [ID]
+# [ID] [ID]
+# [ID]                                   
+
+[PROCEDURE] [ID];
+[ID] [ID]:[ID];
+[BEGIN]
+[ID]:=[ID]+1;
+[END]; { [ID] }
+[PROCEDURE] [ID];
+[TRAZA] [PROCEDURE] [ID];
+[ID] [ID]:[ID];
+[ID]        :[ID];
+    [BEGIN]
+      [ID];
+      # [ID] [ID] 
+      [ID] := 1.456 ;
+      [ID] := 0.001[ID]-10 ;
+      [ID] := 100.0[ID] ;
+    [END];
+
+[BEGIN]
+  [ID] := 0;
+  [ID] [ID] < 10 [ID]
+        [BEGIN]
+           [ID] := [ID] + 1;
+           [ID];
+        [END];
+        # [END] 
+[END];
+
+[BEGIN] # [ID] [ID] [ID] [ID] 
+  [ID]([ID]);
+  [ID]([ID],[ID]);
+  [ID]([ID]);
+[END].  # [ID] [ID] [ID] [ID] 
+
+ 
+Ikusten denez, hainbat hitz gako identifikatu eta bere ordez hitz gakoa ipini. 

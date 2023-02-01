@@ -1,0 +1,45 @@
+program adibidea(input,output);
+var aldagai,hauek,ez,dute,balio:integer;
+ ezertarako,ere,baina_hau_desberdina_da:char;
+
+procedure orain (var datoz:integer;honako:integer);
+var prozedurak:integer;
+# Ikus dezakezunez habiraketa dago proba dezazun
+# eta lerro
+# bukaerara arteko
+# komentarioak 
+
+ procedure lehen;
+ var prozedura:integer;
+ begin
+ ez:=ez+1;
+ end; { lehen }
+ procedure bigarren;
+ traza procedure bigarren;
+ var prozedura:char;
+ i :real;
+ begin
+ lehen;
+ # errealen proba 
+ i := 1.456 ;
+ i := 0.001E-10 ;
+ i := 100.0e2 ;
+ end;
+
+begin
+ prozedurak := 0;
+ while prozedurak < 10 do
+ begin
+ prozedurak := prozedurak + 1;
+ bigarren;
+ end;
+ # end 
+end;
+
+begin # programa nagusia hasten da 
+ read(aldagai);
+ orain(aldagai,hauek);
+ writeln(aldagai);
+end. # programa nagusia amaitzen da 
+
+ 
