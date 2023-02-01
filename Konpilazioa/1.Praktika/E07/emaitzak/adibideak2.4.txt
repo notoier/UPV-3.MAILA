@@ -1,0 +1,2 @@
+Number of identifiers: 56 
+Count of real numbers: 3 

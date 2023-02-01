@@ -1,6 +1,6 @@
 
 %%
-<<<<<IKASLEAK BETE DEZAN>>>>>	 { printf("%s:\tBAI\n",yytext); }
+[a-zA-Z](_?[0-9a-zA-Z]+)*	 { printf("%s:\tBAI\n",yytext); }
 \n  ;
 .+   	                         { printf("%s:\tEZ\n",yytext); }
 %%

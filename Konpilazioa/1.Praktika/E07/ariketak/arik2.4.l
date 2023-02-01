@@ -1,5 +1,6 @@
 %{
-<<<<<IKASLEAK BETE DEZAN>>>>>  
+  int identifiers = 0;
+  int reals = 0;
 %}
 
 %%
@@ -7,12 +8,16 @@
 [Bb][Ee][Gg][Ii][Nn]                 ;
 [Ee][Nn][Dd]                         ;
 [Tt][Rr][Aa][Zz][Aa]                 ;
-<<<<<IKASLEAK BETE DEZAN>>>>>	 {}
-<<<<<IKASLEAK BETE DEZAN>>>>>  {}
+#[^#\n]*\n                           ;
+[a-zA-Z](_?[a-zA-Z0-9]+)*            {++identifiers;}
+[0-9]+\.[0-9]+([eE][-+]?[0-9]+)?	   {++reals;}
 \n     ;
 .      ;
+
 %%
+
 int main() {
-  yylex() ;
-<<<<<IKASLEAK BETE DEZAN>>>>>  
+  yylex();
+  printf("Number of identifiers: %d \n", identifiers);
+  printf("Count of real numbers: %d \n", reals);
 }

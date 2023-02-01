@@ -1,0 +1,10 @@
+obj: BAI
+obj_tipo1: BAI
+obj11: BAI
+obj_11_tipo2: BAI
+abc78_78: BAI
+1obj_obj: EZ
+obj_: EZ
+obj__tipo1: EZ
+_obj: EZ
+obj+=78: EZ

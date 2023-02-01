@@ -1,6 +1,6 @@
-#line 2 "arik2.3.c"
+#line 2 "arik2.5.c"
 
-#line 4 "arik2.3.c"
+#line 4 "arik2.5.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -361,9 +361,9 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[11] =
+static const flex_int16_t yy_accept[10] =
     {   0,
-        0,    0,    5,    3,    2,    4,    3,    0,    1,    0
+        0,    0,    5,    3,    2,    1,    3,    1,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -371,9 +371,9 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    3,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -400,31 +400,27 @@ static const YY_CHAR yy_ec[256] =
 
 static const YY_CHAR yy_meta[4] =
     {   0,
-        1,    1,    2
+        1,    2,    1
     } ;
 
-static const flex_int16_t yy_base[12] =
+static const flex_int16_t yy_base[11] =
     {   0,
-        0,    0,    7,    0,    0,    3,    0,    0,    8,    8,
-        5
+        0,    0,    6,    0,    7,    2,    0,    0,    7,    3
     } ;
 
-static const flex_int16_t yy_def[12] =
+static const flex_int16_t yy_def[11] =
     {   0,
-       10,    1,   10,   11,   11,   10,   11,    6,   10,    0,
-       10
+        9,    1,    9,   10,    9,   10,   10,    6,    0,    9
     } ;
 
-static const flex_int16_t yy_nxt[12] =
+static const flex_int16_t yy_nxt[11] =
     {   0,
-        4,    5,    6,    8,    9,    7,   10,    3,   10,   10,
-       10
+        4,    5,    6,    7,    8,    9,    3,    9,    9,    9
     } ;
 
-static const flex_int16_t yy_chk[12] =
+static const flex_int16_t yy_chk[11] =
     {   0,
-        1,    1,    1,    6,    6,   11,    3,   10,   10,   10,
-       10
+        1,    1,    1,   10,    6,    3,    9,    9,    9,    9
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -441,8 +437,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "arik2.3.l"
-#line 446 "arik2.3.c"
+#line 1 "arik2.5.l"
+#line 442 "arik2.5.c"
 
 #define INITIAL 0
 
@@ -659,9 +655,9 @@ YY_DECL
 		}
 
 	{
-#line 1 "arik2.3.l"
+#line 1 "arik2.5.l"
 
-#line 665 "arik2.3.c"
+#line 661 "arik2.5.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -688,13 +684,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 11 )
+				if ( yy_current_state >= 10 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 8 );
+		while ( yy_base[yy_current_state] != 7 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -719,29 +715,27 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
-/* rule 1 can match eol */
 YY_RULE_SETUP
-#line 2 "arik2.3.l"
-{ printf("%s:\tBAI\n",yytext); }
+#line 2 "arik2.5.l"
+{printf("%s:\tBAI\n", yytext);}
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 3 "arik2.3.l"
+#line 3 "arik2.5.l"
 ;
 	YY_BREAK
 case 3:
-/* rule 3 can match eol */
 YY_RULE_SETUP
-#line 4 "arik2.3.l"
-{ printf("%s:\tEZ\n",yytext); }
+#line 4 "arik2.5.l"
+{printf("%s:\tEZ\n", yytext);}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 5 "arik2.3.l"
+#line 5 "arik2.5.l"
 ECHO;
 	YY_BREAK
-#line 745 "arik2.3.c"
+#line 739 "arik2.5.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1038,7 +1032,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 11 )
+			if ( yy_current_state >= 10 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1066,11 +1060,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 11 )
+		if ( yy_current_state >= 10 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 10);
+	yy_is_jam = (yy_current_state == 9);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1746,7 +1740,5 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 5 "arik2.3.l"
-
-
+#line 5 "arik2.5.l"
 

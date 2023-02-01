@@ -1,0 +1,10 @@
+1:	BAI
+2:	BAI
+3:	BAI
+4:	BAI
+5238723:	BAI
+a:	EZ
+5.1:	EZ
+8.a:	EZ
+87236723kdjfjhdsf:	EZ
+a23a:   EZ
