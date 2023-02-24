@@ -4,8 +4,8 @@ var (	a, b, c int
 
 func prozesatu(x int, y int) { // prozedura da, ez du baliorik itzultzen
   var lag, bueltak, emaitza int
-    /** funtzio anonimoa, habiaratua, := eragileak ezkerreko identifikadorea
-    ** funtzio bezala erazagutzen du. Kontuz, ez da esleipen arrunta! */
+  /** funtzio anonimoa, habiaratua, := eragileak ezkerreko identifikadorea
+   ** funtzio bezala erazagutzen du. Kontuz, ez da esleipen arrunta! */
   gehibat := func(x int) int {
     return x + 1
   } // funtzio anonimoaren amaiera
@@ -16,9 +16,9 @@ func prozesatu(x int, y int) { // prozedura da, ez du baliorik itzultzen
   if emaitza < 1000 {
     bueltak = 0
     for lag == 0 {
-	emaitza = gehibat(emaitza)  /* funtzio anonimoen deiak tratatzeko */
+	emaitza = gehibat(emaitza) /* funtzio anonimoen deiak tratatzeko */
 	break emaitza > 100000
-	lag = kenbat(lag)		 /* funtzio anonimoen deiak tratatzeko */
+	lag = kenbat(lag)		/* funtzio anonimoen deiak tratatzeko */
 	bueltak = bueltak + 1
     } // for amaiera
     println(emaitza)
@@ -27,7 +27,7 @@ func prozesatu(x int, y int) { // prozedura da, ez du baliorik itzultzen
 } // func prozesatu amaiera
 
 func main () {
- /*** hau iruzkin ** / *
+  /*** hau iruzkin ** / *
    lerroanitza da ***/
 
   read(a) read(b)

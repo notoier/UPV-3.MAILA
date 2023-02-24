@@ -38,11 +38,11 @@ int             TOKEN(RINT) ;
 \/                      TOKEN(TDIV);
 
 [ \t\n]                 ;
-\/\/.*\n                        TOKEN(TCOMMENT1);
-\/\*([^\/\*]|(\*[\*]*[^\/\*]))*\*[\*]\/        TOKEN(TCOMMENT2);
+\/\/.*\n                                TOKEN(TCOMMENT1);
+\/\*([^\*]|(\*+[^\/\*]))*\*+\/          TOKEN(TCOMMENT2);
 
 
-[a-zA-Z](_?[a-zA-Z0-9]+)*_?                                 TOKEN(TID) ; 
+[a-zA-Z](_?[a-zA-Z0-9]+)*_?                                     TOKEN(TID) ; 
 ([1-9][0-9]*|0)\.[0-9]+([eE][-+]?[1-9][0-9]+)?                  TOKEN(TKTE_FLOAT32);
 ([1-9][0-9]*|0)                                                 TOKEN(TKTE_INT); 
 

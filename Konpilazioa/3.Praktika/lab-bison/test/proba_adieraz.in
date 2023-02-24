@@ -1,0 +1,19 @@
+package main
+
+func main() {
+
+   a = 0.4756 * a
+   b = a * b * c * d
+   
+   a = a + b
+   b = a + b * c
+   c = a + b + c + d
+   
+   a = a - b
+   b = a - b + c
+   c = a - b + c * b
+   d = a - b - c - d
+
+   a = a + b * c - d / a
+}
+

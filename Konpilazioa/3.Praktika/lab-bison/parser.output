@@ -1,0 +1,400 @@
+Terminales no usados en la gramática
+
+    RVAR
+    TINITASSIG
+
+
+Gramática
+
+    0 $accept: programa $end
+
+    1 programa: RPACK RMAIN RFUNC RMAIN TLPAREN TRPAREN bloke
+
+    2 bloke: TLBRACE sententzia_zerrenda TRBRACE
+
+    3 sententzia_zerrenda: sententzia
+    4                    | sententzia sententzia_zerrenda
+
+    5 sententzia: TID TASSIG adierazpena
+
+    6 adierazpena: adierazpena TMUL adierazpena
+    7            | adierazpena TDIV adierazpena
+    8            | adierazpena TADD adierazpena
+    9            | adierazpena TSUB adierazpena
+   10            | TID
+   11            | TKTE_INT
+   12            | TKTE_FLOAT32
+
+
+Terminales con las reglas donde aparecen
+
+    $end (0) 0
+    error (256)
+    RPACK (258) 1
+    RFUNC (259) 1
+    RMAIN (260) 1
+    RVAR (261)
+    TRPAREN (262) 1
+    TLPAREN (263) 1
+    TRBRACE (264) 2
+    TLBRACE (265) 2
+    TASSIG (266) 5
+    TINITASSIG (267)
+    TMUL (268) 6
+    TADD (269) 8
+    TSUB (270) 9
+    TDIV (271) 7
+    TID <izena> (272) 5 10
+    TKTE_FLOAT32 <izena> (273) 12
+    TKTE_INT <izena> (274) 11
+
+
+No terminales con las reglas donde aparecen
+
+    $accept (20)
+        on left: 0
+    programa (21)
+        on left: 1
+        on right: 0
+    bloke <izena> (22)
+        on left: 2
+        on right: 1
+    sententzia_zerrenda <izena> (23)
+        on left: 3 4
+        on right: 2 4
+    sententzia <izena> (24)
+        on left: 5
+        on right: 3 4
+    adierazpena <izena> (25)
+        on left: 6 7 8 9 10 11 12
+        on right: 5 6 7 8 9
+
+
+Estado 0
+
+    0 $accept: • programa $end
+    1 programa: • RPACK RMAIN RFUNC RMAIN TLPAREN TRPAREN bloke
+
+    RPACK  desplazar e ir al estado 1
+
+    programa  ir al estado 2
+
+
+Estado 1
+
+    1 programa: RPACK • RMAIN RFUNC RMAIN TLPAREN TRPAREN bloke
+
+    RMAIN  desplazar e ir al estado 3
+
+
+Estado 2
+
+    0 $accept: programa • $end
+
+    $end  desplazar e ir al estado 4
+
+
+Estado 3
+
+    1 programa: RPACK RMAIN • RFUNC RMAIN TLPAREN TRPAREN bloke
+
+    RFUNC  desplazar e ir al estado 5
+
+
+Estado 4
+
+    0 $accept: programa $end •
+
+    $default  aceptar
+
+
+Estado 5
+
+    1 programa: RPACK RMAIN RFUNC • RMAIN TLPAREN TRPAREN bloke
+
+    RMAIN  desplazar e ir al estado 6
+
+
+Estado 6
+
+    1 programa: RPACK RMAIN RFUNC RMAIN • TLPAREN TRPAREN bloke
+
+    TLPAREN  desplazar e ir al estado 7
+
+
+Estado 7
+
+    1 programa: RPACK RMAIN RFUNC RMAIN TLPAREN • TRPAREN bloke
+
+    TRPAREN  desplazar e ir al estado 8
+
+
+Estado 8
+
+    1 programa: RPACK RMAIN RFUNC RMAIN TLPAREN TRPAREN • bloke
+    2 bloke: • TLBRACE sententzia_zerrenda TRBRACE
+
+    TLBRACE  desplazar e ir al estado 9
+
+    bloke  ir al estado 10
+
+
+Estado 9
+
+    2 bloke: TLBRACE • sententzia_zerrenda TRBRACE
+    3 sententzia_zerrenda: • sententzia
+    4                    | • sententzia sententzia_zerrenda
+    5 sententzia: • TID TASSIG adierazpena
+
+    TID  desplazar e ir al estado 11
+
+    sententzia_zerrenda  ir al estado 12
+    sententzia           ir al estado 13
+
+
+Estado 10
+
+    1 programa: RPACK RMAIN RFUNC RMAIN TLPAREN TRPAREN bloke •
+
+    $default  reduce usando la regla 1 (programa)
+
+
+Estado 11
+
+    5 sententzia: TID • TASSIG adierazpena
+
+    TASSIG  desplazar e ir al estado 14
+
+
+Estado 12
+
+    2 bloke: TLBRACE sententzia_zerrenda • TRBRACE
+
+    TRBRACE  desplazar e ir al estado 15
+
+
+Estado 13
+
+    3 sententzia_zerrenda: • sententzia
+    3                    | sententzia •  [TRBRACE]
+    4                    | • sententzia sententzia_zerrenda
+    4                    | sententzia • sententzia_zerrenda
+    5 sententzia: • TID TASSIG adierazpena
+
+    TID  desplazar e ir al estado 11
+
+    $default  reduce usando la regla 3 (sententzia_zerrenda)
+
+    sententzia_zerrenda  ir al estado 16
+    sententzia           ir al estado 13
+
+
+Estado 14
+
+    5 sententzia: TID TASSIG • adierazpena
+    6 adierazpena: • adierazpena TMUL adierazpena
+    7            | • adierazpena TDIV adierazpena
+    8            | • adierazpena TADD adierazpena
+    9            | • adierazpena TSUB adierazpena
+   10            | • TID
+   11            | • TKTE_INT
+   12            | • TKTE_FLOAT32
+
+    TID           desplazar e ir al estado 17
+    TKTE_FLOAT32  desplazar e ir al estado 18
+    TKTE_INT      desplazar e ir al estado 19
+
+    adierazpena  ir al estado 20
+
+
+Estado 15
+
+    2 bloke: TLBRACE sententzia_zerrenda TRBRACE •
+
+    $default  reduce usando la regla 2 (bloke)
+
+
+Estado 16
+
+    4 sententzia_zerrenda: sententzia sententzia_zerrenda •
+
+    $default  reduce usando la regla 4 (sententzia_zerrenda)
+
+
+Estado 17
+
+   10 adierazpena: TID •
+
+    $default  reduce usando la regla 10 (adierazpena)
+
+
+Estado 18
+
+   12 adierazpena: TKTE_FLOAT32 •
+
+    $default  reduce usando la regla 12 (adierazpena)
+
+
+Estado 19
+
+   11 adierazpena: TKTE_INT •
+
+    $default  reduce usando la regla 11 (adierazpena)
+
+
+Estado 20
+
+    5 sententzia: TID TASSIG adierazpena •  [TRBRACE, TID]
+    6 adierazpena: adierazpena • TMUL adierazpena
+    7            | adierazpena • TDIV adierazpena
+    8            | adierazpena • TADD adierazpena
+    9            | adierazpena • TSUB adierazpena
+
+    TMUL  desplazar e ir al estado 21
+    TADD  desplazar e ir al estado 22
+    TSUB  desplazar e ir al estado 23
+    TDIV  desplazar e ir al estado 24
+
+    $default  reduce usando la regla 5 (sententzia)
+
+
+Estado 21
+
+    6 adierazpena: • adierazpena TMUL adierazpena
+    6            | adierazpena TMUL • adierazpena
+    7            | • adierazpena TDIV adierazpena
+    8            | • adierazpena TADD adierazpena
+    9            | • adierazpena TSUB adierazpena
+   10            | • TID
+   11            | • TKTE_INT
+   12            | • TKTE_FLOAT32
+
+    TID           desplazar e ir al estado 17
+    TKTE_FLOAT32  desplazar e ir al estado 18
+    TKTE_INT      desplazar e ir al estado 19
+
+    adierazpena  ir al estado 25
+
+
+Estado 22
+
+    6 adierazpena: • adierazpena TMUL adierazpena
+    7            | • adierazpena TDIV adierazpena
+    8            | • adierazpena TADD adierazpena
+    8            | adierazpena TADD • adierazpena
+    9            | • adierazpena TSUB adierazpena
+   10            | • TID
+   11            | • TKTE_INT
+   12            | • TKTE_FLOAT32
+
+    TID           desplazar e ir al estado 17
+    TKTE_FLOAT32  desplazar e ir al estado 18
+    TKTE_INT      desplazar e ir al estado 19
+
+    adierazpena  ir al estado 26
+
+
+Estado 23
+
+    6 adierazpena: • adierazpena TMUL adierazpena
+    7            | • adierazpena TDIV adierazpena
+    8            | • adierazpena TADD adierazpena
+    9            | • adierazpena TSUB adierazpena
+    9            | adierazpena TSUB • adierazpena
+   10            | • TID
+   11            | • TKTE_INT
+   12            | • TKTE_FLOAT32
+
+    TID           desplazar e ir al estado 17
+    TKTE_FLOAT32  desplazar e ir al estado 18
+    TKTE_INT      desplazar e ir al estado 19
+
+    adierazpena  ir al estado 27
+
+
+Estado 24
+
+    6 adierazpena: • adierazpena TMUL adierazpena
+    7            | • adierazpena TDIV adierazpena
+    7            | adierazpena TDIV • adierazpena
+    8            | • adierazpena TADD adierazpena
+    9            | • adierazpena TSUB adierazpena
+   10            | • TID
+   11            | • TKTE_INT
+   12            | • TKTE_FLOAT32
+
+    TID           desplazar e ir al estado 17
+    TKTE_FLOAT32  desplazar e ir al estado 18
+    TKTE_INT      desplazar e ir al estado 19
+
+    adierazpena  ir al estado 28
+
+
+Estado 25
+
+    6 adierazpena: adierazpena • TMUL adierazpena
+    6            | adierazpena TMUL adierazpena •  [TRBRACE, TMUL, TADD, TSUB, TDIV, TID]
+    7            | adierazpena • TDIV adierazpena
+    8            | adierazpena • TADD adierazpena
+    9            | adierazpena • TSUB adierazpena
+
+    $default  reduce usando la regla 6 (adierazpena)
+
+    Conflict between rule 6 and token TMUL resolved as reduce (%left TMUL).
+    Conflict between rule 6 and token TADD resolved as reduce (TADD < TMUL).
+    Conflict between rule 6 and token TSUB resolved as reduce (TSUB < TMUL).
+    Conflict between rule 6 and token TDIV resolved as reduce (%left TDIV).
+
+
+Estado 26
+
+    6 adierazpena: adierazpena • TMUL adierazpena
+    7            | adierazpena • TDIV adierazpena
+    8            | adierazpena • TADD adierazpena
+    8            | adierazpena TADD adierazpena •  [TRBRACE, TADD, TSUB, TID]
+    9            | adierazpena • TSUB adierazpena
+
+    TMUL  desplazar e ir al estado 21
+    TDIV  desplazar e ir al estado 24
+
+    $default  reduce usando la regla 8 (adierazpena)
+
+    Conflict between rule 8 and token TMUL resolved as shift (TADD < TMUL).
+    Conflict between rule 8 and token TADD resolved as reduce (%left TADD).
+    Conflict between rule 8 and token TSUB resolved as reduce (%left TSUB).
+    Conflict between rule 8 and token TDIV resolved as shift (TADD < TDIV).
+
+
+Estado 27
+
+    6 adierazpena: adierazpena • TMUL adierazpena
+    7            | adierazpena • TDIV adierazpena
+    8            | adierazpena • TADD adierazpena
+    9            | adierazpena • TSUB adierazpena
+    9            | adierazpena TSUB adierazpena •  [TRBRACE, TADD, TSUB, TID]
+
+    TMUL  desplazar e ir al estado 21
+    TDIV  desplazar e ir al estado 24
+
+    $default  reduce usando la regla 9 (adierazpena)
+
+    Conflict between rule 9 and token TMUL resolved as shift (TSUB < TMUL).
+    Conflict between rule 9 and token TADD resolved as reduce (%left TADD).
+    Conflict between rule 9 and token TSUB resolved as reduce (%left TSUB).
+    Conflict between rule 9 and token TDIV resolved as shift (TSUB < TDIV).
+
+
+Estado 28
+
+    6 adierazpena: adierazpena • TMUL adierazpena
+    7            | adierazpena • TDIV adierazpena
+    7            | adierazpena TDIV adierazpena •  [TRBRACE, TMUL, TADD, TSUB, TDIV, TID]
+    8            | adierazpena • TADD adierazpena
+    9            | adierazpena • TSUB adierazpena
+
+    $default  reduce usando la regla 7 (adierazpena)
+
+    Conflict between rule 7 and token TMUL resolved as reduce (%left TMUL).
+    Conflict between rule 7 and token TADD resolved as reduce (TADD < TDIV).
+    Conflict between rule 7 and token TSUB resolved as reduce (TSUB < TDIV).
+    Conflict between rule 7 and token TDIV resolved as reduce (%left TDIV).
