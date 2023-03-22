@@ -1,0 +1,18 @@
+func main ()
+var a,b : integer ;
+var c : float;
+
+{
+  a = b + 6 * 6 - 4;
+  repeat  {
+    a = a * 2;
+    b = b + 1;
+  } until a+3 < b-3  ;
+
+  c = b;
+    
+ while (c > 0)  do {
+    c = c / a;
+ };
+
+} 

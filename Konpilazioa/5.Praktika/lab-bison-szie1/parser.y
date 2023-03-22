@@ -47,8 +47,8 @@
 /* Eragileen lehentasunak erazagutu:                                           */
 /* Inplementazioa errazten du baina ez du aldatzen espezifikazioa              */
 
-                                                                              
-
+%left TADD TSUB
+%left TMUL TDIV                                                            
 
 
 /*******************************************************************************/
@@ -78,6 +78,11 @@ stmts : stmt
       ;
 
 stmt :  TID TASSIG expr
+        {
+          kodea.agGehitu(*$<izena>1 + " := " + *$<izena>3);
+        delete $<izena>1;
+        delete $<izena>3;
+        }
      ;
 
 
@@ -85,16 +90,52 @@ expr : TID
        {
         $<izena>$ = $<izena>1;
        }
+
+      |TNUM_INTEGER
+       {
+        $<izena>$ = $<izena>1;
+       }
        
-     | expr TMUL expr 
+      |TNUM_FLOAT       
+       {
+        $<izena>$ = $<izena>1;
+       }
+       
+      | expr TMUL expr 
        { 
       	$<izena>$ = new string;
         *$<izena>$ = kodea.idBerria() ;
         kodea.agGehitu(*$<izena>$ + " := " + *$<izena>1 + " * " + *$<izena>3) ;
-	delete $<izena>1;
-	delete $<izena>3;
+        delete $<izena>1;
+        delete $<izena>3;
        }
     
+      | expr TDIV expr 
+       { 
+      	$<izena>$ = new string;
+        *$<izena>$ = kodea.idBerria() ;
+        kodea.agGehitu(*$<izena>$ + " := " + *$<izena>1 + " / " + *$<izena>3) ;
+        delete $<izena>1;
+        delete $<izena>3;
+       }
+    
+      | expr TADD expr 
+       { 
+      	$<izena>$ = new string;
+        *$<izena>$ = kodea.idBerria() ;
+        kodea.agGehitu(*$<izena>$ + " := " + *$<izena>1 + " + " + *$<izena>3) ;
+        delete $<izena>1;
+        delete $<izena>3;
+       }
+    
+      | expr TSUB expr 
+       { 
+      	$<izena>$ = new string;
+        *$<izena>$ = kodea.idBerria() ;
+        kodea.agGehitu(*$<izena>$ + " := " + *$<izena>1 + " - " + *$<izena>3) ;
+        delete $<izena>1;
+        delete $<izena>3;
+       }
      ;
 
 
