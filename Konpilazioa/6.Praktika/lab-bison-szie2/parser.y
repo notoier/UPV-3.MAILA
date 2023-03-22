@@ -61,6 +61,9 @@
 /*******************************************************************************/
 /* Eragileen lehentasunak erazagutu:                                           */
 
+%nonassoc TCLT TCLE TCGT TCGE
+%left TADD TSUB
+%left TMUL TDIV
 
 
 /*******************************************************************************/
@@ -73,16 +76,14 @@
 
 %%
 
-mainprog : RFUNC RMAIN TLPAREN TRPAREN { kodea.agGehitu("prog") ;}
-	   decls
-           TLBRACE stmts TRBRACE
+mainprog : RFUNC RMAIN TLPAREN TRPAREN { kodea.agGehitu("prog") ;} decls TLBRACE stmts TRBRACE
 	   {
              kodea.agGehitu("halt");
 	     kodea.idatzi() ; 
            }
          ;
 
-decls : RVAR idlist TCOLON type TSEMIC decls {kodea.erazagupenakGehitu(*$4, *$2);}
+decls : RVAR idlist TCOLON type {kodea.erazagupenakGehitu(*$4, *$2);} TSEMIC decls
       |
       ;
 
@@ -108,10 +109,10 @@ stmt :  TID TASSIG expr
 
      | RWHILE M expr RDO M TLBRACE stmts TRBRACE M 
 	{ kodea.agOsatu($<e>3->truel,$<erref>5) ;
-	  kodea.agOsatu($<e>3->falsel,$<erref>9) ;
+	  kodea.agOsatu($<e>3->falsel,$<erref>9 + 1) ;
     	  kodea.agGehitu("goto");
 	  ErrefLista tmp1 ; tmp1.push_back($<erref>9) ;
-    	  kodea.agOsatu(tmp1, $<erref>5) ;
+    	  kodea.agOsatu(tmp1, $<erref>2) ;
 	  delete $<e>3 ;
 	}  
      ;
