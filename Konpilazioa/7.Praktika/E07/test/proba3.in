@@ -4,15 +4,12 @@ var c : float;
 
 {
   a = b + 6 * 6 - 4;
-  repeat  {
+  loop  {
     a = a * 2;
     b = b + 1;
-  } until a+3 < b-3  ;
-
-  c = b;
-    
- while (c > 0)  do {
-    c = c / a;
- };
- 
+    if a+3 < b-3 { c = 1000; exit; } ;
+    c = b;
+  } ;
+  
+  if (c > 0)  { c = c / a; } ;
 } 

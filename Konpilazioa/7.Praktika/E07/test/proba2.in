@@ -6,8 +6,9 @@ var i2,i3 : integer ;
   ff = 6 * 6;
   ffl = 0;
  
-  while ff+5>=ffl-2 do {
+  loop {
     ff = ff * 3 ;
+    exit;
     ffl = ffl + 1 ;
    };
 }

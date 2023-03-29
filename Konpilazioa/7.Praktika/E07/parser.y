@@ -26,7 +26,6 @@
     string *izena ;
     adi *e ;
     int erref ;
-    IdLista *izenak ;
     ErrefLista *next ;
 }
 
@@ -41,7 +40,7 @@
 /* Hauek ez dute atributurik:                                                  */
 
 %token TLBRACE TRBRACE TLPAREN TRPAREN TCOMMA TCOLON TSEMIC TASSIG 
-%token RFUNC RMAIN RVAR RINTEGER RFLOAT RIF RTHEN RELSE RDO RWHILE RREPEAT RUNTIL
+%token RFUNC RMAIN RVAR RINTEGER RFLOAT RIF RLOOP REXIT
 
 
 /*******************************************************************************/
@@ -51,8 +50,7 @@
 /* adibidez: expr-ek adi motako atributua (izena, true eta false biltzen ditu) */
 
 %type <e> expr
-%type <izena> exprbasecase type
-%type <izenak> idlist
+%type <izena> exprbasecase
 %type <next> N
 %type <erref> M
 
@@ -61,9 +59,7 @@
 /*******************************************************************************/
 /* Eragileen lehentasunak erazagutu:                                           */
 
-%nonassoc TCLT TCLE TCGT TCGE
-%left TADD TSUB
-%left TMUL TDIV
+%left TMUL
 
 /*******************************************************************************/
 
@@ -84,43 +80,37 @@ mainprog : RFUNC RMAIN TLPAREN TRPAREN { kodea.agGehitu("prog") ;}
            }
          ;
 
-decls : RVAR idlist TCOLON type {kodea.erazagupenakGehitu(*$4, *$2);} TSEMIC decls 
+decls : RVAR idlist TCOLON type TSEMIC decls
       |
       ;
 
-type : RFLOAT   { $<izena>$ = new string("float"); }      
-     | RINTEGER { $<izena>$ = new string("int"); }
+type : RFLOAT
+     | RINTEGER
      ;
 
 idlist : TID
-	{ $<izenak>$ = new IdLista; $<izenak>$->push_back(*$<izena>1); delete $<izena>1; }
        | idlist TCOMMA TID 
-        { $<izenak>$ = $<izenak>1 ; $<izenak>$->push_back(*$<izena>3); delete $<izena>3; }
        ;
 
 stmts : stmt TSEMIC
       | stmts stmt TSEMIC
       ;
 
-stmt :  TID TASSIG expr
+stmt : TID TASSIG expr
         { 
           kodea.agGehitu(*$<izena>1 + " := " + $<e>3->izena) ; 
 	  delete $<izena>1 ; delete $<e>3;
         }
 
-     | RWHILE M expr RDO M TLBRACE stmts TRBRACE M 
-	{ kodea.agOsatu($<e>3->truel,$<erref>5) ;
-	  kodea.agOsatu($<e>3->falsel,$<erref>9 + 1) ;
-    	  kodea.agGehitu("goto");
-	  ErrefLista tmp1 ; tmp1.push_back($<erref>9) ;
-    	  kodea.agOsatu(tmp1, $<erref>2) ;
-	  delete $<e>3 ;
-	}
-    | RREPEAT M TLBRACE stmts TRBRACE RUNTIL expr M {
-      kodea.agOsatu($<e>7->truel,$<erref>8);
-      kodea.agOsatu($<e>7->falsel,$<erref>2);
-      delete $<e>7;
-    }
+     | RIF expr M TLBRACE stmts TRBRACE M
+        {
+          kodea.agOsatu($<e>2->truel, $<erref>3);
+          kodea.agOsatu($<e>2->falsel, $<erref>7);
+        }
+        
+     | RLOOP TLBRACE stmts TRBRACE  
+
+     | REXIT 
      ;
 
 
@@ -192,7 +182,7 @@ exprbasecase :  TID
      ;
 
 
-M : { $<erref>$ = kodea.lortuErref();}
+M : { $<erref>$ = kodea.lortuErref(); }
   ;
 
 N : {

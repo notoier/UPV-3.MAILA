@@ -21,12 +21,8 @@ var                     TOKEN( RVAR ) ;
 integer                 TOKEN( RINTEGER ) ;
 float                   TOKEN( RFLOAT ) ;
 if                      TOKEN( RIF ) ;
-then                    TOKEN( RTHEN ) ;
-else                    TOKEN( RELSE ) ;
-do                      TOKEN( RDO ) ;
-while			TOKEN( RWHILE ) ;
-repeat                  TOKEN( RREPEAT ) ;
-until                   TOKEN( RUNTIL ) ;
+loop                    TOKEN( RLOOP ) ;
+exit			TOKEN( REXIT ) ;
 
 \{                      TOKEN( TLBRACE );
 \}                      TOKEN( TRBRACE );

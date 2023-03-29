@@ -1,0 +1,13 @@
+func main ()
+var i1,i2,i3 : float ;
+var s4,s5 : integer ;
+
+{
+  loop {
+    i3 = 6 * 6;
+    i1 = i2 + 6 * 6 - 4;
+    if (c > 0)  { c = c / a; } ;
+    s4 = 0;
+  } ;
+}
+
