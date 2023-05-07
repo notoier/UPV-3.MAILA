@@ -1,0 +1,10 @@
+package main
+func main() {
+  var a, b int
+  a = 0
+  b = 13
+  for a / 3 <= 10 {
+    a = a * 2 + (b - 1)
+    break a == 10
+  }
+}

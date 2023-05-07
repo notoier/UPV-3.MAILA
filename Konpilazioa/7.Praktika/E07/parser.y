@@ -25,8 +25,9 @@
 %union {
     string *izena ;
     adi *e ;
-    int erref ;
-    ErrefLista *next ;
+    int erref;
+    ErrefLista *erref_lista;
+    ErrefLista *exit_lista;
 }
 
 /*******************************************************************************/
@@ -48,18 +49,20 @@
 
 /* Hemen erazagutu atributuak dauzkaten ez-bukaerakoak.                        */
 /* adibidez: expr-ek adi motako atributua (izena, true eta false biltzen ditu) */
-
 %type <e> expr
 %type <izena> exprbasecase
-%type <next> N
+%type <erref_lista> N
 %type <erref> M
-
+%type <exit_lista> stmts
+%type <exit_lista> stmt
 /* Gainerako ez-bukaerakoek ez dute atributurik                                */
 
 /*******************************************************************************/
 /* Eragileen lehentasunak erazagutu:                                           */
 
-%left TMUL
+%nonassoc TCLT TCLE TCGT TCGE
+%left TADD TSUB
+%left TMUL TDIV
 
 /*******************************************************************************/
 
@@ -92,25 +95,43 @@ idlist : TID
        | idlist TCOMMA TID 
        ;
 
-stmts : stmt TSEMIC
-      | stmts stmt TSEMIC
-      ;
+stmts : stmt TSEMIC { $<exit_lista>$ = new ErrefLista;
+                      $<exit_lista>$->insert($<exit_lista>$->end(), $<exit_lista>1->begin(), $<exit_lista>1->end());}
+      | stmts stmt TSEMIC { 
+        $<exit_lista>$ = new ErrefLista;
+        $<exit_lista>$->insert($<exit_lista>$->end(), $<exit_lista>1->begin(), $<exit_lista>1->end());
+        $<exit_lista>$->insert($<exit_lista>$->end(), $<exit_lista>2->begin(), $<exit_lista>2->end());
+        delete $<exit_lista>1; delete $<exit_lista>2;
+      }
+     ;
 
 stmt : TID TASSIG expr
-        { 
-          kodea.agGehitu(*$<izena>1 + " := " + $<e>3->izena) ; 
-	  delete $<izena>1 ; delete $<e>3;
-        }
-
+       {
+         $<exit_lista>$ = new ErrefLista; 
+         kodea.agGehitu(*$<izena>1 + " := " + $<e>3->izena) ;
+   delete $<izena>1 ; delete $<e>3;
+       }
      | RIF expr M TLBRACE stmts TRBRACE M
-        {
+        { 
+          $<exit_lista>$ = new ErrefLista;
+          $<exit_lista>$->insert($<exit_lista>$->end(), $<exit_lista>5->begin(), $<exit_lista>5->end());
           kodea.agOsatu($<e>2->truel, $<erref>3);
           kodea.agOsatu($<e>2->falsel, $<erref>7);
+          delete $<exit_lista>5;
         }
         
-     | RLOOP TLBRACE stmts TRBRACE  
+     | RLOOP M TLBRACE stmts TRBRACE M{
 
-     | REXIT 
+      $<exit_lista>$ = new ErrefLista;
+      kodea.agGehitu("goto " + std::to_string($<erref>2));
+      kodea.agOsatu(*$<exit_lista>4, $<erref>6 + 1);    
+     }
+
+     | REXIT {
+      $<exit_lista>$ = new ErrefLista;
+      $<exit_lista>$->push_back(kodea.lortuErref());
+      kodea.agGehitu("goto ");
+     }
      ;
 
 
@@ -186,8 +207,8 @@ M : { $<erref>$ = kodea.lortuErref(); }
   ;
 
 N : {
-      $<next>$ = new ErrefLista;
-      $<next>$->push_back(kodea.lortuErref());
+      $<erref_lista>$ = new ErrefLista;
+      $<erref_lista>$->push_back(kodea.lortuErref());
       kodea.agGehitu("goto");
     }
   ;

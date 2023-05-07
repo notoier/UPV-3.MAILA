@@ -67,6 +67,7 @@ void Kodea::agOsatu(ErrefLista &agZenbakiak, const int balioa) {
   }
 }
 
+
 /**********/
 /* idatzi */
 /**********/
@@ -86,7 +87,5 @@ void Kodea::idatzi() {
 int Kodea::lortuErref() const {
     return aginduak.size() + 1;
 }
-
-
 
 

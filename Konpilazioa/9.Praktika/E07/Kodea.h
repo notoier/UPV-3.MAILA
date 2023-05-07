@@ -47,6 +47,7 @@ public:
 	/* Parametro zerrenda eta mota emanda parametro erazagupen aginduak sortu eta gehitu */
 	void parametroakGehitu(const std::string &motaIzena, const IdLista &idIzenak) ;
 
+
 	/* Adierazitako aginduei falta zaien erreferentzia gehitzen die.
 	 * Adibidez: "goto" => "goto 20;" */
 	void agOsatu(ErrefLista &agZenbakiak, const int balioa);

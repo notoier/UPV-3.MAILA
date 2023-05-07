@@ -1,0 +1,4 @@
+package main
+func return_funtzioa() int {
+  return 0
+}

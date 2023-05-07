@@ -1,0 +1,4 @@
+package main
+func funtzioa_parametroekin(par int) {
+  return 0
+}

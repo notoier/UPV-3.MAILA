@@ -1,0 +1,5 @@
+package main
+var a float32
+func main() {
+  continue
+}

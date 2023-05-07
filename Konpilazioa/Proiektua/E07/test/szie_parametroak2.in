@@ -1,0 +1,4 @@
+package main
+func funtzioa_parametroekin(par, par2 float32) {
+  return 0
+}

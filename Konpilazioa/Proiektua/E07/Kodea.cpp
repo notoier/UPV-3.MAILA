@@ -55,6 +55,13 @@ void Kodea::parametroakGehitu(const string &motaIzena, const IdLista &idIzenak){
   }
 }
 
+void Kodea::parametroekinDeitu(const IdLista &idIzenak){ 
+  IdLista::const_iterator iter;
+  for (iter=idIzenak.begin(); iter!=idIzenak.end(); iter++) {
+    agGehitu("param " + *iter);
+  }
+}
+
 /***********/
 /* agOsatu */
 /***********/
@@ -66,6 +73,7 @@ void Kodea::agOsatu(ErrefLista &agZenbakiak, const int balioa) {
     aginduak[*iter-1].append(erref);
   }
 }
+
 
 /**********/
 /* idatzi */
@@ -86,7 +94,5 @@ void Kodea::idatzi() {
 int Kodea::lortuErref() const {
     return aginduak.size() + 1;
 }
-
-
 
 
