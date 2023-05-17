@@ -54,42 +54,39 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    TKTE_FLOAT32 = 258,            /* TKTE_FLOAT32  */
+    TID = 258,                     /* TID  */
     TKTE_INT = 259,                /* TKTE_INT  */
-    TID = 260,                     /* TID  */
-    RPACK = 261,                   /* RPACK  */
-    RFUNC = 262,                   /* RFUNC  */
-    RMAIN = 263,                   /* RMAIN  */
-    RVAR = 264,                    /* RVAR  */
-    RIF = 265,                     /* RIF  */
-    RBRK = 266,                    /* RBRK  */
-    RCNT = 267,                    /* RCNT  */
-    RFOR = 268,                    /* RFOR  */
-    RPRT = 269,                    /* RPRT  */
-    RRD = 270,                     /* RRD  */
-    RRET = 271,                    /* RRET  */
-    TRBRACE = 272,                 /* TRBRACE  */
-    TLBRACE = 273,                 /* TLBRACE  */
-    TASSIG = 274,                  /* TASSIG  */
-    TINITASSIG = 275,              /* TINITASSIG  */
-    TLPAR = 276,                   /* TLPAR  */
-    TRPAR = 277,                   /* TRPAR  */
-    RINT = 278,                    /* RINT  */
-    RFLOAT = 279,                  /* RFLOAT  */
-    TCLT = 280,                    /* TCLT  */
-    TCLE = 281,                    /* TCLE  */
-    TCGT = 282,                    /* TCGT  */
-    TCGE = 283,                    /* TCGE  */
-    TCEQ = 284,                    /* TCEQ  */
-    TCNE = 285,                    /* TCNE  */
-    TMUL = 286,                    /* TMUL  */
-    TDIV = 287,                    /* TDIV  */
-    TADD = 288,                    /* TADD  */
-    TSUB = 289,                    /* TSUB  */
-    TCOMMA = 290,                  /* TCOMMA  */
-    TOR = 291,                     /* TOR */
-    TAND = 292,                    /* TAND */
-    TNOT = 293                     /* TNOT */
+    TKTE_FLOAT32 = 260,            /* TKTE_FLOAT32  */
+    RMAIN = 261,                   /* RMAIN  */
+    RINT = 262,                    /* RINT  */
+    RFLOAT32 = 263,                /* RFLOAT32  */
+    TCLT = 264,                    /* TCLT  */
+    TCLE = 265,                    /* TCLE  */
+    TCGT = 266,                    /* TCGT  */
+    TCGE = 267,                    /* TCGE  */
+    TMUL = 268,                    /* TMUL  */
+    TDIV = 269,                    /* TDIV  */
+    TADD = 270,                    /* TADD  */
+    TSUB = 271,                    /* TSUB  */
+    RPACK = 272,                   /* RPACK  */
+    RFUNC = 273,                   /* RFUNC  */
+    RVAR = 274,                    /* RVAR  */
+    RFOR = 275,                    /* RFOR  */
+    RBREAK = 276,                  /* RBREAK  */
+    RCONT = 277,                   /* RCONT  */
+    RREAD = 278,                   /* RREAD  */
+    RPRINT = 279,                  /* RPRINT  */
+    RRETURN = 280,                 /* RRETURN  */
+    RIF = 281,                     /* RIF  */
+    TRBRACE = 282,                 /* TRBRACE  */
+    TLBRACE = 283,                 /* TLBRACE  */
+    TASSIG = 284,                  /* TASSIG  */
+    TINITASSIG = 285,              /* TINITASSIG  */
+    TLPAR = 286,                   /* TLPAR  */
+    TRPAR = 287,                   /* TRPAR  */
+    TCOMMA = 288,                  /* TCOMMA  */
+    TCEQ = 289,                    /* TCEQ  */
+    TCNE = 290                     /* TCNE  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -98,22 +95,18 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 32 "parser.y"
+#line 31 "parser.y"
 
-   string *izena; 
-   string *mota;
-   string *balioa;
-   int erref;
-   int main;
-   IdLista *izenak;
-   IdLista *param;
-   IdLista *adi;
-   ErrefLista *main_zer;
-   adierazpena *e;
-   izmain *im;
-   breakcont *brcon;
+    string *izena ;
+    adi *e ;
+    int erref ;
+    //int azpierref;
+    IdLista *izenak ;
+    ErrefLista *main;
+    int mainbat;
+    breakandcont *bc;
 
-#line 114 "parser.hpp"
+#line 110 "parser.hpp"
 
 };
 typedef union YYSTYPE YYSTYPE;

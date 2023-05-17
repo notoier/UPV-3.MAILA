@@ -6,7 +6,7 @@ func main() {
   x = 10
 
   for {
-    if  x > 9 {
+    if x > 9 {
       x = x + 1 
       continue
     }

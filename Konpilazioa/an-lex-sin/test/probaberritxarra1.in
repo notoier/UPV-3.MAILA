@@ -1,0 +1,11 @@
+//Proba honetan ea float32-ko tokena 0 ezkerrean onartzen ez duela ikusten da
+package main
+
+func main() {
+var a_2_bc_  float32
+
+// lerro bukaerara arte
+   a_2_bc_ = 02.4756 
+   
+
+}

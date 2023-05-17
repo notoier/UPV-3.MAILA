@@ -1,0 +1,11 @@
+//Proba honetan ea id tokena 2 azpibarra onartzen duen edo azpibarraz hasi ahal bada
+package main
+
+func main() {
+var a_2__bc_  float32
+
+// lerro bukaerara arte
+   _a_2_bc_ = 0.4756 
+   
+
+} 

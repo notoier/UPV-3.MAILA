@@ -1,0 +1,15 @@
+//Proba honetan ea float32-ko tokena eta linea askoren iruzkina ondo inplementatuta dagoen aztertuko da
+package main
+
+func main() {
+var a_2_bc_  float32
+ /** hau *** / iruzkin **
+   bat da ***/
+
+// lerro bukaerara arte
+   a_2_bc_ = 0.4756 
+   
+
+}
+
+

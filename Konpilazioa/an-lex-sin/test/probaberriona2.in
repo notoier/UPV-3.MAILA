@@ -1,0 +1,12 @@
+//Proba honetan ea konparatzaileak ondo inplementatutak dauden ikusten da
+package main
+
+func main() {
+var a_2_bc_  float32
+e = a == 2
+
+// lerro bukaerara arte
+   a_2_bc_ = 0.4756 
+   
+
+} 

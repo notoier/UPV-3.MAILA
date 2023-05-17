@@ -32,6 +32,9 @@ for             TOKEN(RFOR);
 continue        TOKEN(RCNT);
 read            TOKEN(RRD);
 println         TOKEN(RPRT);
+or              TOKEN(TOR);
+and             TOKEN(TAND);
+not             TOKEN(TNOT);
 
 
 =               TOKEN(TASSIG);
@@ -54,6 +57,7 @@ println         TOKEN(RPRT);
 \>=             TOKEN(TCGE);
 ==              TOKEN(TCEQ);
 !=              TOKEN(TCNE);
+
 
 [ \t\n]                     ;
 \/\/.*\n                      

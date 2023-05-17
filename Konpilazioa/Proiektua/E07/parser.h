@@ -35,8 +35,8 @@
    especially those whose name start with YY_ or yy_.  They are
    private implementation details that can be changed or removed.  */
 
-#ifndef YY_YY_PARSER_HPP_INCLUDED
-# define YY_YY_PARSER_HPP_INCLUDED
+#ifndef YY_YY_PARSER_H_INCLUDED
+# define YY_YY_PARSER_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -86,10 +86,10 @@ extern int yydebug;
     TDIV = 287,                    /* TDIV  */
     TADD = 288,                    /* TADD  */
     TSUB = 289,                    /* TSUB  */
-    TCOMMA = 290,                  /* TCOMMA  */
-    TOR = 291,                     /* TOR */
-    TAND = 292,                    /* TAND */
-    TNOT = 293                     /* TNOT */
+    TOR = 290,                     /* TOR  */
+    TAND = 291,                    /* TAND  */
+    TNOT = 292,                    /* TNOT  */
+    TCOMMA = 293                   /* TCOMMA  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -108,12 +108,12 @@ union YYSTYPE
    IdLista *izenak;
    IdLista *param;
    IdLista *adi;
-   ErrefLista *main_zer;
+//   ErrefLista *main_zer;
    adierazpena *e;
    izmain *im;
    breakcont *brcon;
 
-#line 114 "parser.hpp"
+#line 117 "parser.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
@@ -128,4 +128,4 @@ extern YYSTYPE yylval;
 int yyparse (void);
 
 
-#endif /* !YY_YY_PARSER_HPP_INCLUDED  */
+#endif /* !YY_YY_PARSER_H_INCLUDED  */
