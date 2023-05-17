@@ -87,9 +87,9 @@ extern int yydebug;
     TADD = 288,                    /* TADD  */
     TSUB = 289,                    /* TSUB  */
     TCOMMA = 290,                  /* TCOMMA  */
-    TOR = 291,                     /* TOR */
-    TAND = 292,                    /* TAND */
-    TNOT = 293                     /* TNOT */
+    ROR = 291,                     /* ROR */
+    RAND = 292,                    /* RAND */
+    RNOT = 293,                     /* RNOT */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif

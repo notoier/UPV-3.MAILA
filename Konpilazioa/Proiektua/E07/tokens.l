@@ -32,9 +32,9 @@ for             TOKEN(RFOR);
 continue        TOKEN(RCNT);
 read            TOKEN(RRD);
 println         TOKEN(RPRT);
-or              TOKEN(TOR);
-and             TOKEN(TAND);
-not             TOKEN(TNOT);
+and             TOKEN(RAND);
+or              TOKEN(ROR);
+not             TOKEN(RNOT);
 
 
 =               TOKEN(TASSIG);

@@ -1,0 +1,16 @@
+package main
+func main() {
+
+  var x int
+
+  x = 10
+
+  for {
+    if not x < 11{
+      x = x + 1 
+      continue
+    }
+    
+    break x <= 9
+  }
+}

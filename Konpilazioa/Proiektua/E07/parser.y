@@ -57,10 +57,11 @@
 %token <balioa> TKTE_FLOAT32 TKTE_INT
 %token <izena> TID 
 
-%token RPACK RFUNC RMAIN RVAR RIF RBRK RCNT RFOR RPRT RRD RRET
+%token RPACK RFUNC RMAIN RVAR RIF RBRK RCNT RFOR RPRT RRD RRET 
 %token TRBRACE TLBRACE TASSIG TINITASSIG TLPAR TRPAR
-%token RINT RFLOAT TCLT TCLE TCGT TCGE TCEQ TCNE TMUL TDIV TADD TSUB TOR TAND TNOT
+%token RINT RFLOAT TCLT TCLE TCGT TCGE TCEQ TCNE TMUL TDIV TADD TSUB 
 %token TCOMMA
+%token ROR RAND RNOT 
 
 /* Hemen erazagutu atributuak dauzkaten ez-bukaerakoak. 
    Adibidez, aldagaia ez-bukaerakoak izena atributua izango balu:
@@ -68,7 +69,7 @@
    Analisi lexiko eta sintaktikorako atributurik ez.
    
 */
-%type <e> adierazpena erlazionala
+%type <e> adierazpena
 %type <im> izena
 %type <izena> aldagaia
 %type <izenak> id_zerrenda id_zerrendaren_bestea
@@ -80,7 +81,8 @@
 //%type <param> par_zerrenda par_zerrendaren_bestea
 %type <brcon> bloke sententzia sententzia_zerrenda
 
-
+%left RAND ROR
+%right RNOT
 %nonassoc TCGE TCGT TCEQ TCNE TCLE TCLT
 %left TADD TSUB
 %left TMUL TDIV
@@ -271,61 +273,55 @@ adierazpena : adierazpena TADD adierazpena
                {$<e>$ = new adierazpena;
                $<e>$->izena = kodea.idBerria() ;
                kodea.agGehitu($<e>$->izena + " := " + $<e>1->izena + "/" + $<e>3->izena) ;}
-            
-            | erlazionala TOR M erlazionala
-               {
-                  kodea.agOsatu($<e>1->falsel, $<erref>3);
-                  $<e>$->truel.insert($<e>$->truel.end(), $<e>1->truel.begin(), $<e>1->truel.end());
-                  $<e>$->truel.insert($<e>$->truel.end(), $<e>4->truel.begin(), $<e>4->truel.end());
-                  $<e>$->falsel = $<e>4->falsel; 
-               }
 
-            /*NOTA: CAMBIAR EL SORTU erlazionala PARA QUE NO ME CREE LA LINE DE CODIGO CUANDO NO ES. PASAR LOS TRUE Y FALSE PARA ARRIBA PARA EVITAR ERRORES*/
-            | erlazionala TAND M erlazionala
-               {
-                  kodea.agOsatu($<e>1->truel, $<erref>3);
-                  $<e>$->falsel.insert($<e>$->falsel.end(), $<e>1->falsel.begin(), $<e>1->falsel.end());
-                  $<e>$->falsel.insert($<e>$->falsel.end(), $<e>4->falsel.begin(), $<e>4->falsel.end());
-                  $<e>$->truel = $<e>4->truel; }
-
-            | TNOT erlazionala 
-            {
-               $<e>$->falsel.insert($<e>$->truel.end(), $<e>1->truel.begin(), $<e>1->truel.end());
-               $<e>$->truel.insert($<e>$->falsel.end(), $<e>1->falsel.begin(), $<e>1->falsel.end()); }
-
-            | TLPAR erlazionala TRPAR {$<e>$ = $<e>2;}
-
-            | aldagaia  
-                  {$<e>$ = new adierazpena; 
-                  $<e>$->izena = *$<izena>1;}
-            | TKTE_INT  
-                  {$<e>$ = new adierazpena; 
-                  $<e>$->izena = *$<balioa>1;}
-            | TKTE_FLOAT32 
-                  {$<e>$ = new adierazpena; 
-                  $<e>$->izena = *$<balioa>1;}
-            | TLPAR adierazpena TRPAR 
-                  {//$<e>$ = new adierazpena; 
-                  $<e>$->izena = *$<izena>2;}
-
-erlazionala : adierazpena TCEQ adierazpena 
+            | adierazpena TCEQ adierazpena 
                {//$<e>$ = new adierazpena;
-               /* $<e>$ = sortuErlazionala($<e>1->izena, " == ", $<e>3->izena) ; */} 
+                $<e>$ = sortuErlazionala($<e>1->izena, " == ", $<e>3->izena) ; } 
             | adierazpena TCGT adierazpena
                {//$<e>$ = new adierazpena;
-              /*  $<e>$ = sortuErlazionala($<e>1->izena ," > ", $<e>3->izena)  */;} 
+                $<e>$ = sortuErlazionala($<e>1->izena ," > ", $<e>3->izena)  ;} 
             | adierazpena TCLT adierazpena
                {//$<e>$ = new adierazpena;
-               /* $<e>$ = sortuErlazionala($<e>1->izena ," < ", $<e>3->izena) ; */} 
+                $<e>$ = sortuErlazionala($<e>1->izena ," < ", $<e>3->izena) ; } 
             | adierazpena TCGE adierazpena
                {//$<e>$ = new adierazpena;
-               /* $<e>$ = sortuErlazionala($<e>1->izena ," >= ", $<e>3->izena) ; */} 
+                $<e>$ = sortuErlazionala($<e>1->izena ," >= ", $<e>3->izena) ; } 
             | adierazpena TCLE adierazpena
                {//$<e>$ = new adierazpena;
-               /* $<e>$ = sortuErlazionala($<e>1->izena ," <= ", $<e>3->izena) ; */} 
+                $<e>$ = sortuErlazionala($<e>1->izena ," <= ", $<e>3->izena) ; } 
             | adierazpena TCNE adierazpena  
                {//$<e>$ = new adierazpena;
-               /* $<e>$ = sortuErlazionala($<e>1->izena ," != ", $<e>3->izena) ; */}
+                $<e>$ = sortuErlazionala($<e>1->izena ," != ", $<e>3->izena) ; }
+            
+            | adierazpena ROR M adierazpena
+               {$<e>$ = new adierazpena; 
+               kodea.agOsatu($<e>1->falsel, $<erref>3);
+               $<e>$->truel.insert($<e>$->truel.end(), $<e>1->truel.begin(), $<e>1->truel.end());
+               $<e>$->truel.insert($<e>$->truel.end(), $<e>4->truel.begin(), $<e>4->truel.end());
+               $<e>$->falsel = $<e>4->falsel;}
+            | adierazpena RAND M adierazpena
+               {$<e>$ = new adierazpena; 
+               kodea.agOsatu($<e>1->truel, $<erref>3);
+               $<e>$->falsel.insert($<e>$->falsel.end(), $<e>1->falsel.begin(), $<e>1->falsel.end());
+               $<e>$->falsel.insert($<e>$->falsel.end(), $<e>4->falsel.begin(), $<e>4->falsel.end());
+               $<e>$->truel = $<e>4->truel; }
+
+            | RNOT adierazpena 
+               {$<e>$ = new adierazpena; 
+               $<e>$->falsel = $<e>2->truel;
+               $<e>$->truel = $<e>2->falsel;}
+
+            | TLPAR adierazpena TRPAR 
+               {$<e>$ = $<e>2;}
+            | aldagaia  
+               {$<e>$ = new adierazpena; 
+               $<e>$->izena = *$<izena>1;}
+            | TKTE_INT  
+               {$<e>$ = new adierazpena; 
+               $<e>$->izena = *$<balioa>1;}
+            | TKTE_FLOAT32 
+               {$<e>$ = new adierazpena; 
+               $<e>$->izena = *$<balioa>1;}
 
 M  : {$<erref>$ = kodea.lortuErref();}
    ;

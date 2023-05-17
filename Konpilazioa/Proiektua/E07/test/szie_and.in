@@ -1,0 +1,12 @@
+package main
+func main() {
+
+  var x int
+
+  x = 10
+
+  if x > 25 and x-5 == 7 {
+    x = x + 1
+  }
+
+}

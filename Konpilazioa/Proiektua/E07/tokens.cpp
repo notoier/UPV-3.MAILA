@@ -386,8 +386,8 @@ static const flex_int16_t yy_accept[110] =
        37,   37,   37,   37,   37,   37,   37,   37,   37,   37,
        37,   37,   19,   20,   33,    0,    0,    0,   39,   18,
        30,   32,   31,   37,   37,   37,   37,   37,   37,   37,
-       37,    8,   37,   37,   37,   14,   37,   37,   37,   37,
-        0,    0,    0,   35,   38,   15,   37,   37,   37,   10,
+       37,    8,   37,   37,   37,   15,   37,   37,   37,   37,
+        0,    0,    0,   35,   38,   14,   37,   37,   37,   10,
        37,    5,   37,   16,   37,   37,   37,   37,    4,   36,
         0,   37,   37,   37,    2,    3,   37,   37,   12,   37,
         0,   38,    9,   37,   37,   37,   37,   37,   37,   37,
@@ -931,17 +931,17 @@ TOKEN(RPRT);
 case 14:
 YY_RULE_SETUP
 #line 35 "tokens.l"
-TOKEN(TOR);
+TOKEN(RAND);
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
 #line 36 "tokens.l"
-TOKEN(TAND);
+TOKEN(ROR);
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
 #line 37 "tokens.l"
-TOKEN(TNOT);
+TOKEN(RNOT);
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
