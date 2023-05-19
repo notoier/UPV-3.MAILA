@@ -1,6 +1,6 @@
 CC= g++
 SOURCES=main.cpp parser.cpp tokens.cpp Kodea.cpp Lag.cpp
-TESTDIR=./test
+TESTDIR=./test/*
 
 all: parser test
 

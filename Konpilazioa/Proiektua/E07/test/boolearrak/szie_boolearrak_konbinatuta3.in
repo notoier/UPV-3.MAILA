@@ -1,0 +1,16 @@
+package main
+func main() {
+
+  var x int
+
+  x = 10 
+  y = 7 
+
+    if (x > 11 and x < 11) or (not y < 10 and y > 9){ 
+      x = x + 1 
+    }
+
+    if not (x > 11 or x < 11) and (y < 10 or y > 9){ 
+      y = y + 1 
+    }
+}

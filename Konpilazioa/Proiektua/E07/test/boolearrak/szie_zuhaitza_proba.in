@@ -1,0 +1,16 @@
+package main
+func main() {
+
+  var x int
+
+  x = 10 
+  y = 7 
+
+    if (x > 11 and x < 11) or (y < 10 and y > 9){ //s3
+      x = x + 1 
+    }
+
+    if (x > 11 or not x < 11) and not (y < 10 or y > 9){
+      y = y + 1 
+    }
+}

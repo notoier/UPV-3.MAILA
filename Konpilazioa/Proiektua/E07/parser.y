@@ -81,8 +81,8 @@
 //%type <param> par_zerrenda par_zerrendaren_bestea
 %type <brcon> bloke sententzia sententzia_zerrenda
 
+%left RNOT
 %left RAND ROR
-%right RNOT
 %nonassoc TCGE TCGT TCEQ TCNE TCLE TCLT
 %left TADD TSUB
 %left TMUL TDIV
@@ -99,7 +99,8 @@ programa : RPACK RMAIN {kodea.agGehitu("proc main");} bloke_nag
 bloke_nag : bl_eraz M {kodea.agGehitu("goto");} azpiprogramak 
             {ErrefLista *erreflista = new ErrefLista;
             erreflista->push_back($<erref>2);
-            kodea.agOsatu(*erreflista, $<main>4);}
+            kodea.agOsatu(*erreflista, $<main>4);
+           }
           ;
 
 azpiprogramak : azpiprogramak azpiprograma {$<main>$ = $<main>1 + $<main>2;}

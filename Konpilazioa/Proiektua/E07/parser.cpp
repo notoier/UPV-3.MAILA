@@ -578,14 +578,14 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int16 yyrline[] =
 {
-       0,    94,    94,    94,    99,    99,   105,   106,   108,   112,
-     115,   121,   131,   132,   134,   134,   137,   140,   144,   147,
-     148,   150,   153,   158,   162,   164,   165,   167,   168,   170,
-     172,   172,   173,   175,   175,   176,   178,   189,   193,   198,
-     202,   207,   214,   220,   227,   231,   235,   238,   242,   246,
-     248,   252,   254,   258,   260,   264,   268,   272,   277,   280,
-     283,   286,   289,   292,   296,   302,   309,   314,   316,   319,
-     322,   326
+       0,    94,    94,    94,    99,    99,   106,   107,   109,   113,
+     116,   122,   132,   133,   135,   135,   138,   141,   145,   148,
+     149,   151,   154,   159,   163,   165,   166,   168,   169,   171,
+     173,   173,   174,   176,   176,   177,   179,   190,   194,   199,
+     203,   208,   215,   221,   228,   232,   236,   239,   243,   247,
+     249,   253,   255,   259,   261,   265,   269,   273,   278,   281,
+     284,   287,   290,   293,   297,   303,   310,   315,   317,   320,
+     323,   327
 };
 #endif
 
@@ -644,12 +644,12 @@ static const yytype_int16 yypact[] =
       44,     4,     7,     7,   -67,   -67,    75,   100,     7,   -67,
       77,   -67,    67,   -67,   143,     7,   -67,   -67,   -67,     7,
        7,   -67,   112,   112,     0,     7,   146,   112,   158,   -67,
-     -67,    59,    43,   -67,   159,    99,    73,   134,     7,     7,
+     -67,    59,    43,   -67,   159,    99,    73,   112,     7,     7,
        7,     7,     7,     7,     7,     7,     7,     7,   -67,   -67,
       65,   -67,   112,    86,   160,   162,   112,   -67,    56,   -67,
-       7,   -67,   -67,   144,   144,   144,   144,   144,   144,   -67,
+       7,   -67,   -67,   134,   134,   134,   134,   134,   134,   -67,
      -67,    42,    42,     7,     7,   -67,   -67,    65,   -67,   -67,
-       7,    44,    99,   134,   134,   -67,   -67,   163,    65,   -67,
+       7,    44,    99,   144,   144,   -67,   -67,   163,    65,   -67,
      -67,   -67,   -67
 };
 
@@ -713,9 +713,9 @@ static const yytype_int16 yytable[] =
       97,    76,    98,    99,    88,    89,    90,    91,    92,    93,
       94,    95,    96,    97,   110,    98,    99,    88,    89,    90,
       91,    92,    93,    94,    95,    96,    97,    51,    98,    99,
-      83,    68,    52,    53,    54,    55,    56,    57,    58,    88,
-      89,    90,    91,    92,    93,    94,    95,    96,    97,    -1,
-      -1,    -1,    -1,    -1,    -1,    94,    95,    96,    97,    65,
+      83,    68,    52,    53,    54,    55,    56,    57,    58,    -1,
+      -1,    -1,    -1,    -1,    -1,    94,    95,    96,    97,    88,
+      89,    90,    91,    92,    93,    94,    95,    96,    97,    65,
       34,   109,   129,   130,    29,   141,   138,   131,   107,    80,
      139,   137
 };
@@ -1544,47 +1544,48 @@ yyreduce:
 #line 100 "parser.y"
             {ErrefLista *erreflista = new ErrefLista;
             erreflista->push_back((yyvsp[-2].erref));
-            kodea.agOsatu(*erreflista, (yyvsp[0].main));}
-#line 1549 "parser.cpp"
+            kodea.agOsatu(*erreflista, (yyvsp[0].main));
+           }
+#line 1550 "parser.cpp"
     break;
 
   case 6: /* azpiprogramak: azpiprogramak azpiprograma  */
-#line 105 "parser.y"
+#line 106 "parser.y"
                                            {(yyval.main) = (yyvsp[-1].main) + (yyvsp[0].main);}
-#line 1555 "parser.cpp"
+#line 1556 "parser.cpp"
     break;
 
   case 7: /* azpiprogramak: azpiprograma  */
-#line 106 "parser.y"
+#line 107 "parser.y"
                               {(yyval.main) = (yyvsp[0].main);}
-#line 1561 "parser.cpp"
+#line 1562 "parser.cpp"
     break;
 
   case 8: /* azpiprograma: RFUNC izena argumentuak auk_mota bloke  */
-#line 109 "parser.y"
+#line 110 "parser.y"
                {(yyval.main) = (yyvsp[-3].im)->main;
                if ((yyval.main) == 0) kodea.agGehitu("endproc " + (yyvsp[-3].im)->izena);}
-#line 1568 "parser.cpp"
+#line 1569 "parser.cpp"
     break;
 
   case 9: /* izena: RMAIN  */
-#line 113 "parser.y"
+#line 114 "parser.y"
          {(yyval.im) = new izmain;
          (yyval.im)->main = kodea.lortuErref();}
-#line 1575 "parser.cpp"
+#line 1576 "parser.cpp"
     break;
 
   case 10: /* izena: TID  */
-#line 116 "parser.y"
+#line 117 "parser.y"
          {(yyval.im) = new izmain;
          (yyval.im)->izena = *(yyvsp[0].izena);
          (yyval.im)->main = 0;
          kodea.agGehitu("proc " + *(yyvsp[0].izena));}
-#line 1584 "parser.cpp"
+#line 1585 "parser.cpp"
     break;
 
   case 11: /* bloke: TLBRACE bl_eraz anon_azpi sententzia_zerrenda TRBRACE  */
-#line 122 "parser.y"
+#line 123 "parser.y"
          {(yyval.brcon) = new breakcont;
          //$<brcon>$->breakl.insert($<brcon>$->breakl.end(), $<brcon>2->breakl.begin(), $<brcon>2->breakl.end());
          (yyval.brcon)->breakl.insert((yyval.brcon)->breakl.end(), (yyvsp[-1].brcon)->breakl.begin(), (yyvsp[-1].brcon)->breakl.end());
@@ -1593,75 +1594,75 @@ yyreduce:
          (yyval.brcon)->continuel.insert((yyval.brcon)->continuel.end(), (yyvsp[-1].brcon)->continuel.begin(), (yyvsp[-1].brcon)->continuel.end());
 
          }
-#line 1597 "parser.cpp"
+#line 1598 "parser.cpp"
     break;
 
   case 14: /* $@3: %empty  */
-#line 134 "parser.y"
+#line 135 "parser.y"
                             {kodea.agGehitu("proc " + *(yyvsp[-2].izena));}
-#line 1603 "parser.cpp"
+#line 1604 "parser.cpp"
     break;
 
   case 15: /* anon: TID TINITASSIG RFUNC $@3 argumentuak auk_mota bloke  */
-#line 135 "parser.y"
+#line 136 "parser.y"
       {kodea.agGehitu("endproc " + *(yyvsp[-6].izena));}
-#line 1609 "parser.cpp"
+#line 1610 "parser.cpp"
     break;
 
   case 21: /* eraz: id_zerrenda mota  */
-#line 151 "parser.y"
+#line 152 "parser.y"
       {kodea.erazagupenakGehitu(*(yyvsp[0].mota), *(yyvsp[-1].izenak));}
-#line 1615 "parser.cpp"
+#line 1616 "parser.cpp"
     break;
 
   case 22: /* id_zerrenda: TID id_zerrendaren_bestea  */
-#line 154 "parser.y"
+#line 155 "parser.y"
                {(yyval.izenak) = new IdLista;
                (yyval.izenak)->insert((yyval.izenak)->end(), (yyvsp[0].izenak)->begin(), (yyvsp[0].izenak)->end());
                (yyval.izenak)->push_front(*(yyvsp[-1].izena));}
-#line 1623 "parser.cpp"
+#line 1624 "parser.cpp"
     break;
 
   case 23: /* id_zerrendaren_bestea: TCOMMA TID id_zerrendaren_bestea  */
-#line 159 "parser.y"
+#line 160 "parser.y"
                         {(yyval.izenak) = new IdLista;
                         (yyval.izenak)->insert((yyval.izenak)->end(), (yyvsp[0].izenak)->begin(), (yyvsp[0].izenak)->end());
                         (yyval.izenak)->push_front(*(yyvsp[-1].izena));}
-#line 1631 "parser.cpp"
+#line 1632 "parser.cpp"
     break;
 
   case 24: /* id_zerrendaren_bestea: %empty  */
-#line 162 "parser.y"
+#line 163 "parser.y"
                         {(yyval.izenak) = new IdLista;}
-#line 1637 "parser.cpp"
+#line 1638 "parser.cpp"
     break;
 
   case 25: /* mota: RINT  */
-#line 164 "parser.y"
+#line 165 "parser.y"
             {(yyval.mota) = new string("int");}
-#line 1643 "parser.cpp"
+#line 1644 "parser.cpp"
     break;
 
   case 26: /* mota: RFLOAT  */
-#line 165 "parser.y"
+#line 166 "parser.y"
               {(yyval.mota) = new string("real");}
-#line 1649 "parser.cpp"
+#line 1650 "parser.cpp"
     break;
 
   case 30: /* $@4: %empty  */
-#line 172 "parser.y"
+#line 173 "parser.y"
                                 {kodea.parametroakGehitu(*(yyvsp[0].mota), *(yyvsp[-1].izenak));}
-#line 1655 "parser.cpp"
+#line 1656 "parser.cpp"
     break;
 
   case 33: /* $@5: %empty  */
-#line 175 "parser.y"
+#line 176 "parser.y"
                                                  {kodea.parametroakGehitu(*(yyvsp[0].mota), *(yyvsp[-1].izenak));}
-#line 1661 "parser.cpp"
+#line 1662 "parser.cpp"
     break;
 
   case 36: /* sententzia_zerrenda: sententzia_zerrenda sententzia  */
-#line 179 "parser.y"
+#line 180 "parser.y"
                         {(yyval.brcon) = new breakcont;
                         (yyval.brcon)->breakl.insert((yyval.brcon)->breakl.end(), (yyvsp[-1].brcon)->breakl.begin(), (yyvsp[-1].brcon)->breakl.end());
                         (yyval.brcon)->breakl.insert((yyval.brcon)->breakl.end(), (yyvsp[0].brcon)->breakl.begin(), (yyvsp[0].brcon)->breakl.end());
@@ -1670,277 +1671,277 @@ yyreduce:
                         (yyval.brcon)->continuel.insert((yyval.brcon)->continuel.end(), (yyvsp[0].brcon)->continuel.begin(), (yyvsp[0].brcon)->continuel.end());
 
                         }
-#line 1674 "parser.cpp"
+#line 1675 "parser.cpp"
     break;
 
   case 37: /* sententzia_zerrenda: sententzia  */
-#line 191 "parser.y"
+#line 192 "parser.y"
                         {(yyval.brcon) = (yyvsp[0].brcon);}
-#line 1680 "parser.cpp"
+#line 1681 "parser.cpp"
     break;
 
   case 38: /* sententzia: aldagaia TASSIG TID TLPAR adi_zerrenda TRPAR  */
-#line 194 "parser.y"
+#line 195 "parser.y"
             {(yyval.brcon) = new breakcont;
             kodea.parametroekinDeitu(*(yyvsp[-1].adi));
             kodea.agGehitu(*(yyvsp[-5].izena) + " := call " + *(yyvsp[-3].izena));}
-#line 1688 "parser.cpp"
+#line 1689 "parser.cpp"
     break;
 
   case 39: /* sententzia: aldagaia TASSIG adierazpena  */
-#line 199 "parser.y"
+#line 200 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.agGehitu(*(yyvsp[-2].izena) + " := " + (yyvsp[0].e)->izena);}
-#line 1695 "parser.cpp"
+#line 1696 "parser.cpp"
     break;
 
   case 40: /* sententzia: TID TLPAR adi_zerrenda TRPAR  */
-#line 203 "parser.y"
+#line 204 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.parametroekinDeitu(*(yyvsp[-1].adi));
                kodea.agGehitu("call " + *(yyvsp[-3].izena));}
-#line 1703 "parser.cpp"
+#line 1704 "parser.cpp"
     break;
 
   case 41: /* sententzia: RIF adierazpena M bloke M  */
-#line 208 "parser.y"
+#line 209 "parser.y"
                {(yyval.brcon) = (yyvsp[-1].brcon);
                //kodea.agOsatu($<brcon>5->breakl, $<erref>3);
                //kodea.agOsatu($<brcon>5->continuel, $<erref>5);
                kodea.agOsatu((yyvsp[-3].e)->truel, (yyvsp[-2].erref));
                kodea.agOsatu((yyvsp[-3].e)->falsel, (yyvsp[0].erref));}
-#line 1713 "parser.cpp"
+#line 1714 "parser.cpp"
     break;
 
   case 42: /* sententzia: RFOR M bloke M  */
-#line 215 "parser.y"
+#line 216 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.agOsatu((yyvsp[-1].brcon)->breakl, (yyvsp[0].erref) + 1);
                kodea.agOsatu((yyvsp[-1].brcon)->continuel, (yyvsp[-2].erref));
                kodea.agGehitu("goto " + to_string((yyvsp[-2].erref)));}
-#line 1722 "parser.cpp"
+#line 1723 "parser.cpp"
     break;
 
   case 43: /* sententzia: RFOR M adierazpena M bloke M  */
-#line 221 "parser.y"
+#line 222 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.agOsatu((yyvsp[-1].brcon)->breakl, (yyvsp[0].erref) + 1);
                kodea.agOsatu((yyvsp[-1].brcon)->continuel, (yyvsp[-4].erref));
                kodea.agOsatu((yyvsp[-3].e)->truel, (yyvsp[-2].erref));
                kodea.agOsatu((yyvsp[-3].e)->falsel, (yyvsp[0].erref) + 1);
                kodea.agGehitu("goto " + to_string((yyvsp[-4].erref)));}
-#line 1733 "parser.cpp"
+#line 1734 "parser.cpp"
     break;
 
   case 44: /* sententzia: RBRK adierazpena  */
-#line 228 "parser.y"
+#line 229 "parser.y"
                {(yyval.brcon) = new breakcont;
                (yyval.brcon)->breakl = (yyvsp[0].e)->truel;
                kodea.agOsatu((yyvsp[0].e)->falsel, kodea.lortuErref());}
-#line 1741 "parser.cpp"
+#line 1742 "parser.cpp"
     break;
 
   case 45: /* sententzia: RCNT  */
-#line 232 "parser.y"
+#line 233 "parser.y"
                {(yyval.brcon) = new breakcont;
                (yyval.brcon)->continuel.push_back(kodea.lortuErref());
                kodea.agGehitu("goto");}
-#line 1749 "parser.cpp"
+#line 1750 "parser.cpp"
     break;
 
   case 46: /* sententzia: RRD TLPAR aldagaia TRPAR  */
-#line 236 "parser.y"
+#line 237 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.agGehitu("read " + (yyvsp[-1].e)->izena);}
-#line 1756 "parser.cpp"
+#line 1757 "parser.cpp"
     break;
 
   case 47: /* sententzia: RPRT TLPAR adierazpena TRPAR  */
-#line 239 "parser.y"
+#line 240 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.agGehitu("write " + (yyvsp[-1].e)->izena);
                kodea.agGehitu("writeln");}
-#line 1764 "parser.cpp"
+#line 1765 "parser.cpp"
     break;
 
   case 48: /* sententzia: RRET adierazpena  */
-#line 243 "parser.y"
+#line 244 "parser.y"
                {(yyval.brcon) = new breakcont;
                kodea.agGehitu("return " + (yyvsp[0].e)->izena);}
-#line 1771 "parser.cpp"
+#line 1772 "parser.cpp"
     break;
 
   case 49: /* aldagaia: TID  */
-#line 246 "parser.y"
+#line 247 "parser.y"
                {(yyval.izena) = (yyvsp[0].izena) ;}
-#line 1777 "parser.cpp"
+#line 1778 "parser.cpp"
     break;
 
   case 50: /* adi_zerrenda: adierazpena adi_zerrenda_bestea  */
-#line 249 "parser.y"
+#line 250 "parser.y"
                   {(yyval.adi) = new IdLista;
                   (yyval.adi)->insert((yyval.adi)->end(), (yyvsp[0].adi)->begin(), (yyvsp[0].adi)->end());
                   (yyval.adi)->push_front(*(yyvsp[-1].izena));}
-#line 1785 "parser.cpp"
+#line 1786 "parser.cpp"
     break;
 
   case 51: /* adi_zerrenda: %empty  */
-#line 252 "parser.y"
+#line 253 "parser.y"
                {(yyval.adi) = new IdLista;}
-#line 1791 "parser.cpp"
+#line 1792 "parser.cpp"
     break;
 
   case 52: /* adi_zerrenda_bestea: TCOMMA adierazpena adi_zerrenda_bestea  */
-#line 255 "parser.y"
+#line 256 "parser.y"
                         {(yyval.adi) = new IdLista;
                         (yyval.adi)->insert((yyval.adi)->end(), (yyvsp[0].adi)->begin(), (yyvsp[0].adi)->end());
                         (yyval.adi)->push_front((yyvsp[-1].e)->izena);}
-#line 1799 "parser.cpp"
+#line 1800 "parser.cpp"
     break;
 
   case 53: /* adi_zerrenda_bestea: %empty  */
-#line 258 "parser.y"
+#line 259 "parser.y"
                       {(yyval.adi) = new IdLista;}
-#line 1805 "parser.cpp"
+#line 1806 "parser.cpp"
     break;
 
   case 54: /* adierazpena: adierazpena TADD adierazpena  */
-#line 261 "parser.y"
+#line 262 "parser.y"
                {(yyval.e) = new adierazpena;
                (yyval.e)->izena = kodea.idBerria() ;
                kodea.agGehitu((yyval.e)->izena + " := " + (yyvsp[-2].e)->izena + "+" + (yyvsp[0].e)->izena) ;}
-#line 1813 "parser.cpp"
+#line 1814 "parser.cpp"
     break;
 
   case 55: /* adierazpena: adierazpena TSUB adierazpena  */
-#line 265 "parser.y"
+#line 266 "parser.y"
                {(yyval.e) = new adierazpena;
                (yyval.e)->izena = kodea.idBerria() ;
                kodea.agGehitu((yyval.e)->izena + " := " + (yyvsp[-2].e)->izena + "-" + (yyvsp[0].e)->izena) ;}
-#line 1821 "parser.cpp"
+#line 1822 "parser.cpp"
     break;
 
   case 56: /* adierazpena: adierazpena TMUL adierazpena  */
-#line 269 "parser.y"
+#line 270 "parser.y"
                {(yyval.e) = new adierazpena;
                (yyval.e)->izena = kodea.idBerria() ;
                kodea.agGehitu((yyval.e)->izena + " := " + (yyvsp[-2].e)->izena + "*" + (yyvsp[0].e)->izena) ;}
-#line 1829 "parser.cpp"
+#line 1830 "parser.cpp"
     break;
 
   case 57: /* adierazpena: adierazpena TDIV adierazpena  */
-#line 273 "parser.y"
+#line 274 "parser.y"
                {(yyval.e) = new adierazpena;
                (yyval.e)->izena = kodea.idBerria() ;
                kodea.agGehitu((yyval.e)->izena + " := " + (yyvsp[-2].e)->izena + "/" + (yyvsp[0].e)->izena) ;}
-#line 1837 "parser.cpp"
+#line 1838 "parser.cpp"
     break;
 
   case 58: /* adierazpena: adierazpena TCEQ adierazpena  */
-#line 278 "parser.y"
+#line 279 "parser.y"
                {//$<e>$ = new adierazpena;
                 (yyval.e) = sortuErlazionala((yyvsp[-2].e)->izena, " == ", (yyvsp[0].e)->izena) ; }
-#line 1844 "parser.cpp"
+#line 1845 "parser.cpp"
     break;
 
   case 59: /* adierazpena: adierazpena TCGT adierazpena  */
-#line 281 "parser.y"
+#line 282 "parser.y"
                {//$<e>$ = new adierazpena;
                 (yyval.e) = sortuErlazionala((yyvsp[-2].e)->izena ," > ", (yyvsp[0].e)->izena)  ;}
-#line 1851 "parser.cpp"
+#line 1852 "parser.cpp"
     break;
 
   case 60: /* adierazpena: adierazpena TCLT adierazpena  */
-#line 284 "parser.y"
+#line 285 "parser.y"
                {//$<e>$ = new adierazpena;
                 (yyval.e) = sortuErlazionala((yyvsp[-2].e)->izena ," < ", (yyvsp[0].e)->izena) ; }
-#line 1858 "parser.cpp"
+#line 1859 "parser.cpp"
     break;
 
   case 61: /* adierazpena: adierazpena TCGE adierazpena  */
-#line 287 "parser.y"
+#line 288 "parser.y"
                {//$<e>$ = new adierazpena;
                 (yyval.e) = sortuErlazionala((yyvsp[-2].e)->izena ," >= ", (yyvsp[0].e)->izena) ; }
-#line 1865 "parser.cpp"
+#line 1866 "parser.cpp"
     break;
 
   case 62: /* adierazpena: adierazpena TCLE adierazpena  */
-#line 290 "parser.y"
+#line 291 "parser.y"
                {//$<e>$ = new adierazpena;
                 (yyval.e) = sortuErlazionala((yyvsp[-2].e)->izena ," <= ", (yyvsp[0].e)->izena) ; }
-#line 1872 "parser.cpp"
+#line 1873 "parser.cpp"
     break;
 
   case 63: /* adierazpena: adierazpena TCNE adierazpena  */
-#line 293 "parser.y"
+#line 294 "parser.y"
                {//$<e>$ = new adierazpena;
                 (yyval.e) = sortuErlazionala((yyvsp[-2].e)->izena ," != ", (yyvsp[0].e)->izena) ; }
-#line 1879 "parser.cpp"
+#line 1880 "parser.cpp"
     break;
 
   case 64: /* adierazpena: adierazpena ROR M adierazpena  */
-#line 297 "parser.y"
+#line 298 "parser.y"
                {(yyval.e) = new adierazpena; 
                kodea.agOsatu((yyvsp[-3].e)->falsel, (yyvsp[-1].erref));
                (yyval.e)->truel.insert((yyval.e)->truel.end(), (yyvsp[-3].e)->truel.begin(), (yyvsp[-3].e)->truel.end());
                (yyval.e)->truel.insert((yyval.e)->truel.end(), (yyvsp[0].e)->truel.begin(), (yyvsp[0].e)->truel.end());
                (yyval.e)->falsel = (yyvsp[0].e)->falsel;}
-#line 1889 "parser.cpp"
+#line 1890 "parser.cpp"
     break;
 
   case 65: /* adierazpena: adierazpena RAND M adierazpena  */
-#line 303 "parser.y"
+#line 304 "parser.y"
                {(yyval.e) = new adierazpena; 
                kodea.agOsatu((yyvsp[-3].e)->truel, (yyvsp[-1].erref));
                (yyval.e)->falsel.insert((yyval.e)->falsel.end(), (yyvsp[-3].e)->falsel.begin(), (yyvsp[-3].e)->falsel.end());
                (yyval.e)->falsel.insert((yyval.e)->falsel.end(), (yyvsp[0].e)->falsel.begin(), (yyvsp[0].e)->falsel.end());
                (yyval.e)->truel = (yyvsp[0].e)->truel; }
-#line 1899 "parser.cpp"
+#line 1900 "parser.cpp"
     break;
 
   case 66: /* adierazpena: RNOT adierazpena  */
-#line 310 "parser.y"
+#line 311 "parser.y"
                {(yyval.e) = new adierazpena; 
                (yyval.e)->falsel = (yyvsp[0].e)->truel;
                (yyval.e)->truel = (yyvsp[0].e)->falsel;}
-#line 1907 "parser.cpp"
+#line 1908 "parser.cpp"
     break;
 
   case 67: /* adierazpena: TLPAR adierazpena TRPAR  */
-#line 315 "parser.y"
+#line 316 "parser.y"
                {(yyval.e) = (yyvsp[-1].e);}
-#line 1913 "parser.cpp"
+#line 1914 "parser.cpp"
     break;
 
   case 68: /* adierazpena: aldagaia  */
-#line 317 "parser.y"
+#line 318 "parser.y"
                {(yyval.e) = new adierazpena; 
                (yyval.e)->izena = *(yyvsp[0].izena);}
-#line 1920 "parser.cpp"
+#line 1921 "parser.cpp"
     break;
 
   case 69: /* adierazpena: TKTE_INT  */
-#line 320 "parser.y"
+#line 321 "parser.y"
                {(yyval.e) = new adierazpena; 
                (yyval.e)->izena = *(yyvsp[0].balioa);}
-#line 1927 "parser.cpp"
+#line 1928 "parser.cpp"
     break;
 
   case 70: /* adierazpena: TKTE_FLOAT32  */
-#line 323 "parser.y"
+#line 324 "parser.y"
                {(yyval.e) = new adierazpena; 
                (yyval.e)->izena = *(yyvsp[0].balioa);}
-#line 1934 "parser.cpp"
+#line 1935 "parser.cpp"
     break;
 
   case 71: /* M: %empty  */
-#line 326 "parser.y"
+#line 327 "parser.y"
      {(yyval.erref) = kodea.lortuErref();}
-#line 1940 "parser.cpp"
+#line 1941 "parser.cpp"
     break;
 
 
-#line 1944 "parser.cpp"
+#line 1945 "parser.cpp"
 
       default: break;
     }
@@ -2164,5 +2165,5 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 328 "parser.y"
+#line 329 "parser.y"
 
