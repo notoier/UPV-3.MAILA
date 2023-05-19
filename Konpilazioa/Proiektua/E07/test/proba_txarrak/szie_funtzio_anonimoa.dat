@@ -1,0 +1,7 @@
+package main
+func main() {
+  funtzioa = func() { // ':=' egon beharrean '=' dago
+    return 0
+  }
+  return 0
+}

@@ -1,0 +1,16 @@
+package main
+func main() {
+
+  var x int
+
+  x = 10
+
+  for {
+    if x > 9 {
+      x = x + 1 
+      continue x == 3 //Baldintza duen continue
+    }
+    
+    break x <= 9
+  }
+}

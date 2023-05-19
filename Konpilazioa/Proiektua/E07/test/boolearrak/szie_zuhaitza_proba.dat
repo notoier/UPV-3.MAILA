@@ -6,7 +6,7 @@ func main() {
   x = 10 
   y = 7 
 
-    if (x > 11 and x < 11) or (y < 10 and y > 9){ //s3
+    if (x > 11 and x < 11) or (y < 10 and y > 9){
       x = x + 1 
     }
 

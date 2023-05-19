@@ -1,0 +1,6 @@
+package main
+var (a, b float32 c, d) //Mota gabeko esleipena
+
+func main(){
+    return 0
+}

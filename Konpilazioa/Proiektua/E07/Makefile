@@ -18,7 +18,7 @@ tokens.cpp: tokens.l parser.h
 parser: $(SOURCES) Kodea.h Lag.h
 	$(CC) $(CPPFLAGS) $(CFLAGS) -o $@ $(SOURCES) -ll
 
-test: $(TESTDIR)/*.in
+test: $(TESTDIR)/*.dat
 	@for f in $^ ; do \
 	echo "$${f} probatzen:" ;\
         ./parser < $${f} ; \

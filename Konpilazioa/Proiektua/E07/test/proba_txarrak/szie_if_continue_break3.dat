@@ -1,0 +1,16 @@
+package main
+func main() {
+
+  var x int
+
+  x = 10
+
+   { //For gabeko continue
+    if x > 9 {
+      x = x + 1 
+      continue
+    }
+    
+    break x <= 9
+  }
+}
