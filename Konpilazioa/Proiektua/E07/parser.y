@@ -32,7 +32,7 @@
 %union {
    string *izena; 
    string *mota;
-   string *balioa;
+   string *z_izena;
    int erref;
    int main;
    IdLista *izenak;
@@ -54,7 +54,7 @@
    Analisi lexiko eta sintaktikorako atributurik ez.
 */
 
-%token <balioa> TKTE_FLOAT32 TKTE_INT
+%token <z_izena> TKTE_FLOAT32 TKTE_INT
 %token <izena> TID 
 
 %token RPACK RFUNC RMAIN RVAR RIF RBRK RCNT RFOR RPRT RRD RRET 
@@ -300,6 +300,7 @@ adierazpena : adierazpena TADD adierazpena
                $<e>$->truel.insert($<e>$->truel.end(), $<e>1->truel.begin(), $<e>1->truel.end());
                $<e>$->truel.insert($<e>$->truel.end(), $<e>4->truel.begin(), $<e>4->truel.end());
                $<e>$->falsel = $<e>4->falsel;}
+               
             | adierazpena RAND M adierazpena
                {$<e>$ = new adierazpena; 
                kodea.agOsatu($<e>1->truel, $<erref>3);
@@ -319,10 +320,10 @@ adierazpena : adierazpena TADD adierazpena
                $<e>$->izena = *$<izena>1;}
             | TKTE_INT  
                {$<e>$ = new adierazpena; 
-               $<e>$->izena = *$<balioa>1;}
+               $<e>$->izena = *$<z_izena>1;}
             | TKTE_FLOAT32 
                {$<e>$ = new adierazpena; 
-               $<e>$->izena = *$<balioa>1;}
+               $<e>$->izena = *$<z_izena>1;}
 
 M  : {$<erref>$ = kodea.lortuErref();}
    ;

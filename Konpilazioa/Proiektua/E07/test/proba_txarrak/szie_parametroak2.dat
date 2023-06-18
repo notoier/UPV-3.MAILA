@@ -1,4 +1,4 @@
 package main
-func funtzioa_parametroekin(par, par2) { //Mota falta da
+func main(par, par2) { //Mota falta da
   return 0
 }

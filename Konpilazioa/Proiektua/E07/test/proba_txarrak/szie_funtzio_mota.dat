@@ -1,4 +1,4 @@
 package main
-func funtziomota() int float32 { //Bi mota daude
+func main() int float32 { //Bi mota daude
     return 0
 }

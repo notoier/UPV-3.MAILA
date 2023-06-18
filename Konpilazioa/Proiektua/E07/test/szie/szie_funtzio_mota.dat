@@ -1,4 +1,4 @@
 package main
-func funtziomota() int {
+func main() int {
     return 0
 }

@@ -102,7 +102,7 @@ union YYSTYPE
 
    string *izena; 
    string *mota;
-   string *balioa;
+   string *z_izena;
    int erref;
    int main;
    IdLista *izenak;

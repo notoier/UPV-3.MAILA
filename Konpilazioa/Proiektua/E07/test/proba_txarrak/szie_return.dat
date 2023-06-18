@@ -1,4 +1,4 @@
 package main
-func return_funtzioa() int {
+func main() int {
   return //Return soilik
 }

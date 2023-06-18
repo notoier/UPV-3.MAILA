@@ -1923,14 +1923,14 @@ yyreduce:
   case 69: /* adierazpena: TKTE_INT  */
 #line 321 "parser.y"
                {(yyval.e) = new adierazpena; 
-               (yyval.e)->izena = *(yyvsp[0].balioa);}
+               (yyval.e)->izena = *(yyvsp[0].z_izena);}
 #line 1928 "parser.cpp"
     break;
 
   case 70: /* adierazpena: TKTE_FLOAT32  */
 #line 324 "parser.y"
                {(yyval.e) = new adierazpena; 
-               (yyval.e)->izena = *(yyvsp[0].balioa);}
+               (yyval.e)->izena = *(yyvsp[0].z_izena);}
 #line 1935 "parser.cpp"
     break;
 
