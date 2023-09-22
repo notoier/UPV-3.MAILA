@@ -81,7 +81,7 @@
 //%type <param> par_zerrenda par_zerrendaren_bestea
 %type <brcon> bloke sententzia sententzia_zerrenda
 
-%left RNOT
+%right RNOT
 %left RAND ROR
 %nonassoc TCGE TCGT TCEQ TCNE TCLE TCLT
 %left TADD TSUB
@@ -297,6 +297,7 @@ adierazpena : adierazpena TADD adierazpena
             | adierazpena ROR M adierazpena
                {$<e>$ = new adierazpena; 
                kodea.agOsatu($<e>1->falsel, $<erref>3);
+               $<e>$->izena = "";
                $<e>$->truel.insert($<e>$->truel.end(), $<e>1->truel.begin(), $<e>1->truel.end());
                $<e>$->truel.insert($<e>$->truel.end(), $<e>4->truel.begin(), $<e>4->truel.end());
                $<e>$->falsel = $<e>4->falsel;}
@@ -304,12 +305,14 @@ adierazpena : adierazpena TADD adierazpena
             | adierazpena RAND M adierazpena
                {$<e>$ = new adierazpena; 
                kodea.agOsatu($<e>1->truel, $<erref>3);
+               $<e>$->izena = "";
                $<e>$->falsel.insert($<e>$->falsel.end(), $<e>1->falsel.begin(), $<e>1->falsel.end());
                $<e>$->falsel.insert($<e>$->falsel.end(), $<e>4->falsel.begin(), $<e>4->falsel.end());
                $<e>$->truel = $<e>4->truel; }
 
             | RNOT adierazpena 
-               {$<e>$ = new adierazpena; 
+               {$<e>$ = new adierazpena;
+               $<e>$->izena = ""; 
                $<e>$->falsel = $<e>2->truel;
                $<e>$->truel = $<e>2->falsel;}
 
